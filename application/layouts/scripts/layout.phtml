@@ -8,7 +8,6 @@
         <meta name="author" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-        <link rel="stylesheet" href="<% $this->baseUrl() %>/css/layout.css" media="screen, projection" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/style.css" media="screen, projection" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/print.css" media="print" />
         <!--[if IE]>
@@ -24,38 +23,30 @@
             <header>
                 <hgroup>
                     <h1>PHPConf Taiwan <% $year %></h1>
-                    <h2>台灣 PHP </h2>
+                    <h2>台灣 PHP 界的大盛事</h2>
                 </hgroup>
 
             </header>
             <nav>
                 <ul>
-                    <li><a href="#">報名</a></li>
-                    <li><a href="#">議程</a></li>
-                    <li><a href="#">地點</a></li>
-                    <li><a href="#">關於 PHPConf Taiwan</a></li>
+                    <li><a href="http://registrano.com/" target="_blank">報名</a></li>
+                    <li><a href="<% $this->url(['action' => 'sessions'], 'year') %>">議程</a></li>
+                    <li><a href="<% $this->url(['action' => 'location'], 'year') %>">地點</a></li>
+                    <li><a href="<% $this->url(['action' => 'staff'], 'year') %>">工作人員</a></li>
+                    <li><a href="<% $this->url(['action' => 'sponsors'], 'year') %>">贊助單位</a></li>
+                    <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
                 </ul>
             </nav>
-            <% $this->layout()->content %>
-            <aside>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-            </aside>
+            <div id="main" role="main">
+                <% $this->layout()->content %>
+            </div>
             <footer>
                 <p class="copyright">&copy;<% $year %> PHPConf.TW</p>
             </footer>
         </div> <!--! end of #container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        <script>window.jQuery || document.write('<script src="<% $this->baseUrl() %>/lib/jquery-1.6.2.min.js"><\/script>')</script>
+        <script src="<% $this->baseUrl() %>/js/phpconf.js"></script>
     </body>
 </html>

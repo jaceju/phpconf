@@ -1,9 +1,10 @@
 @import "compass/css3/gradient"
 @import "fancy-buttons"
 @import "html5"
+@import "layout"
 
-a.button
-  @include fancy-button(#123456)
+a.register
+  @include fancy-button(#123456, 40px, 10px)
 
 nav a
   color: #FFF
@@ -12,3 +13,10 @@ nav a
     color: #CCC
   &:visited
     color: #FFF
+
+#sessions
+  table
+    border: 1px solid #000
+    width: 100%
+    td,th
+      border: 1px solid #000
