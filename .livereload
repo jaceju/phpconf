@@ -2,6 +2,7 @@
 
 # additional extensions to monitor
 #config.exts << 'haml'
+config.exts << 'phtml'
 
 # exclude files with NAMES matching this mask
 #config.exclusions << '~*'

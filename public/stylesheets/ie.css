@@ -1,5 +1,0 @@
-/* line 1, ../sass/ie.sass */
-audio[controls], canvas, video {
-  display: inline;
-  zoom: 1;
-}

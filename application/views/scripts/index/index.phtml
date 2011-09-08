@@ -1,5 +1,8 @@
-<section id="info">
-    <h1>在台灣 PHP 社群第一次舉辦的技術大會</h1>
-    <p></p>
-    <p><a href="http://registrano.com/" class="register">現在就報名！</a></p>
-</section>
+<div id="info">
+    <% foreach $announcements as $announcement %>
+    <article class="announcement">
+        <h1><% $announcement->title|escape %></h1>
+        <div class="content"><% $announcement->content %></div>
+    </article>
+    <% /foreach %>
+</div>

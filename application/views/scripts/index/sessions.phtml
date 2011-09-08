@@ -2,24 +2,17 @@
     <h1>議程介紹</h1>
     <table>
         <tr>
-            <th>時間</th>
-            <th>議程</th>
+            <th class="time">時間</th>
+            <th class="session">議程</th>
         </tr>
+        <% foreach $sessions as $session %>
         <tr>
-            <td><span class="startTime">9:00</span> ~ <span class="endTime">10:00</span></td>
-            <td></td>
+            <td><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+            <td>
+                <span class="subject"><% $session->subject|escape %></span>
+                <span class="talker"><% $session->talker|escape %></span>
+            </td>
         </tr>
-        <tr>
-            <td><span class="startTime">9:00</span> ~ <span class="endTime">10:00</span></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><span class="startTime">9:00</span> ~ <span class="endTime">10:00</span></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><span class="startTime">9:00</span> ~ <span class="endTime">10:00</span></td>
-            <td></td>
-        </tr>
+        <% /foreach %>
     </table>
 </section>

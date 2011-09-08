@@ -1,5 +1,5 @@
 /* incase an inverted custom gradient isn't specified */
-/* line 177, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 177, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class, a.register {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/public/img/button_bg.png?1315140545') repeat-x bottom left;
@@ -12,22 +12,22 @@
   border-style: solid;
   font-weight: bold;
 }
-/* line 165, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 165, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class::-moz-focus-inner, a.register::-moz-focus-inner {
   border: none;
   padding: 0;
 }
-/* line 168, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 168, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class:focus, a.register:focus {
   outline: none;
 }
 
-/* line 2, ../sass/_html5.sass */
+/* line 2, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 5, ../sass/_html5.sass */
+/* line 5, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 audio[controls], canvas, video {
   display: inline-block;
 }
@@ -42,7 +42,7 @@ audio[controls], canvas, video {
  *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
  * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-/* line 21, ../sass/_html5.sass */
+/* line 21, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -52,7 +52,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 29, ../sass/_html5.sass */
+/* line 29, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 body {
   margin: 0;
   font-size: 13px;
@@ -61,7 +61,7 @@ body {
   color: #222222;
 }
 
-/* line 36, ../sass/_html5.sass */
+/* line 36, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 button, input, select, textarea {
   font-family: sans-serif;
   color: #222222;
@@ -75,19 +75,19 @@ button, input, select, textarea {
 /* =============================================================================
  * Links
  * ========================================================================== */
-/* line 53, ../sass/_html5.sass */
+/* line 53, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 a {
   color: #0000ee;
 }
-/* line 55, ../sass/_html5.sass */
+/* line 55, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 a:visited {
   color: #551a8b;
 }
-/* line 57, ../sass/_html5.sass */
+/* line 57, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 a:focus {
   outline: thin dotted;
 }
-/* line 59, ../sass/_html5.sass */
+/* line 59, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 a:hover, a:active {
   outline: 0;
 }
@@ -96,27 +96,27 @@ a:hover, a:active {
 /* =============================================================================
  * Typography
  * ========================================================================== */
-/* line 68, ../sass/_html5.sass */
+/* line 68, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 71, ../sass/_html5.sass */
+/* line 71, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 b, strong {
   font-weight: bold;
 }
 
-/* line 74, ../sass/_html5.sass */
+/* line 74, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 77, ../sass/_html5.sass */
+/* line 77, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 dfn {
   font-style: italic;
 }
 
-/* line 80, ../sass/_html5.sass */
+/* line 80, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 hr {
   display: block;
   height: 1px;
@@ -126,14 +126,14 @@ hr {
   padding: 0;
 }
 
-/* line 88, ../sass/_html5.sass */
+/* line 88, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 ins {
   background: #ffff99;
   color: black;
   text-decoration: none;
 }
 
-/* line 93, ../sass/_html5.sass */
+/* line 93, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 mark {
   background: yellow;
   color: black;
@@ -142,7 +142,7 @@ mark {
 }
 
 /* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
-/* line 101, ../sass/_html5.sass */
+/* line 101, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 pre, code, kbd, samp {
   font-family: monospace, monospace;
   _font-family: "courier new", monospace;
@@ -150,30 +150,30 @@ pre, code, kbd, samp {
 }
 
 /* Improve readability of pre-formatted text in all browsers */
-/* line 108, ../sass/_html5.sass */
+/* line 108, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 113, ../sass/_html5.sass */
+/* line 113, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 q {
   quotes: none;
 }
-/* line 115, ../sass/_html5.sass */
+/* line 115, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 119, ../sass/_html5.sass */
+/* line 119, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 small {
   font-size: 85%;
 }
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
-/* line 124, ../sass/_html5.sass */
+/* line 124, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 sub {
   font-size: 75%;
   line-height: 0;
@@ -181,7 +181,7 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 130, ../sass/_html5.sass */
+/* line 130, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 sup {
   font-size: 75%;
   line-height: 0;
@@ -190,7 +190,7 @@ sup {
   top: -0.5em;
 }
 
-/* line 137, ../sass/_html5.sass */
+/* line 137, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 sub {
   bottom: -0.25em;
 }
@@ -198,18 +198,18 @@ sub {
 /* =============================================================================
  * Lists
  * ========================================================================== */
-/* line 144, ../sass/_html5.sass */
+/* line 144, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 ul, ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
-/* line 148, ../sass/_html5.sass */
+/* line 148, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 152, ../sass/_html5.sass */
+/* line 152, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 nav ul, nav ol {
   list-style: none;
   margin: 0;
@@ -221,14 +221,14 @@ nav ul, nav ol {
  * ========================================================================== */
 /* Improve image quality when scaled in IE7
  * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-/* line 165, ../sass/_html5.sass */
+/* line 165, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
 /* Correct overflow displayed oddly in IE9 */
-/* line 172, ../sass/_html5.sass */
+/* line 172, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -236,7 +236,7 @@ svg:not(:root) {
 /* =============================================================================
  * Figures
  * ========================================================================== */
-/* line 179, ../sass/_html5.sass */
+/* line 179, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 figure, form {
   margin: 0;
 }
@@ -244,7 +244,7 @@ figure, form {
 /* =============================================================================
  * Forms
  * ========================================================================== */
-/* line 186, ../sass/_html5.sass */
+/* line 186, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 fieldset {
   border: 0;
   margin: 0;
@@ -253,7 +253,7 @@ fieldset {
 
 /* 1. Correct color not inheriting in IE6/7/8/9
  * 2. Correct alignment displayed oddly in IE6/7 */
-/* line 195, ../sass/_html5.sass */
+/* line 195, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 legend {
   border: 0;
   *margin-left: -7px;
@@ -261,7 +261,7 @@ legend {
 }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-/* line 202, ../sass/_html5.sass */
+/* line 202, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 label {
   cursor: pointer;
 }
@@ -269,7 +269,7 @@ label {
 /* 1. Correct font-size not inheriting in all browsers
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers */
-/* line 210, ../sass/_html5.sass */
+/* line 210, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -279,7 +279,7 @@ button, input, select, textarea {
 
 /* 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7 */
-/* line 220, ../sass/_html5.sass */
+/* line 220, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 button, input {
   line-height: normal;
   *overflow: visible;
@@ -287,22 +287,22 @@ button, input {
 
 /* 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS */
-/* line 228, ../sass/_html5.sass */
+/* line 228, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 button {
   cursor: pointer;
   -webkit-appearance: button;
 }
 
-/* line 233, ../sass/_html5.sass */
+/* line 233, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
 }
-/* line 236, ../sass/_html5.sass */
+/* line 236, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
 }
-/* line 238, ../sass/_html5.sass */
+/* line 238, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -312,21 +312,21 @@ input[type="search"] {
 /* Consistent box sizing and appearance */
 /* Remove inner padding and border in FF3/4
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-/* line 250, ../sass/_html5.sass */
+/* line 250, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 /* Remove default vertical scrollbar in IE6/7/8/9 */
-/* line 256, ../sass/_html5.sass */
+/* line 256, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
 /* Colors for form validity */
-/* line 264, ../sass/_html5.sass */
+/* line 264, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
@@ -334,7 +334,7 @@ input:invalid, textarea:invalid {
 /* =============================================================================
  * Tables
  * ========================================================================== */
-/* line 271, ../sass/_html5.sass */
+/* line 271, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -349,7 +349,7 @@ table {
  * Please define your styles before this section.
  * ========================================================================== */
 /* For image replacement */
-/* line 287, ../sass/_html5.sass */
+/* line 287, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .ir {
   display: block;
   text-indent: -999em;
@@ -358,14 +358,14 @@ table {
   text-align: left;
   direction: ltr;
 }
-/* line 294, ../sass/_html5.sass */
+/* line 294, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .ir br {
   display: none;
 }
 
 /* Hide for both screenreaders and browsers:
  * css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 300, ../sass/_html5.sass */
+/* line 300, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .hidden {
   display: none;
   visibility: hidden;
@@ -373,7 +373,7 @@ table {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
  *www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 307, ../sass/_html5.sass */
+/* line 307, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -384,7 +384,7 @@ table {
   position: absolute;
   width: 1px;
 }
-/* line 317, ../sass/_html5.sass */
+/* line 317, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -396,22 +396,22 @@ table {
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 329, ../sass/_html5.sass */
+/* line 329, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 334, ../sass/_html5.sass */
+/* line 334, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .clearfix {
   zoom: 1;
 }
-/* line 335, ../sass/_html5.sass */
+/* line 335, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .clearfix:before {
   content: "";
   display: table;
 }
-/* line 338, ../sass/_html5.sass */
+/* line 338, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
 .clearfix:after {
   content: "";
   display: table;
@@ -434,7 +434,7 @@ table {
  * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
  * ========================================================================== */
 @media print {
-  /* line 362, ../sass/_html5.sass */
+  /* line 362, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   * {
     background: transparent !important;
     color: black !important;
@@ -444,55 +444,55 @@ table {
   }
 
   /* Black prints faster: sanbeiji.com/archives/953 */
-  /* line 369, ../sass/_html5.sass */
+  /* line 369, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   a {
     color: #444444 !important;
     text-decoration: underline;
   }
-  /* line 372, ../sass/_html5.sass */
+  /* line 372, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   a:visited {
     color: #444444 !important;
     text-decoration: underline;
   }
-  /* line 375, ../sass/_html5.sass */
+  /* line 375, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 377, ../sass/_html5.sass */
+  /* line 377, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 379, ../sass/_html5.sass */
+  /* line 379, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   .ir a:after {
     content: "";
   }
 
-  /* line 382, ../sass/_html5.sass */
+  /* line 382, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 385, ../sass/_html5.sass */
+  /* line 385, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   pre, blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 388, ../sass/_html5.sass */
+  /* line 388, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   thead {
     display: table-header-group;
   }
 
   /* css-discuss.incutio.com/wiki/Printing_Tables */
-  /* line 391, ../sass/_html5.sass */
+  /* line 391, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   tr {
     page-break-inside: avoid;
   }
 
-  /* line 393, ../sass/_html5.sass */
+  /* line 393, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
@@ -502,51 +502,51 @@ table {
     margin: 0.5cm;
 }
 
-  /* line 399, ../sass/_html5.sass */
+  /* line 399, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 402, ../sass/_html5.sass */
+  /* line 402, /Users/jaceju/Sites/personal/phpconf.tw/sass/_html5.sass */
   h2, h3 {
     page-break-after: avoid;
   }
 }
-/* line 1, ../sass/_layout.sass */
+/* line 1, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 #container {
   margin: 0 auto;
   width: 900px;
   background: white;
 }
 
-/* line 6, ../sass/_layout.sass */
+/* line 6, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 header {
   background: white;
   padding: 20px;
 }
-/* line 9, ../sass/_layout.sass */
+/* line 9, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 header h1 {
   margin: 0;
 }
 
-/* line 12, ../sass/_layout.sass */
+/* line 12, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 nav {
   float: left;
   width: 900px;
   background: #333333;
 }
-/* line 16, ../sass/_layout.sass */
+/* line 16, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 19, ../sass/_layout.sass */
+/* line 19, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 nav ul li {
   list-style-type: none;
   display: inline;
 }
-/* line 22, ../sass/_layout.sass */
+/* line 22, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 nav li a {
   display: block;
   float: left;
@@ -555,33 +555,79 @@ nav li a {
   text-decoration: none;
   border-right: 1px solid white;
 }
-/* line 29, ../sass/_layout.sass */
+/* line 29, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 nav li a:hover {
   background: #338833;
 }
 
-/* line 32, ../sass/_layout.sass */
+/* line 32, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 #main {
-  width: 900px;
+  clear: left;
+  float: left;
+  width: 560px;
   padding: 20px 0;
   margin: 0 0 0 30px;
   display: inline;
 }
-/* line 37, ../sass/_layout.sass */
+/* line 39, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
 #main h2 {
   margin: 0;
 }
 
-/* line 40, ../sass/_layout.sass */
-footer {
+/* line 42, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
+aside {
+  float: right;
+  width: 240px;
+  padding: 20px 0;
+  margin: 0 20px 0 0;
+  display: inline;
+  background: #eeeeee;
+}
+/* line 49, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
+aside h3 {
+  margin: 0;
+}
+
+/* line 52, /Users/jaceju/Sites/personal/phpconf.tw/sass/_layout.sass */
+footer.page {
   clear: both;
   background: white;
   text-align: right;
   padding: 20px;
   height: 1%;
+  border-top: 1px solid #cccccc;
 }
 
-/* line 6, ../sass/style.sass */
+/* line 1, /Users/jaceju/Sites/personal/phpconf.tw/sass/_announcements.sass */
+article.announcement {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333333;
+  padding: 5px;
+}
+
+/* line 2, /Users/jaceju/Sites/personal/phpconf.tw/sass/_sessions.sass */
+#sessions table {
+  border: 1px solid black;
+  width: 100%;
+}
+/* line 5, /Users/jaceju/Sites/personal/phpconf.tw/sass/_sessions.sass */
+#sessions table td, #sessions table th {
+  border: 1px solid black;
+}
+/* line 8, /Users/jaceju/Sites/personal/phpconf.tw/sass/_sessions.sass */
+#sessions th.time {
+  width: 60px;
+}
+/* line 11, /Users/jaceju/Sites/personal/phpconf.tw/sass/_sessions.sass */
+#sessions td {
+  padding: 5px;
+}
+/* line 13, /Users/jaceju/Sites/personal/phpconf.tw/sass/_sessions.sass */
+#sessions td span {
+  display: block;
+}
+
+/* line 8, ../../sass/style.sass */
 a.register {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -613,11 +659,11 @@ a.register {
   -khtml-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 a.register, a.register:visited {
   color: white;
 }
-/* line 31, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 31, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 a.register:hover, a.register:focus {
   background-color: #002c59;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e80d3), color-stop(10%, #1d5389), color-stop(50%, #0d253d), color-stop(50%, #0a1d30), color-stop(100%, #13375a));
@@ -629,11 +675,11 @@ a.register:hover, a.register:focus {
   border-color: #02060a;
   text-shadow: black 0px 1px 1px;
 }
-/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 a.register:hover, a.register:hover:visited, a.register:focus, a.register:focus:visited {
   color: white;
 }
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 36, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 a.register:active {
   background-color: #002549;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0d253d), color-stop(30%, #0e2a45), color-stop(50%, #0b2034), color-stop(50%, #081828), color-stop(100%, #14395e));
@@ -649,31 +695,21 @@ a.register:active {
   -o-box-shadow: #050e17 0 0.08em 0.2em 1px inset;
   box-shadow: #050e17 0 0.08em 0.2em 1px inset;
 }
-/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, /Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 a.register:active, a.register:active:visited {
   color: white;
 }
 
-/* line 9, ../sass/style.sass */
+/* line 11, ../../sass/style.sass */
 nav a {
   color: white;
   text-decoration: none;
 }
-/* line 12, ../sass/style.sass */
+/* line 14, ../../sass/style.sass */
 nav a:hover {
   color: #cccccc;
 }
-/* line 14, ../sass/style.sass */
+/* line 16, ../../sass/style.sass */
 nav a:visited {
   color: white;
-}
-
-/* line 18, ../sass/style.sass */
-#sessions table {
-  border: 1px solid black;
-  width: 100%;
-}
-/* line 21, ../sass/style.sass */
-#sessions table td, #sessions table th {
-  border: 1px solid black;
 }

@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-
+        <link rel="shortcut icon" href="<% $this->baseUrl() %>/favicon.gif" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/style.css" media="screen, projection" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/print.css" media="print" />
         <!--[if IE]>
@@ -24,23 +24,34 @@
                 <hgroup>
                     <h1>PHPConf Taiwan <% $year %></h1>
                     <h2>台灣 PHP 界的大盛事</h2>
+                    <p><img src="<% $this->baseUrl() %>/img/logo.jpg" alt="PHPConf Taiwan <% $year %>" /></p>
                 </hgroup>
 
             </header>
             <nav>
                 <ul>
+                    <li><a href="<% $this->url(['action' => 'index']) %>">公告</a></li>
                     <li><a href="http://registrano.com/" target="_blank">報名</a></li>
-                    <li><a href="<% $this->url(['action' => 'sessions'], 'year') %>">議程</a></li>
-                    <li><a href="<% $this->url(['action' => 'location'], 'year') %>">地點</a></li>
-                    <li><a href="<% $this->url(['action' => 'staff'], 'year') %>">工作人員</a></li>
-                    <li><a href="<% $this->url(['action' => 'sponsors'], 'year') %>">贊助單位</a></li>
+                    <li><a href="<% $this->url(['action' => 'sessions']) %>">議程</a></li>
+                    <li><a href="<% $this->url(['action' => 'location']) %>">地點</a></li>
+                    <li><a href="<% $this->url(['action' => 'staffs']) %>">工作人員</a></li>
+                    <li><a href="<% $this->url(['action' => 'sponsors']) %>">贊助單位</a></li>
                     <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
                 </ul>
             </nav>
             <div id="main" role="main">
                 <% $this->layout()->content %>
             </div>
-            <footer>
+            <aside>
+                <section>
+                    <h1>贊助廠商</h1>
+                    <ul>
+                        <li>贊助商一</li>
+                        <li>贊助商二</li>
+                    </ul>
+                </section>
+            </aside>
+            <footer class="page">
                 <p class="copyright">&copy;<% $year %> PHPConf.TW</p>
             </footer>
         </div> <!--! end of #container -->

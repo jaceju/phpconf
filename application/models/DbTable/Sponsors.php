@@ -1,15 +1,13 @@
 <?php
 
-class Phpconf_Model_DbTable_Announcements extends Zend_Db_Table_Abstract
+class Phpconf_Model_DbTable_Sponsors extends Zend_Db_Table_Abstract
 {
 
-    protected $_name = 'announcements';
-
-    protected $_rowClass = 'Phpconf_Model_Announcement';
+    protected $_name = 'sponsors';
 
     protected $_referenceMap = array(
         'Conference' => array(
-            'columns' => 'conferenceId', // 對應到 announcements.conferenceId
+            'columns' => 'conferenceId', // 對應到 sponsors.conferenceId
             'refTableClass' => 'Phpconf_Model_DbTable_Conferences',
             'refColumns' => 'id', // 對應到 conference.id
         ),
@@ -17,14 +15,14 @@ class Phpconf_Model_DbTable_Announcements extends Zend_Db_Table_Abstract
 
     /**
      *
-     * @var Phpconf_Model_DbTable_Announcements
+     * @var Phpconf_Model_DbTable_Sponsors
      */
     private static $_instance = null;
 
     /**
      *
      * @param array $config
-     * @return Phpconf_Model_DbTable_Announcements
+     * @return Phpconf_Model_DbTable_Sponsors
      */
     public function getInstance($config = array())
     {
@@ -33,5 +31,6 @@ class Phpconf_Model_DbTable_Announcements extends Zend_Db_Table_Abstract
         }
         return self::$_instance;
     }
+
 }
 

@@ -21,7 +21,13 @@
         <dbTableDirectory>
           <dbTableFile dbTableName="Announcements"/>
           <dbTableFile dbTableName="Conferences"/>
+          <dbTableFile dbTableName="Sessions"/>
+          <dbTableFile dbTableName="Staffs"/>
+          <dbTableFile dbTableName="Jobs"/>
+          <dbTableFile dbTableName="Sponsors"/>
         </dbTableDirectory>
+        <modelFile modelName="Announcement"/>
+        <modelFile modelName="Conference"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <viewsDirectory>
