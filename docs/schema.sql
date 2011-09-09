@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS `sessions` (
   `conferenceId` int(10) unsigned DEFAULT NULL COMMENT '會議編號',
   `subject` varchar(200) NOT NULL COMMENT '主題',
   `talker` varchar(20) DEFAULT NULL COMMENT '講者',
+  `brief` text COMMENT '摘要',
   `startTime` time NOT NULL COMMENT '開始時間',
   `endTime` time NOT NULL COMMENT '結束時間',
   PRIMARY KEY (`id`)

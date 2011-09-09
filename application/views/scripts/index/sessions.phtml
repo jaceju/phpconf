@@ -6,13 +6,23 @@
             <th class="session">議程</th>
         </tr>
         <% foreach $sessions as $session %>
-        <tr>
+        <% if null === $session->talker %>
+        <tr class="break">
+            <td colspan="2">
+                <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
+            </td>
+        </tr>
+        <% else %>
+        <tr class="info">
             <td><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
             <td>
                 <span class="subject"><% $session->subject|escape %></span>
                 <span class="talker"><% $session->talker|escape %></span>
+                <a href="#" class="more">摘要</a>
+                <div class="brief"><% $session->brief|escape|nl2br %></div>
             </td>
         </tr>
+        <% /if %>
         <% /foreach %>
     </table>
 </section>
