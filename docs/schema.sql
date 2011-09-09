@@ -35,6 +35,8 @@ CREATE TABLE IF NOT EXISTS `conferences` (
   `endDate` date NOT NULL COMMENT '結束日期',
   `location` varchar(200) NOT NULL COMMENT '地點',
   `address` varchar(200) NOT NULL COMMENT '場地地址',
+  `mapUrl` varchar(250) NOT NULL COMMENT '地圖連結',
+  `traffic` text COMMENT '交通資訊',
   `description` text NOT NULL COMMENT '描述',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='會議';
