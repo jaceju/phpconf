@@ -40,19 +40,40 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
         return $this->findDependentRowset('Phpconf_Model_DbTable_Sessions', 'Conference', $select);
     }
 
+    /**
+     *
+     * @return Zend_Db_Table_Rowset
+     */
     public function fetchStaffs()
     {
-
+        $staffTable = Phpconf_Model_DbTable_Staffs::getInstance();
+        $select = $staffTable->select()
+                ->order('name');
+        return $this->findDependentRowset('Phpconf_Model_DbTable_Staffs', 'Conference', $select);
     }
 
+    /**
+     *
+     * @return Zend_Db_Table_Rowset
+     */
     public function fetchJobs()
     {
-
+        $jobTable = Phpconf_Model_DbTable_Jobs::getInstance();
+        $select = $jobTable->select()
+                ->order('sortOrder');
+        return $jobTable->fetchAll($select);
     }
 
+    /**
+     *
+     * @return Zend_Db_Table_Rowset
+     */
     public function fetchSponsors()
     {
-        
+        $sponsorTable = Phpconf_Model_DbTable_Sponsors::getInstance();
+        $select = $sponsorTable->select()
+                ->order('name');
+        return $this->findDependentRowset('Phpconf_Model_DbTable_Sponsors', 'Conference', $select);
     }
 }
 

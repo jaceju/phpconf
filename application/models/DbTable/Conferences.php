@@ -10,6 +10,8 @@ class Phpconf_Model_DbTable_Conferences extends Zend_Db_Table_Abstract
     protected $_dependentTables = array(
         'Phpconf_Model_DbTable_Announcements',
         'Phpconf_Model_DbTable_Sesssions',
+        'Phpconf_Model_DbTable_Staffs',
+        'Phpconf_Model_DbTable_Sponsors',
     );
 
     /**

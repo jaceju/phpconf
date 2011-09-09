@@ -1,6 +1,8 @@
 <section>
     <h1>贊助單位</h1>
     <ul>
-        <li>johnpupu - 網站主機</li>
+        <% foreach $sponsors as $sponsor %>
+        <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
+        <% /foreach %>
     </ul>
 </section>

@@ -31,17 +31,18 @@ class IndexController extends Zend_Controller_Action
 
     public function locationAction()
     {
-
+        $this->view->conference = $this->_conference;
     }
 
     public function staffsAction()
     {
-
+        $this->view->jobs = $this->_conference->fetchJobs();
+        $this->view->staffs = $this->_conference->fetchStaffs();
     }
 
     public function sponsorsAction()
     {
-
+        $this->view->sponsors = $this->_conference->fetchSponsors();
     }
 }
 
