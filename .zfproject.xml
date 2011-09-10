@@ -16,6 +16,7 @@
           <actionMethod actionName="index"/>
         </controllerFile>
       </controllersDirectory>
+      <pluginsDirectory enabled="false"/>
       <actionHelpersDirectory enabled="false"/>
       <formsDirectory>
         <formFile formName="Login"/>
