@@ -37,6 +37,9 @@
                     <li><a href="<% $this->url(['action' => 'staffs']) %>">工作人員</a></li>
                     <li><a href="<% $this->url(['action' => 'sponsors']) %>">贊助單位</a></li>
                     <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
+                    <% if $currentAdmin %>
+                    <li><a href="<% $this->url(['action' => 'logout']) %>">登出</a></li>
+                    <% /if %>
                 </ul>
             </nav>
             <div id="main" role="main">

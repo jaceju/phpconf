@@ -14,11 +14,6 @@ class IndexController extends Zend_Controller_Action
         $this->_conference = Phpconf_Model_Conference::getInstanceFromYear($year);
     }
 
-    public function loginAction()
-    {
-
-    }
-
     public function indexAction()
     {
         $this->view->announcements = $this->_conference->fetchLatestAnnouncements();
