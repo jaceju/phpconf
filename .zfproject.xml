@@ -14,12 +14,15 @@
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Admin">
           <actionMethod actionName="index"/>
+          <actionMethod actionName="conferenceEdit"/>
         </controllerFile>
       </controllersDirectory>
       <pluginsDirectory enabled="false"/>
       <actionHelpersDirectory enabled="false"/>
       <formsDirectory>
         <formFile formName="Login"/>
+        <formFile formName="AnnouncementEdit"/>
+        <formFile formName="ConferenceEdit"/>
       </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>
@@ -31,7 +34,6 @@
           <dbTableFile dbTableName="Jobs"/>
           <dbTableFile dbTableName="Sponsors"/>
         </dbTableDirectory>
-        <modelFile modelName="Announcement"/>
         <modelFile modelName="Conference"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
@@ -45,6 +47,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Admin">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Admin">
+            <viewScriptFile forActionName="conferenceEdit"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
@@ -85,6 +90,7 @@
           </testApplicationControllerFile>
           <testApplicationControllerFile forControllerName="Admin">
             <testApplicationActionMethod forActionName="index"/>
+            <testApplicationActionMethod forActionName="conferenceEdit"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
       </testApplicationDirectory>

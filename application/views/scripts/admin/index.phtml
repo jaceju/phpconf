@@ -1,8 +1,10 @@
-<div id="info">
+<div id="announcements">
     <% foreach $announcements as $announcement %>
     <article class="announcement">
         <h1><% $announcement->title|escape %></h1>
         <div class="content"><% $announcement->content %></div>
+        <div class="edit"><a href="<% $this->url(['action' => 'announcement-edit', 'id' => $announcement->id], 'admin') %>">編輯</a></div>
     </article>
     <% /foreach %>
 </div>
+

@@ -1,0 +1,24 @@
+<div id="conferences">
+    <table>
+        <thead>
+            <tr>
+                <th>年度</th>
+                <th>開始日期</th>
+                <th>結束日期</th>
+                <th>地點</th>
+                <th>編輯</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% foreach $conferences as $conference %>
+            <tr>
+                <td><% $conference->year|escape %></td>
+                <td><% $conference->startDate|escape %></td>
+                <td><% $conference->endDate|escape %></td>
+                <td><% $conference->location|escape %></td>
+                <td><a href="<% $this->url(['action' => 'conference-edit', 'id' => $conference-id]) %>">編輯</a></td>
+            </tr>
+            <% /foreach %>
+        </tbody>
+    </table>
+</div>

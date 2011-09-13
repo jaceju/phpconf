@@ -24,7 +24,7 @@ class Phpconf_Model_DbTable_Sponsors extends Zend_Db_Table_Abstract
      * @param array $config
      * @return Phpconf_Model_DbTable_Sponsors
      */
-    public function getInstance($config = array())
+    public static function getInstance($config = array())
     {
         if (null === self::$_instance) {
             self::$_instance = new self($config);

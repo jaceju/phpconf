@@ -1,28 +1,32 @@
 <section id="sessions">
     <h1>議程介紹</h1>
     <table>
-        <tr>
-            <th class="time">時間</th>
-            <th class="session">議程</th>
-        </tr>
-        <% foreach $sessions as $session %>
-        <% if null === $session->talker %>
-        <tr class="break">
-            <td colspan="2">
-                <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
-            </td>
-        </tr>
-        <% else %>
-        <tr class="info">
-            <td><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
-            <td>
-                <span class="subject"><% $session->subject|escape %></span>
-                <span class="talker"><% $session->talker|escape %></span>
-                <a href="#" class="more">摘要</a>
-                <div class="brief"><% $session->brief|escape|nl2br %></div>
-            </td>
-        </tr>
-        <% /if %>
-        <% /foreach %>
+        <thead>
+            <tr>
+                <th class="time">時間</th>
+                <th class="session">議程</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% foreach $sessions as $session %>
+            <% if null === $session->talker %>
+            <tr class="break">
+                <td colspan="2">
+                    <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
+                </td>
+            </tr>
+            <% else %>
+            <tr class="info">
+                <td><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+                <td>
+                    <span class="subject"><% $session->subject|escape %></span>
+                    <span class="talker"><% $session->talker|escape %></span>
+                    <a href="#" class="more">摘要</a>
+                    <div class="brief"><% $session->brief|escape|nl2br %></div>
+                </td>
+            </tr>
+            <% /if %>
+            <% /foreach %>
+        </tbody>
     </table>
 </section>

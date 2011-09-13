@@ -6,11 +6,16 @@ class IndexController extends Zend_Controller_Action
      *
      * @var Phpconf_Model_Conference
      */
-    private $_conference = null;
+    protected $_conference = null;
 
     public function init()
     {
         $year = $this->getRequest()->getParam('year');
+        if (null === $year) {
+            $this->getHelper('redirector')->gotoRouteAndExit(array(
+                        'year' => START_YEAR,
+                    ), 'year');
+        }
         $this->_conference = Phpconf_Model_Conference::getInstanceFromYear($year);
     }
 

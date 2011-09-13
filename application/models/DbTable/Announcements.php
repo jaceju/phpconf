@@ -5,8 +5,6 @@ class Phpconf_Model_DbTable_Announcements extends Zend_Db_Table_Abstract
 
     protected $_name = 'announcements';
 
-    protected $_rowClass = 'Phpconf_Model_Announcement';
-
     protected $_referenceMap = array(
         'Conference' => array(
             'columns' => 'conferenceId', // 對應到 announcements.conferenceId
@@ -26,7 +24,7 @@ class Phpconf_Model_DbTable_Announcements extends Zend_Db_Table_Abstract
      * @param array $config
      * @return Phpconf_Model_DbTable_Announcements
      */
-    public function getInstance($config = array())
+    public static function getInstance($config = array())
     {
         if (null === self::$_instance) {
             self::$_instance = new self($config);
