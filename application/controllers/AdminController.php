@@ -26,6 +26,7 @@ class AdminController extends IndexController
         }
 
         $this->getHelper('layout')->setLayout('admin');
+        parent::preDispatch();
     }
 
     public function loginAction()
@@ -152,6 +153,11 @@ class AdminController extends IndexController
             $form->populate($announcement->toArray());
         }
 
+    }
+
+    public function sponsorsAction()
+    {
+        
     }
 
 }

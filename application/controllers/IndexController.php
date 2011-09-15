@@ -23,11 +23,6 @@ class IndexController extends Zend_Controller_Action
         $this->view->sessions = $this->_conference->fetchSessions();
     }
 
-    public function locationAction()
-    {
-        $this->view->conference = $this->_conference;
-    }
-
     public function staffsAction()
     {
         $this->view->jobs = $this->_conference->fetchJobs();

@@ -23,37 +23,23 @@
             <header>
                 <hgroup>
                     <h1>PHPConf Taiwan <% $year %></h1>
-                    <h2>台灣 PHP 界的大盛事</h2>
-                    <h3><img src="<% $this->baseUrl() %>/img/logo.jpg" alt="PHPConf Taiwan <% $year %>" /></h3>
+                    <h2>管理介面</h2>
                 </hgroup>
-
             </header>
             <nav>
                 <ul>
+                    <li><a href="<% $this->url(['action' => 'conferences']) %>">年度會議</a></li>
                     <li><a href="<% $this->url(['action' => 'index']) %>">公告</a></li>
-                    <li><a href="http://registrano.com/" target="_blank">報名</a></li>
                     <li><a href="<% $this->url(['action' => 'sessions']) %>">議程</a></li>
-                    <li><a href="<% $this->url(['action' => 'location']) %>">地點</a></li>
                     <li><a href="<% $this->url(['action' => 'staffs']) %>">工作人員</a></li>
                     <li><a href="<% $this->url(['action' => 'sponsors']) %>">贊助單位</a></li>
-                    <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
-
-                </ul>
-                <% if $currentAdmin %>
-                <ul>
-
-                    <li><a href="<% $this->url(['action' => 'conferences']) %>">年度會議</a></li>
                     <li><a href="<% $this->url(['action' => 'logout']) %>">登出</a></li>
 
                 </ul>
-                <% /if %>
             </nav>
             <div id="main" role="main">
                 <% $this->layout()->content %>
             </div>
-            <footer class="page">
-                <p class="copyright">&copy;<% $year %> PHPConf.TW</p>
-            </footer>
         </div> <!--! end of #container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
