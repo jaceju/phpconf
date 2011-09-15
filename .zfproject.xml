@@ -17,8 +17,12 @@
           <actionMethod actionName="conferenceEdit"/>
         </controllerFile>
       </controllersDirectory>
-      <pluginsDirectory enabled="false"/>
-      <actionHelpersDirectory enabled="false"/>
+      <pluginsDirectory>
+        <pluginFile pluginName="Conference"/>
+      </pluginsDirectory>
+      <actionHelpersDirectory>
+        <actionHelperFile actionHelperName="Conference"/>
+      </actionHelpersDirectory>
       <formsDirectory>
         <formFile formName="Login"/>
         <formFile formName="AnnouncementEdit"/>

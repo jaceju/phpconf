@@ -35,16 +35,13 @@
                     <li><a href="<% $this->url(['action' => 'sessions']) %>">議程</a></li>
                     <li><a href="<% $this->url(['action' => 'location']) %>">地點</a></li>
                     <li><a href="<% $this->url(['action' => 'staffs']) %>">工作人員</a></li>
-                    <li><a href="<% $this->url(['action' => 'sponsors']) %>">贊助單位</a></li>
                     <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
-
                 </ul>
                 <% if $currentAdmin %>
                 <ul>
-
+                    <li><a href="<% $this->url(['action' => 'sponsors']) %>">贊助單位</a></li>
                     <li><a href="<% $this->url(['action' => 'conferences']) %>">年度會議</a></li>
                     <li><a href="<% $this->url(['action' => 'logout']) %>">登出</a></li>
-
                 </ul>
                 <% /if %>
             </nav>
@@ -55,8 +52,9 @@
                 <section>
                     <h1>贊助廠商</h1>
                     <ul>
-                        <li>贊助商一</li>
-                        <li>贊助商二</li>
+                        <% foreach $sponsors as $sponsor %>
+                        <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
+                        <% /foreach %>
                     </ul>
                 </section>
             </aside>

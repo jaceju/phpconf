@@ -8,15 +8,9 @@ class IndexController extends Zend_Controller_Action
      */
     protected $_conference = null;
 
-    public function init()
+    public function preDispatch()
     {
-        $year = $this->getRequest()->getParam('year');
-        if (null === $year) {
-            $this->getHelper('redirector')->gotoRouteAndExit(array(
-                        'year' => START_YEAR,
-                    ), 'year');
-        }
-        $this->_conference = Phpconf_Model_Conference::getInstanceFromYear($year);
+        $this->_conference = $this->getHelper('Conference')->getConference();
     }
 
     public function indexAction()
@@ -38,11 +32,6 @@ class IndexController extends Zend_Controller_Action
     {
         $this->view->jobs = $this->_conference->fetchJobs();
         $this->view->staffs = $this->_conference->fetchStaffs();
-    }
-
-    public function sponsorsAction()
-    {
-        $this->view->sponsors = $this->_conference->fetchSponsors();
     }
 }
 
