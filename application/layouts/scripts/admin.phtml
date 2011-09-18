@@ -26,6 +26,7 @@
                     <h2>管理介面</h2>
                 </hgroup>
             </header>
+            <% if $currentAdmin %>
             <nav>
                 <ul>
                     <li><a href="<% $this->url(['action' => 'conferences']) %>">年度會議</a></li>
@@ -34,9 +35,9 @@
                     <li><a href="<% $this->url(['action' => 'staffs']) %>">工作人員</a></li>
                     <li><a href="<% $this->url(['action' => 'sponsors']) %>">贊助單位</a></li>
                     <li><a href="<% $this->url(['action' => 'logout']) %>">登出</a></li>
-
                 </ul>
             </nav>
+            <% /if %>
             <div id="main" role="main">
                 <% $this->layout()->content %>
             </div>

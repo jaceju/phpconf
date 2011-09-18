@@ -1,10 +1,19 @@
 <div id="announcements">
-    <% foreach $announcements as $announcement %>
-    <article class="announcement">
-        <h1><% $announcement->title|escape %></h1>
-        <div class="content"><% $announcement->content %></div>
-        <div class="edit"><a href="<% $this->url(['action' => 'announcement-edit', 'id' => $announcement->id], 'admin') %>">編輯</a></div>
-    </article>
-    <% /foreach %>
+    <table>
+        <thead>
+            <tr>
+                <th>標題</th>
+                <th>編輯</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% foreach $announcements as $announcement %>
+            <tr>
+                <td><% $announcement->title|escape %></td>
+                <td><a href="<% $this->url(['action' => 'announcement-edit', 'id' => $announcement->id], 'admin') %>">編輯</a></td>
+            </tr>
+            <% /foreach %>
+        </tbody>
+    </table>
 </div>
 

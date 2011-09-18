@@ -1,0 +1,56 @@
+@mixin css3-tab
+  padding: 0
+  margin: 0 0 0 50px
+  list-style: none
+  height: 100px
+  background: #fff
+  float: left
+  li
+    float: left
+    height: 50px
+    background: #06c
+    margin-top: 50px
+    a
+      display: block
+      float: left
+      padding: 0 20px
+      margin: -50px 20px 0 20px
+      height: 100px
+      background: #06c
+      color: #000
+      font: bold 25px / 100px arial, sans-serif
+      text-decoration: none
+      position: relative
+      -moz-border-radius: 20px 20px 0 0
+      border-radius: 20px 20px 0 0
+      background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0))
+      background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0))
+      background-image: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0))
+      background-image: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0))
+      text-shadow: 1px 1px 5px #fff
+      &:before
+        content: ""
+        display: block
+        width: 20px
+        height: 50px
+        background: #fff
+        position: absolute
+        left: -20px
+        bottom: 2px
+        -moz-border-radius: 0 0 20px 0
+        border-radius: 0 0 20px 0
+      &:after
+        content: ""
+        display: block
+        width: 20px
+        height: 50px
+        background: #fff
+        position: absolute
+        right: -20px
+        bottom: 2px
+        -moz-border-radius: 0 0 0 20px
+        border-radius: 0 0 0 20px
+    &:hover
+      background-color: #c60
+      a
+        background-color: #c60

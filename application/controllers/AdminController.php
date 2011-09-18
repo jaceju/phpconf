@@ -60,6 +60,9 @@ class AdminController extends IndexController
      * @param array $values
      * @return bool
      *
+     *
+     *
+     *
      */
     protected function _process($values)
     {
@@ -79,6 +82,9 @@ class AdminController extends IndexController
 
     /**
      * @return Zend_Auth_Adapter_DbTable
+     *
+     *
+     *
      *
      */
     protected function _getAuthAdapter()
@@ -157,10 +163,43 @@ class AdminController extends IndexController
 
     public function sponsorsAction()
     {
-        
+        $this->view->sponsors
+                = $this->_conference->fetchSponsors();
     }
 
+    public function sessionEditAction()
+    {
+        $sessionId = (int) $this->_getParam('id');
+        $form = new Phpconf_Form_SessionEdit();
+        $form->setId($sessionId);
+        $form->setConferenceId($this->_conference->id);
+        $this->view->form = $form;
+    }
+
+    public function staffEditAction()
+    {
+        $staffId = (int) $this->_getParam('id');
+        $form = new Phpconf_Form_StaffEdit();
+        $form->setId($staffId);
+        $form->setConferenceId($this->_conference->id);
+        $this->view->form = $form;
+    }
+
+    public function sponsorEditAction()
+    {
+        $sponsorId = (int) $this->_getParam('id');
+        $form = new Phpconf_Form_SponsorEdit();
+        $form->setId($sponsorId);
+        $form->setConferenceId($this->_conference->id);
+        $this->view->form = $form;
+    }
+
+
 }
+
+
+
+
 
 
 

@@ -1,15 +1,20 @@
-<section>
-    <h1>工作人員</h1>
-    <% foreach $jobs as $job %>
-    <section>
-        <h1><% $job->name|escape %></h1>
-        <ul>
+<div id="staffs">
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>工作</th>
+                <th>編輯</th>
+            </tr>
+        </thead>
+        <tbody>
             <% foreach $staffs as $staff %>
-            <% if $staff->jobId === $job->id %>
-            <li><% $staff->name|escape %></li>
-            <% /if %>
+            <tr>
+                <td><% $staff->name|escape %></td>
+                <td><% $staff->jobId|escape %></td>
+                <td><a href="<% $this->url(['action' => 'staff-edit', 'id' => $staff->id], 'admin') %>">編輯</a></td>
+            </tr>
             <% /foreach %>
-        </ul>
-    </section>
-    <% /foreach %>
-</section>
+        </tbody>
+    </table>
+</div>

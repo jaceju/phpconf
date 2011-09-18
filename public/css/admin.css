@@ -513,40 +513,40 @@ table {
     page-break-after: avoid;
   }
 }
-/* line 1, ../../sass/_admin-layout.sass */
+/* line 1, ../../sass/admin/_layout.sass */
 #container {
   margin: 0 auto;
   width: 900px;
   background: white;
 }
 
-/* line 6, ../../sass/_admin-layout.sass */
+/* line 6, ../../sass/admin/_layout.sass */
 header {
   background: white;
   padding: 20px;
 }
-/* line 9, ../../sass/_admin-layout.sass */
+/* line 9, ../../sass/admin/_layout.sass */
 header h1 {
   margin: 0;
 }
 
-/* line 12, ../../sass/_admin-layout.sass */
+/* line 12, ../../sass/admin/_layout.sass */
 nav {
   float: left;
   width: 900px;
   background: #333333;
 }
-/* line 16, ../../sass/_admin-layout.sass */
+/* line 16, ../../sass/admin/_layout.sass */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 19, ../../sass/_admin-layout.sass */
+/* line 19, ../../sass/admin/_layout.sass */
 nav ul li {
   list-style-type: none;
   display: inline;
 }
-/* line 22, ../../sass/_admin-layout.sass */
+/* line 22, ../../sass/admin/_layout.sass */
 nav li a {
   display: block;
   float: left;
@@ -555,22 +555,22 @@ nav li a {
   text-decoration: none;
   border-right: 1px solid white;
 }
-/* line 29, ../../sass/_admin-layout.sass */
+/* line 29, ../../sass/admin/_layout.sass */
 nav li a:hover {
   background: #338833;
 }
 
-/* line 32, ../../sass/_admin-layout.sass */
+/* line 32, ../../sass/admin/_layout.sass */
 #main {
   clear: both;
   width: 900px;
 }
-/* line 35, ../../sass/_admin-layout.sass */
+/* line 35, ../../sass/admin/_layout.sass */
 #main h2 {
   margin: 0;
 }
 
-/* line 38, ../../sass/_admin-layout.sass */
+/* line 38, ../../sass/admin/_layout.sass */
 footer.page {
   clear: both;
   background: white;
@@ -580,45 +580,32 @@ footer.page {
   border-top: 1px solid #cccccc;
 }
 
-/* line 1, ../../sass/_announcements.sass */
-article.announcement {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #333333;
-  padding: 5px;
-}
-
-/* line 2, ../../sass/_sessions.sass */
-#sessions table {
+/* line 1, ../../sass/_table.sass */
+table {
   border: 1px solid black;
   width: 100%;
 }
-/* line 5, ../../sass/_sessions.sass */
-#sessions table td, #sessions table th {
+
+/* line 5, ../../sass/_table.sass */
+td, th {
   border: 1px solid black;
 }
-/* line 8, ../../sass/_sessions.sass */
-#sessions th.time {
-  width: 60px;
-}
-/* line 11, ../../sass/_sessions.sass */
-#sessions td {
+
+/* line 8, ../../sass/_table.sass */
+td {
   padding: 5px;
 }
-/* line 13, ../../sass/_sessions.sass */
-#sessions td span {
-  display: block;
-}
 
-/* line 8, ../../sass/admin.sass */
+/* line 7, ../../sass/admin.sass */
 nav a {
   color: white;
   text-decoration: none;
 }
-/* line 11, ../../sass/admin.sass */
+/* line 10, ../../sass/admin.sass */
 nav a:hover {
   color: #cccccc;
 }
-/* line 13, ../../sass/admin.sass */
+/* line 12, ../../sass/admin.sass */
 nav a:visited {
   color: white;
 }

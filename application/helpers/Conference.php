@@ -13,7 +13,8 @@ class Phpconf_ActionHelper_Conference
     {
         $year = $this->getRequest()->getParam('year');
         if (null === $year) {
-            $this->getHelper('redirector')->gotoRouteAndExit(array(
+            $redirector = Zend_Controller_Action_HelperBroker::getStaticHelper('redirector');
+            $redirector->gotoRouteAndExit(array(
                         'year' => START_YEAR,
                     ), 'year');
         }

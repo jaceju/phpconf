@@ -16,7 +16,7 @@
                 <td><% $conference->startDate|escape %></td>
                 <td><% $conference->endDate|escape %></td>
                 <td><% $conference->location|escape %></td>
-                <td><a href="<% $this->url(['action' => 'conference-edit', 'id' => $conference-id]) %>">編輯</a></td>
+                <td><a href="<% $this->url(['action' => 'conference-edit', 'id' => $conference->id]) %>">編輯</a></td>
             </tr>
             <% /foreach %>
         </tbody>

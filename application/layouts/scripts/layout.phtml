@@ -20,40 +20,36 @@
     </head>
     <body>
         <div id="container">
-            <header>
-                <hgroup>
-                    <h1>PHPConf Taiwan <% $year %></h1>
-                    <h2>台灣 PHP 界的大盛事</h2>
-                    <h3><img src="<% $this->baseUrl() %>/img/logo.jpg" alt="PHPConf Taiwan <% $year %>" /></h3>
-                </hgroup>
-
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="<% $this->url(['action' => 'index']) %>">公告</a></li>
-                    <li><a href="http://registrano.com/" target="_blank">報名</a></li>
-                    <li><a href="<% $this->url(['action' => 'sessions']) %>">議程</a></li>
-                    <li><a href="<% $this->url(['action' => 'location']) %>">地點</a></li>
-                    <li><a href="<% $this->url(['action' => 'staffs']) %>">工作人員</a></li>
-                    <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
-                </ul>
-            </nav>
-            <div id="main" role="main">
-                <% $this->layout()->content %>
+            <div id="header">
+                <header class="page">
+                    <hgroup>
+                        <h1><a href="<% $this->baseUrl() %>">PHPConf Taiwan <% $year %></a></h1>
+                        <h2>台灣 PHP 界的大盛事</h2>
+                    </hgroup>
+                </header>
+                <% partial name="frontend/nav" class="top" %>
             </div>
-            <aside>
-                <section>
-                    <h1>贊助廠商</h1>
-                    <ul>
-                        <% foreach $sponsors as $sponsor %>
-                        <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
-                        <% /foreach %>
-                    </ul>
-                </section>
-            </aside>
-            <footer class="page">
-                <p class="copyright">&copy;<% $year %> PHPConf.TW</p>
-            </footer>
+            <div id="body">
+                <div id="main" role="main">
+                    <% $this->layout()->content %>
+                </div>
+                <aside>
+                    <section>
+                        <h1>贊助</h1>
+                        <ul>
+                            <% foreach $sponsors as $sponsor %>
+                            <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
+                            <% /foreach %>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+            <div id="footer">
+                <% partial name="frontend/nav" class="bottom" %>
+                <footer class="page">
+                    <p class="copyright">&copy;<% $year %> PHPConf.TW</p>
+                </footer>
+            </div>
         </div> <!--! end of #container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

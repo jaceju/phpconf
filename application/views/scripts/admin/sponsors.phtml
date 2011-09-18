@@ -1,8 +1,20 @@
-<section>
-    <h1>贊助單位</h1>
-    <ul>
-        <% foreach $sponsors as $sponsor %>
-        <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
-        <% /foreach %>
-    </ul>
-</section>
+<div id="sponsors">
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>支援</th>
+                <th>編輯</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% foreach $sponsors as $sponsor %>
+            <tr>
+                <td><% $sponsor->name|escape %></td>
+                <td><% $sponsor->supply|escape %></td>
+                <td><a href="<% $this->url(['action' => 'sponsor-edit', 'id' => $sponsor->id], 'admin') %>">編輯</a></td>
+            </tr>
+            <% /foreach %>
+        </tbody>
+    </table>
+</div>
