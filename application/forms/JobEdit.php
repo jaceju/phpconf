@@ -1,17 +1,13 @@
 <?php
 
-class Phpconf_Form_StaffEdit extends Zend_Form
+class Phpconf_Form_JobEdit extends Zend_Form
 {
 
     public function init()
     {
-        $this->setName("staff-edit")
+        $this->setName("job-edit")
                 ->setMethod('post')
                 ->addElement('hidden', 'id', array(
-                    'filters' => array('Digits'),
-                    'required' => true,
-                ))
-                ->addElement('hidden', 'conferenceId', array(
                     'filters' => array('Digits'),
                     'required' => true,
                 ))
@@ -21,11 +17,11 @@ class Phpconf_Form_StaffEdit extends Zend_Form
                         array('StringLength', false, array(1, 200)),
                     ),
                     'required' => true,
-                    'label' => '姓名',
+                    'label' => '名稱',
                 ))
-                ->addElement('select', 'jobId', array(
+                ->addElement('text', 'sortOrder', array(
                     'required' => true,
-                    'label' => '工作',
+                    'label' => '排列順序',
                 ))
                 ->addElement('submit', 'save', array(
                     'required' => false,
@@ -43,18 +39,6 @@ class Phpconf_Form_StaffEdit extends Zend_Form
     {
         $element = $this->getElement('id');
         $element->setValue($id);
-        return $this;
-    }
-
-    /**
-     *
-     * @param int $conferenceId
-     * @return Phpconf_Form_StaffEdit
-     */
-    public function setConferenceId($conferenceId)
-    {
-        $element = $this->getElement('conferenceId');
-        $element->setValue($conferenceId);
         return $this;
     }
 }

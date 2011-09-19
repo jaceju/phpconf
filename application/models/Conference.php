@@ -41,6 +41,16 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
 
     /**
      *
+     * @return Zend_Db_Table_Row
+     */
+    public function newAnnouncement()
+    {
+        $announcementTable = Phpconf_Model_DbTable_Announcements::getInstance();
+        return $announcementTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
+    }
+
+    /**
+     *
      * @param int $id
      * @param array $data
      * @return mixed
@@ -83,6 +93,16 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
 
     /**
      *
+     * @return Zend_Db_Table_Row
+     */
+    public function newSession()
+    {
+        $sessionTable = Phpconf_Model_DbTable_Sessions::getInstance();
+        return $sessionTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
+    }
+
+    /**
+     *
      * @return Zend_Db_Table_Rowset
      */
     public function fetchStaffs()
@@ -102,6 +122,16 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $staffTable = Phpconf_Model_DbTable_Staffs::getInstance();
         return $staffTable->find($id)->current();
+    }
+
+    /**
+     *
+     * @return Zend_Db_Table_Row
+     */
+    public function newStaff()
+    {
+        $staffTable = Phpconf_Model_DbTable_Staffs::getInstance();
+        return $staffTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
     }
 
     /**
@@ -129,6 +159,16 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
 
     /**
      *
+     * @return Zend_Db_Table_Row
+     */
+    public function newJob()
+    {
+        $jobTable = Phpconf_Model_DbTable_Jobs::getInstance();
+        return $jobTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
+    }
+
+    /**
+     *
      * @return Zend_Db_Table_Rowset
      */
     public function fetchSponsors()
@@ -152,6 +192,16 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
 
     /**
      *
+     * @return Zend_Db_Table_Row
+     */
+    public function newSponsor()
+    {
+        $sponsorTable = Phpconf_Model_DbTable_Sponsors::getInstance();
+        return $sponsorTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
+    }
+
+    /**
+     *
      * @return Zend_Db_Table_Rowset
      */
     public static function fetchConferences()
@@ -171,6 +221,16 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $conferenceTable = Phpconf_Model_DbTable_Conferences::getInstance();
         return $conferenceTable->find($id)->current();
+    }
+
+    /**
+     *
+     * @return Zend_Db_Table_Row
+     */
+    public static function newConference()
+    {
+        $conferenceTable = Phpconf_Model_DbTable_Conferences::getInstance();
+        return $conferenceTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
     }
 
     /**

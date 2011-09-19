@@ -33,6 +33,7 @@
         <formFile formName="SessionEdit"/>
         <formFile formName="SponsorEdit"/>
         <formFile formName="StaffEdit"/>
+        <formFile formName="JobEdit"/>
       </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>

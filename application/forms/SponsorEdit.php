@@ -5,7 +5,7 @@ class Phpconf_Form_SponsorEdit extends Zend_Form
 
     public function init()
     {
-        $this->setName("announcement-edit")
+        $this->setName("sponsor-edit")
                 ->setMethod('post')
                 ->addElement('hidden', 'id', array(
                     'filters' => array('Digits'),

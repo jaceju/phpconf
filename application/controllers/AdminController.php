@@ -4,7 +4,10 @@ require_once __DIR__ . '/IndexController.php';
 
 class AdminController extends IndexController
 {
-
+    /**
+     *
+     * @var string
+     */
     protected $_currentAdmin = null;
 
     public function init()
@@ -126,7 +129,9 @@ class AdminController extends IndexController
                 $form->populate($formData);
             }
         } else {
-            $conference = Phpconf_Model_Conference::fetchConferenceById($conferenceId);
+            $conference = ($conferenceId)
+                        ? Phpconf_Model_Conference::fetchConferenceById($conferenceId)
+                        : Phpconf_Model_Conference::newConference();
             $form->populate($conference->toArray());
         }
     }
@@ -154,8 +159,9 @@ class AdminController extends IndexController
                 $form->populate($formData);
             }
         } else {
-            $announcement = $this->_conference
-                    ->fetchAnnouncementById($announcementId);
+            $announcement = ($announcementId)
+                          ? $this->_conference->fetchAnnouncementById($announcementId)
+                          : $this->_conference->newAnnouncement();
             $form->populate($announcement->toArray());
         }
 
@@ -167,6 +173,36 @@ class AdminController extends IndexController
                 = $this->_conference->fetchSponsors();
     }
 
+    public function sponsorEditAction()
+    {
+        $sponsorId = (int) $this->_getParam('id');
+        $form = new Phpconf_Form_SponsorEdit();
+        $form->setId($sponsorId);
+        $form->setConferenceId($this->_conference->id);
+        $this->view->form = $form;
+
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            $formData = $request->getPost();
+            if ($form->isValid($formData)) {
+                $this->_conference
+                        ->saveSponsor($sponsorId, $form->getValues());
+                $this->getHelper('redirector')
+                        ->gotoRouteAndExit(array(
+                            'action' => 'sponsors',
+                            'id' => null,
+                                ), 'admin');
+            } else {
+                $form->populate($formData);
+            }
+        } else {
+            $sponsor = ($sponsorId)
+                          ? $this->_conference->fetchSponsorById($sponsorId)
+                          : $this->_conference->newSponsor();
+            $form->populate($sponsor->toArray());
+        }
+    }
+
     public function sessionEditAction()
     {
         $sessionId = (int) $this->_getParam('id');
@@ -174,6 +210,27 @@ class AdminController extends IndexController
         $form->setId($sessionId);
         $form->setConferenceId($this->_conference->id);
         $this->view->form = $form;
+
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            $formData = $request->getPost();
+            if ($form->isValid($formData)) {
+                $this->_conference
+                        ->saveSession($sessionId, $form->getValues());
+                $this->getHelper('redirector')
+                        ->gotoRouteAndExit(array(
+                            'action' => 'sessions',
+                            'id' => null,
+                                ), 'admin');
+            } else {
+                $form->populate($formData);
+            }
+        } else {
+            $session = ($sessionId)
+                          ? $this->_conference->fetchSessionById($sessionId)
+                          : $this->_conference->newSession();
+            $form->populate($session->toArray());
+        }
     }
 
     public function staffEditAction()
@@ -183,17 +240,62 @@ class AdminController extends IndexController
         $form->setId($staffId);
         $form->setConferenceId($this->_conference->id);
         $this->view->form = $form;
+
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            $formData = $request->getPost();
+            if ($form->isValid($formData)) {
+                $this->_conference
+                        ->saveStaff($staffId, $form->getValues());
+                $this->getHelper('redirector')
+                        ->gotoRouteAndExit(array(
+                            'action' => 'staffs',
+                            'id' => null,
+                                ), 'admin');
+            } else {
+                $form->populate($formData);
+            }
+        } else {
+            $staff = ($staffId)
+                          ? $this->_conference->fetchStaffById($staffId)
+                          : $this->_conference->newStaff();
+            $form->populate($staff->toArray());
+        }
     }
 
-    public function sponsorEditAction()
+    public function jobsAction()
     {
-        $sponsorId = (int) $this->_getParam('id');
-        $form = new Phpconf_Form_SponsorEdit();
-        $form->setId($sponsorId);
-        $form->setConferenceId($this->_conference->id);
-        $this->view->form = $form;
+        $this->view->jobs = $this->_conference->fetchJobs();
     }
 
+    public function jobEditAction()
+    {
+        $jobId = (int) $this->_getParam('id');
+        $form = new Phpconf_Form_JobEdit();
+        $form->setId($jobId);
+        $this->view->form = $form;
+
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            $formData = $request->getPost();
+            if ($form->isValid($formData)) {
+                $this->_conference
+                        ->saveJob($jobId, $form->getValues());
+                $this->getHelper('redirector')
+                        ->gotoRouteAndExit(array(
+                            'action' => 'jobs',
+                            'id' => null,
+                                ), 'admin');
+            } else {
+                $form->populate($formData);
+            }
+        } else {
+            $job = ($jobId)
+                          ? $this->_conference->fetchJobById($jobId)
+                          : $this->_conference->newJob();
+            $form->populate($job->toArray());
+        }
+    }
 
 }
 

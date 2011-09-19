@@ -1,0 +1,21 @@
+<div id="jobs">
+    <p><a href="<% $this->url(['action' => 'job-edit']) %>">新增</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>工作</th>
+                <th>編輯</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% foreach $jobs as $job %>
+            <tr>
+                <td><% $job->name|escape %></td>
+                <td><% $job->sortOrder|escape %></td>
+                <td><a href="<% $this->url(['action' => 'job-edit', 'id' => $job->id], 'admin') %>">編輯</a></td>
+            </tr>
+            <% /foreach %>
+        </tbody>
+    </table>
+</div>
