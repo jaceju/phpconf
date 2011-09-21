@@ -22,10 +22,13 @@
         <div id="container">
             <div id="header">
                 <header class="page">
-                    <hgroup>
-                        <h1><a href="<% $this->baseUrl() %>">PHPConf Taiwan <% $year %></a></h1>
-                        <h2>台灣 PHP 界的大盛事</h2>
-                    </hgroup>
+                    <div id="hgroup">
+                        <hgroup>
+                            <h1><a href="<% $this->baseUrl() %>">PHPConf Taiwan <% $year %></a></h1>
+                            <h2>台灣 PHP 界的大盛事</h2>
+                            <h3><a class="register" href="http://registrano.com/" target="_blank">現在就報名！</a></h3>
+                        </hgroup>
+                    </div>
                 </header>
                 <% partial name="frontend/nav" class="top" %>
             </div>
@@ -34,14 +37,7 @@
                     <% $this->layout()->content %>
                 </div>
                 <aside>
-                    <section>
-                        <h1>贊助</h1>
-                        <ul>
-                            <% foreach $sponsors as $sponsor %>
-                            <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
-                            <% /foreach %>
-                        </ul>
-                    </section>
+                    <% partial name="frontend/aside" %>
                 </aside>
             </div>
             <div id="footer">

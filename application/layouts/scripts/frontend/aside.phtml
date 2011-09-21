@@ -1,0 +1,12 @@
+<div class="section">
+    <section>
+        <header>
+            <h1>贊助</h1>
+        </header>
+        <ul>
+            <% foreach $sponsors as $sponsor %>
+            <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
+            <% /foreach %>
+        </ul>
+    </section>
+</div>

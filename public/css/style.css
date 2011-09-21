@@ -1,6 +1,6 @@
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class, a.register {
+.fancy-button-reset-base-class, #container #header #hgroup h3 a.register {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/public/img/button_bg.png?1315140545') repeat-x bottom left;
   margin: 0;
@@ -13,12 +13,12 @@
   font-weight: bold;
 }
 /* line 165, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner, a.register::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, #container #header #hgroup h3 a.register::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus, a.register:focus {
+.fancy-button-reset-base-class:focus, #container #header #hgroup h3 a.register:focus {
   outline: none;
 }
 
@@ -513,164 +513,9 @@ table {
     page-break-after: avoid;
   }
 }
-/* line 1, ../../sass/_announcements.sass */
-a.register {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  font-size: 45px;
-  line-height: 1.2em;
-  padding: 0.3em 1em;
-  border-width: 1px;
-  background-color: #2880be;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b9cad5), color-stop(10%, #809eb3), color-stop(50%, #507086), color-stop(50%, #4b687d), color-stop(100%, #5e839d));
-  background-image: -webkit-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
-  background-image: -moz-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
-  background-image: -o-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
-  background-image: -ms-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
-  background-image: linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
-  border-color: #395060;
-  text-shadow: #123955 0px 1px 1px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  -o-background-clip: padding-box;
-  -ms-background-clip: padding-box;
-  -khtml-background-clip: padding-box;
-  background-clip: padding-box;
-}
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-a.register, a.register:visited {
-  color: white;
-}
-/* line 31, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-a.register:hover, a.register:focus {
-  background-color: #2577b1;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #afc2d0), color-stop(10%, #7696ad), color-stop(50%, #4b687d), color-stop(50%, #456073), color-stop(100%, #587b93));
-  background-image: -webkit-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
-  background-image: -moz-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
-  background-image: -o-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
-  background-image: -ms-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
-  background-image: linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
-  border-color: #344857;
-  text-shadow: #0f3148 0px 1px 1px;
-}
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-a.register:hover, a.register:hover:visited, a.register:focus, a.register:focus:visited {
-  color: white;
-}
-/* line 36, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-a.register:active {
-  background-color: #236fa5;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4b687d), color-stop(30%, #4e6d83), color-stop(50%, #476376), color-stop(50%, #415b6d), color-stop(100%, #5a7d96));
-  background-image: -webkit-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
-  background-image: -moz-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
-  background-image: -o-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
-  background-image: -ms-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
-  background-image: linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
-  border-color: #2e404d;
-  text-shadow: #0d283b 0px -1px -1px;
-  -moz-box-shadow: #395060 0 0.08em 0.2em 1px inset;
-  -webkit-box-shadow: #395060 0 0.08em 0.2em 1px inset;
-  -o-box-shadow: #395060 0 0.08em 0.2em 1px inset;
-  box-shadow: #395060 0 0.08em 0.2em 1px inset;
-}
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-a.register:active, a.register:active:visited {
-  color: white;
-}
-
-/* line 4, ../../sass/_announcements.sass */
-section.announcement {
-  margin-bottom: 10px;
-  padding: 5px 5px 20px 5px;
-}
-/* line 8, ../../sass/_announcements.sass */
-section.announcement header > h1 {
-  font-weight: bold;
-  color: #333333;
-  text-shadow: 1px 1px 2px #999999;
-}
-/* line 12, ../../sass/_announcements.sass */
-section.announcement .content {
-  border-radius: 5px;
-  font-size: 1.2em;
-  color: #666666;
-  padding: 20px;
-  background: #eeeeee;
-  box-shadow: inset 0 0 5px #cccccc;
-}
-
-/* line 2, ../../sass/_sessions.sass */
-#sessions table {
-  font-size: 15px;
-  border: 1px solid black;
-  width: 100%;
-  table-layout: fixed;
-  box-shadow: 0px 0px 5px #cccccc;
-}
-/* line 9, ../../sass/_sessions.sass */
-#sessions table td, #sessions table th {
-  border: 1px solid #999999;
-  padding: 5px;
-  text-align: center;
-}
-/* line 14, ../../sass/_sessions.sass */
-#sessions table th {
-  background: #666666;
-  color: #eeeeee;
-  font-size: 20px;
-}
-/* line 19, ../../sass/_sessions.sass */
-#sessions table tr.break {
-  background: #993333;
-}
-/* line 22, ../../sass/_sessions.sass */
-#sessions table tr.break td {
-  color: white;
-  text-align: center;
-}
-/* line 26, ../../sass/_sessions.sass */
-#sessions table th.time {
-  width: 80px;
-}
-/* line 29, ../../sass/_sessions.sass */
-#sessions table td {
-  padding: 5px;
-}
-/* line 32, ../../sass/_sessions.sass */
-#sessions table td span {
-  display: block;
-}
-/* line 35, ../../sass/_sessions.sass */
-#sessions table td span.subject {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  line-height: 25px;
-  text-align: left;
-}
-/* line 42, ../../sass/_sessions.sass */
-#sessions table td span.talker {
-  font-size: 16px;
-  color: #666666;
-  text-align: right;
-}
-/* line 47, ../../sass/_sessions.sass */
-#sessions table td div.brief {
-  padding-left: 20px;
-  text-align: left;
-}
-
 /* line 11, ../../sass/_layout.sass */
 html, body {
-  background: #999999;
+  background: #efefdc;
 }
 
 /* line 14, ../../sass/_layout.sass */
@@ -686,15 +531,23 @@ html, body {
   overflow: hidden;
   background: white;
   height: 130px;
-  box-shadow: 0 0 5px 0 #666666;
+  box-shadow: 0 0 10px 0 #666666;
 }
 /* line 9, ../../sass/page/_header.sass */
-#container #header h1 {
-  margin: 0 0 0 10px;
+#container #header #hgroup {
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+  position: relative;
+}
+/* line 15, ../../sass/page/_header.sass */
+#container #header #hgroup h1 {
+  margin: 0;
+  padding: 0;
   background: url(../img/logo.jpg) no-repeat;
 }
-/* line 12, ../../sass/page/_header.sass */
-#container #header h1 a {
+/* line 20, ../../sass/page/_header.sass */
+#container #header #hgroup h1 a {
   display: block;
   width: 237px;
   height: 80px;
@@ -702,41 +555,124 @@ html, body {
   overflow: hidden;
   outline: none;
 }
-/* line 19, ../../sass/page/_header.sass */
-#container #header h2 {
+/* line 27, ../../sass/page/_header.sass */
+#container #header #hgroup h2 {
   position: absolute;
-  top: 55px;
-  left: 260px;
+  bottom: 0;
+  left: 250px;
+  margin: 0;
+  padding: 0;
+  color: #999999;
 }
-/* line 24, ../../sass/page/_header.sass */
+/* line 35, ../../sass/page/_header.sass */
+#container #header #hgroup h3 {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  margin: 0;
+  padding: 0;
+}
+/* line 42, ../../sass/page/_header.sass */
+#container #header #hgroup h3 a.register {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 25px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #b5c8fa;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #fdfdfe), color-stop(50%, #bac6e6), color-stop(50%, #afbce2), color-stop(100%, #d4dbef));
+  background-image: -webkit-linear-gradient(#ffffff, #fdfdfe 10%, #bac6e6 50%, #afbce2 50%, #d4dbef);
+  background-image: -moz-linear-gradient(#ffffff, #fdfdfe 10%, #bac6e6 50%, #afbce2 50%, #d4dbef);
+  background-image: -o-linear-gradient(#ffffff, #fdfdfe 10%, #bac6e6 50%, #afbce2 50%, #d4dbef);
+  background-image: -ms-linear-gradient(#ffffff, #fdfdfe 10%, #bac6e6 50%, #afbce2 50%, #d4dbef);
+  background-image: linear-gradient(#ffffff, #fdfdfe 10%, #bac6e6 50%, #afbce2 50%, #d4dbef);
+  border-color: #8da1d6;
+  text-shadow: #fdfdff 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.845) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.845) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.845) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.845) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 120, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#container #header #hgroup h3 a.register, #container #header #hgroup h3 a.register:visited {
+  color: #222222;
+}
+/* line 31, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#container #header #hgroup h3 a.register:hover, #container #header #hgroup h3 a.register:focus {
+  background-color: #a7bdf9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #f2f4fa), color-stop(50%, #afbce2), color-stop(50%, #a3b3de), color-stop(100%, #c9d2eb));
+  background-image: -webkit-linear-gradient(#ffffff, #f2f4fa 10%, #afbce2 50%, #a3b3de 50%, #c9d2eb);
+  background-image: -moz-linear-gradient(#ffffff, #f2f4fa 10%, #afbce2 50%, #a3b3de 50%, #c9d2eb);
+  background-image: -o-linear-gradient(#ffffff, #f2f4fa 10%, #afbce2 50%, #a3b3de 50%, #c9d2eb);
+  background-image: -ms-linear-gradient(#ffffff, #f2f4fa 10%, #afbce2 50%, #a3b3de 50%, #c9d2eb);
+  background-image: linear-gradient(#ffffff, #f2f4fa 10%, #afbce2 50%, #a3b3de 50%, #c9d2eb);
+  border-color: #8297d2;
+  text-shadow: #eef3fe 0px 1px 1px;
+}
+/* line 120, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#container #header #hgroup h3 a.register:hover, #container #header #hgroup h3 a.register:hover:visited, #container #header #hgroup h3 a.register:focus, #container #header #hgroup h3 a.register:focus:visited {
+  color: #222222;
+}
+/* line 36, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#container #header #hgroup h3 a.register:active {
+  background-color: #99b2f8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #afbce2), color-stop(30%, #b6c3e5), color-stop(50%, #a7b6df), color-stop(50%, #9caddb), color-stop(100%, #ccd5ed));
+  background-image: -webkit-linear-gradient(#afbce2, #b6c3e5 30%, #a7b6df 50%, #9caddb 50%, #ccd5ed);
+  background-image: -moz-linear-gradient(#afbce2, #b6c3e5 30%, #a7b6df 50%, #9caddb 50%, #ccd5ed);
+  background-image: -o-linear-gradient(#afbce2, #b6c3e5 30%, #a7b6df 50%, #9caddb 50%, #ccd5ed);
+  background-image: -ms-linear-gradient(#afbce2, #b6c3e5 30%, #a7b6df 50%, #9caddb 50%, #ccd5ed);
+  background-image: linear-gradient(#afbce2, #b6c3e5 30%, #a7b6df 50%, #9caddb 50%, #ccd5ed);
+  border-color: #768ece;
+  text-shadow: #e0e8fd 0px -1px -1px;
+  -moz-box-shadow: #8da1d6 0 0.08em 0.2em 1px inset;
+  -webkit-box-shadow: #8da1d6 0 0.08em 0.2em 1px inset;
+  -o-box-shadow: #8da1d6 0 0.08em 0.2em 1px inset;
+  box-shadow: #8da1d6 0 0.08em 0.2em 1px inset;
+}
+/* line 120, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+#container #header #hgroup h3 a.register:active, #container #header #hgroup h3 a.register:active:visited {
+  color: #222222;
+}
+/* line 45, ../../sass/page/_header.sass */
 #container #header nav.top {
   position: relative;
   top: 10px;
-  background: #666666;
+  background: #449105;
   box-shadow: inset 0 3px 0 #cccccc;
   z-index: 9999;
 }
-/* line 31, ../../sass/page/_header.sass */
+/* line 52, ../../sass/page/_header.sass */
 #container #header nav.top ul {
   margin: 0 auto;
   width: 960px;
   height: 40px;
 }
-/* line 36, ../../sass/page/_header.sass */
+/* line 57, ../../sass/page/_header.sass */
 #container #header nav.top ul li {
   display: inline;
 }
-/* line 39, ../../sass/page/_header.sass */
+/* line 60, ../../sass/page/_header.sass */
 #container #header nav.top ul li.active > a {
   background: white;
   color: #333333;
-  box-shadow: inset 0 3px 0 #666666;
+  box-shadow: inset 0 3px 0 #449105;
 }
-/* line 44, ../../sass/page/_header.sass */
+/* line 65, ../../sass/page/_header.sass */
 #container #header nav.top ul li.active > a:hover {
   color: #333333;
 }
-/* line 47, ../../sass/page/_header.sass */
+/* line 68, ../../sass/page/_header.sass */
 #container #header nav.top ul li a {
   float: left;
   display: block;
@@ -747,7 +683,7 @@ html, body {
   color: white;
   text-decoration: none;
 }
-/* line 57, ../../sass/page/_header.sass */
+/* line 78, ../../sass/page/_header.sass */
 #container #header nav.top ul li a:hover {
   color: #eeeeee;
   text-shadow: 1px 1px 2px #cccccc;
@@ -760,37 +696,48 @@ html, body {
   height: 100%;
   background: white;
   overflow: hidden;
-  box-shadow: 0 0 5px 0 #666666;
+  box-shadow: 0 0 10px 0 #666666;
 }
 /* line 10, ../../sass/page/_body.sass */
 #container #body #main {
   clear: left;
   float: left;
-  width: 620px;
+  width: 660px;
   padding: 0 0 20px 0;
   margin: 0 0 0 30px;
   display: inline;
+  min-height: 500px;
 }
-/* line 17, ../../sass/page/_body.sass */
+/* line 19, ../../sass/page/_body.sass */
 #container #body #main h2 {
   margin: 0;
 }
-/* line 20, ../../sass/page/_body.sass */
+/* line 22, ../../sass/page/_body.sass */
 #container #body aside {
   float: right;
   width: 220px;
   min-height: 300px;
-  padding: 5px 10px 20px 10px;
   margin: 0 20px 0 0;
   display: inline;
-  background: #eeeeee;
+  background: #006699;
+  color: white;
   border-bottom: 5px solid #666666;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -khtml-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 0 5px 0 #666666;
+  box-shadow: 0 0 10px 0 #999999;
 }
-/* line 31, ../../sass/page/_body.sass */
-#container #body aside h3 {
+/* line 36, ../../sass/page/_body.sass */
+#container #body aside .section h1 {
+  color: #333333;
+  padding: 10px;
+  background: white;
   margin: 0;
+  text-align: center;
+  font-size: 1.4em;
 }
 /* line 3, ../../sass/page/_footer.sass */
 #container #footer {
@@ -800,25 +747,29 @@ html, body {
   margin: 0 auto;
   width: 960px;
   margin-bottom: 10px;
-  background: #666666;
+  background: #449105;
   min-height: 35px;
   height: 1%;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -khtml-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 0 5px 0 #666666;
+  box-shadow: 0 0 10px 0 #666666;
 }
 /* line 16, ../../sass/page/_footer.sass */
 #container #footer p.copyright {
-  float: left;
+  float: right;
   line-height: 35px;
   color: white;
   margin: 15px;
 }
 /* line 23, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul {
-  float: left;
-  margin: 15px;
+  float: right;
+  margin: 15px 15px 15px 30px;
   padding: 0;
-  border-right: 1px solid #cccccc;
 }
 /* line 28, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li {
@@ -826,7 +777,7 @@ html, body {
   list-style-type: none;
   text-align: right;
 }
-/* line 32, ../../sass/page/_footer.sass */
+/* line 33, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li a {
   display: block;
   float: left;
@@ -835,4 +786,99 @@ html, body {
   color: white;
   padding-right: 20px;
   text-decoration: none;
+}
+
+/* line 1, ../../sass/_announcements.sass */
+section.announcement {
+  margin-bottom: 10px;
+  padding: 5px 5px 20px 5px;
+}
+/* line 5, ../../sass/_announcements.sass */
+section.announcement header > h1 {
+  font-weight: bold;
+  color: #449105;
+  text-shadow: 1px 1px 2px #999999;
+}
+/* line 9, ../../sass/_announcements.sass */
+section.announcement .content {
+  -moz-border-radius: 0 10px;
+  -webkit-border-radius: 0 10px;
+  -o-border-radius: 0 10px;
+  -ms-border-radius: 0 10px;
+  -khtml-border-radius: 0 10px;
+  border-radius: 0 10px;
+  font-size: 1.2em;
+  color: #666666;
+  padding: 20px;
+  background: #f6f6f6;
+  box-shadow: inset 0 0 5px #cccccc;
+}
+
+/* line 3, ../../sass/_sessions.sass */
+#sessions table {
+  font-size: 15px;
+  border: 1px solid black;
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: 0px 0px 5px #cccccc;
+}
+/* line 10, ../../sass/_sessions.sass */
+#sessions table td, #sessions table th {
+  border: 1px solid #999999;
+  padding: 5px;
+  text-align: center;
+}
+/* line 15, ../../sass/_sessions.sass */
+#sessions table th {
+  background: #666666;
+  color: #eeeeee;
+  font-size: 20px;
+}
+/* line 20, ../../sass/_sessions.sass */
+#sessions table tr.break {
+  background: #993333;
+}
+/* line 23, ../../sass/_sessions.sass */
+#sessions table tr.break td {
+  color: white;
+  text-align: center;
+}
+/* line 27, ../../sass/_sessions.sass */
+#sessions table th.time {
+  width: 80px;
+  border-right: 3px solid #999999;
+}
+/* line 31, ../../sass/_sessions.sass */
+#sessions table td {
+  padding: 5px;
+}
+/* line 34, ../../sass/_sessions.sass */
+#sessions table td.time {
+  background: #f2fff5;
+  border-right: 3px solid #999999;
+}
+/* line 38, ../../sass/_sessions.sass */
+#sessions table td span {
+  display: block;
+}
+/* line 41, ../../sass/_sessions.sass */
+#sessions table td span.subject {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  line-height: 30px;
+  padding: 5px 0;
+  text-align: left;
+}
+/* line 49, ../../sass/_sessions.sass */
+#sessions table td span.talker {
+  font-size: 16px;
+  color: #666666;
+  text-align: left;
+  padding: 5px 0;
+}
+/* line 55, ../../sass/_sessions.sass */
+#sessions table td div.brief {
+  padding-left: 20px;
+  text-align: left;
 }

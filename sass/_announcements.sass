@@ -1,19 +1,16 @@
-a.register
-    +fancy-button(#567890, 45px)
-
 section.announcement
     margin-bottom: 10px
     padding: 5px 5px 20px 5px
 
     header>h1
         font-weight: bold
-        +shadow-font(#333, #999)
+        +shadow-font($highlightBgColor, #999)
 
     .content
-        border-radius: 5px
+        +border-radius(0 10px)
         font-size: 1.2em
         color: #666
         padding: 20px
-        background: #eee
+        background: #f6f6f6
         box-shadow: inset 0 0 5px #ccc
 

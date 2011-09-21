@@ -10,25 +10,26 @@ $lineHeight: 35px
     background: $highlightBgColor
     min-height: 35px
     height: 1%
-    border-radius: 0 0 10px 10px
+    +border-radius(0 0 10px 10px)
     +main-shadow
 
     p.copyright
-        float: left
+        float: right
         line-height: $lineHeight
         color: $highlightFontColor
         margin: 15px
 
     nav.bottom
         ul
-            float: left
-            margin: 15px
+            float: right
+            margin: 15px 15px 15px 30px
             padding: 0
-            border-right: 1px solid #ccc
+
             li
                 display: inline
                 list-style-type: none
                 text-align: right
+
                 a
                     display: block
                     float: left

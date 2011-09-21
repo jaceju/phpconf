@@ -1,15 +1,15 @@
 $fixedWidth: 960px
-$mainContentWidth: 620px
+$mainContentWidth: 660px
 $asideWidth: 300px
 $mainShadow: #666
-$highlightBgColor: #666
+$highlightBgColor: #449105
 $highlightFontColor: #fff
 
-@mixin main-shadow()
-    box-shadow: 0 0 5px 0 $mainShadow
+@mixin main-shadow($color: $mainShadow)
+    box-shadow: 0 0 10px 0 $color
 
 html, body
-    background: #999
+    background: #efefdc
 
 #container
     @import "page/header"

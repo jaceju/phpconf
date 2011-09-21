@@ -6,20 +6,41 @@
     height: 130px
     +main-shadow
 
-    h1
-        margin: 0 0 0 10px
-        background: url(../img/logo.jpg) no-repeat
-        a
-            display: block
-            width: 237px
-            height: 80px
-            text-indent: -9999px
-            overflow: hidden
-            outline: none
-    h2
-        position: absolute
-        top: 55px
-        left: 260px
+    #hgroup
+        margin: 0 auto
+        padding: 0
+        width: $fixedWidth
+        position: relative
+
+        h1
+            margin: 0
+            padding: 0
+            background: url(../img/logo.jpg) no-repeat
+
+            a
+                display: block
+                width: 237px
+                height: 80px
+                text-indent: -9999px
+                overflow: hidden
+                outline: none
+        h2
+            position: absolute
+            bottom: 0
+            left: 250px
+            margin: 0
+            padding: 0
+            color: #999
+
+        h3
+            position: absolute
+            bottom: 0
+            right: 30px
+            margin: 0
+            padding: 0
+
+            a.register
+                +fancy-button(#c5cfea, 25px)
 
     nav.top
         position: relative

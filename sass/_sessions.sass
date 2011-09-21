@@ -1,4 +1,5 @@
 #sessions
+
     table
         font-size: 15px
         border: 1px solid #000
@@ -23,11 +24,16 @@
                 color: #fff
                 text-align: center
 
-        th.time,
+        th.time
             width: 80px
+            border-right: 3px solid #999
 
         td
             padding: 5px
+
+            &.time
+                background: #F2FFF5
+                border-right: 3px solid #999
 
             span
                 display: block
@@ -36,13 +42,15 @@
                     font-size: 18px
                     font-weight: bold
                     color: #000
-                    line-height: 25px
+                    line-height: 30px
+                    padding: 5px 0
                     text-align: left
 
                 &.talker
                     font-size: 16px
                     color: #666
-                    text-align: right
+                    text-align: left
+                    padding: 5px 0
 
             div.brief
                 padding-left: 20px
