@@ -1,6 +1,6 @@
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class {
+.fancy-button-reset-base-class, a.register {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/public/img/button_bg.png?1315140545') repeat-x bottom left;
   margin: 0;
@@ -13,12 +13,12 @@
   font-weight: bold;
 }
 /* line 165, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, a.register::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus {
+.fancy-button-reset-base-class:focus, a.register:focus {
   outline: none;
 }
 
@@ -514,10 +514,96 @@ table {
   }
 }
 /* line 1, ../../sass/_announcements.sass */
-article.announcement {
+a.register {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 45px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #2880be;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b9cad5), color-stop(10%, #809eb3), color-stop(50%, #507086), color-stop(50%, #4b687d), color-stop(100%, #5e839d));
+  background-image: -webkit-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
+  background-image: -moz-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
+  background-image: -o-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
+  background-image: -ms-linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
+  background-image: linear-gradient(#b9cad5, #809eb3 10%, #507086 50%, #4b687d 50%, #5e839d);
+  border-color: #395060;
+  text-shadow: #123955 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.451) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+a.register, a.register:visited {
+  color: white;
+}
+/* line 31, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+a.register:hover, a.register:focus {
+  background-color: #2577b1;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #afc2d0), color-stop(10%, #7696ad), color-stop(50%, #4b687d), color-stop(50%, #456073), color-stop(100%, #587b93));
+  background-image: -webkit-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
+  background-image: -moz-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
+  background-image: -o-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
+  background-image: -ms-linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
+  background-image: linear-gradient(#afc2d0, #7696ad 10%, #4b687d 50%, #456073 50%, #587b93);
+  border-color: #344857;
+  text-shadow: #0f3148 0px 1px 1px;
+}
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+a.register:hover, a.register:hover:visited, a.register:focus, a.register:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+a.register:active {
+  background-color: #236fa5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4b687d), color-stop(30%, #4e6d83), color-stop(50%, #476376), color-stop(50%, #415b6d), color-stop(100%, #5a7d96));
+  background-image: -webkit-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
+  background-image: -moz-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
+  background-image: -o-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
+  background-image: -ms-linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
+  background-image: linear-gradient(#4b687d, #4e6d83 30%, #476376 50%, #415b6d 50%, #5a7d96);
+  border-color: #2e404d;
+  text-shadow: #0d283b 0px -1px -1px;
+  -moz-box-shadow: #395060 0 0.08em 0.2em 1px inset;
+  -webkit-box-shadow: #395060 0 0.08em 0.2em 1px inset;
+  -o-box-shadow: #395060 0 0.08em 0.2em 1px inset;
+  box-shadow: #395060 0 0.08em 0.2em 1px inset;
+}
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
+a.register:active, a.register:active:visited {
+  color: white;
+}
+
+/* line 4, ../../sass/_announcements.sass */
+section.announcement {
   margin-bottom: 10px;
-  border-bottom: 1px solid #333333;
-  padding: 5px;
+  padding: 5px 5px 20px 5px;
+}
+/* line 8, ../../sass/_announcements.sass */
+section.announcement header > h1 {
+  font-weight: bold;
+  color: #333333;
+  text-shadow: 1px 1px 2px #999999;
+}
+/* line 12, ../../sass/_announcements.sass */
+section.announcement .content {
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #666666;
+  padding: 20px;
+  background: #eeeeee;
 }
 
 /* line 2, ../../sass/_sessions.sass */
@@ -580,24 +666,31 @@ article.announcement {
   text-align: left;
 }
 
-/* line 1, ../../sass/_layout.sass */
+/* line 9, ../../sass/_layout.sass */
+html, body {
+  background: #999999;
+}
+
+/* line 12, ../../sass/_layout.sass */
 #container {
   position: relative;
   margin: 0 auto;
-  width: 900px;
-  background: white;
+  width: 100%;
 }
 /* line 1, ../../sass/page/_header.sass */
 #container #header {
+  position: relative;
+  padding-top: 10px;
   overflow: hidden;
-  padding: 10px;
+  background: white;
+  height: 130px;
 }
-/* line 4, ../../sass/page/_header.sass */
+/* line 8, ../../sass/page/_header.sass */
 #container #header h1 {
-  margin: 0;
+  margin: 0 0 0 10px;
   background: url(../img/logo.jpg) no-repeat;
 }
-/* line 7, ../../sass/page/_header.sass */
+/* line 11, ../../sass/page/_header.sass */
 #container #header h1 a {
   display: block;
   width: 237px;
@@ -606,129 +699,121 @@ article.announcement {
   overflow: hidden;
   outline: none;
 }
-/* line 14, ../../sass/page/_header.sass */
+/* line 18, ../../sass/page/_header.sass */
 #container #header h2 {
   position: absolute;
-  top: 50px;
+  top: 55px;
   left: 260px;
 }
-/* line 19, ../../sass/page/_header.sass */
+/* line 23, ../../sass/page/_header.sass */
 #container #header nav.top {
-  float: left;
-  width: 900px;
-}
-/* line 22, ../../sass/page/_header.sass */
-#container #header nav.top ul {
-  padding: 0;
-  margin: 10px 0 0 0;
-  list-style: none;
-  width: 900px;
-  height: 30px;
-  background: white;
-  float: left;
-  border-bottom: 1px solid #003399;
-}
-/* line 10, ../../sass/css3/_tab.sass */
-#container #header nav.top ul li {
-  float: left;
-  height: 10px;
-  margin-top: 50px;
-}
-/* line 14, ../../sass/css3/_tab.sass */
-#container #header nav.top ul li a {
-  display: block;
-  float: left;
-  padding: 0 20px;
-  margin: -50px 1px 0 1px;
-  height: 30px;
-  background-color: #0066cc;
-  color: #eeeeee;
-  font: bold 15px/30px arial, sans-serif;
-  text-decoration: none;
   position: relative;
-  -moz-border-radius: 10px 10px 0 0;
-  border-radius: 10px 10px 0 0;
-  border: 1px solid #003399;
-  border-bottom: none;
-  text-shadow: 1px 1px 1px #333333;
+  top: 10px;
+  background: black;
 }
-/* line 30, ../../sass/css3/_tab.sass */
-#container #header nav.top ul li a:hover {
-  background: #003399;
+/* line 28, ../../sass/page/_header.sass */
+#container #header nav.top ul {
+  margin: 0 auto;
+  width: 960px;
+  height: 40px;
+}
+/* line 33, ../../sass/page/_header.sass */
+#container #header nav.top ul li {
+  display: inline;
+}
+/* line 36, ../../sass/page/_header.sass */
+#container #header nav.top ul li a {
+  float: left;
+  display: block;
+  font-size: 1.2em;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 20px;
   color: white;
+  text-decoration: none;
 }
-/* line 34, ../../sass/css3/_tab.sass */
-#container #header nav.top ul li.active a {
-  background-color: white;
-  color: black;
+/* line 46, ../../sass/page/_header.sass */
+#container #header nav.top ul li a:hover {
+  color: #eeeeee;
+  text-shadow: 1px 1px 2px #cccccc;
 }
 /* line 1, ../../sass/page/_body.sass */
-#container aside {
+#container #body {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0px 3px 5px 0 black;
+}
+/* line 10, ../../sass/page/_body.sass */
+#container #body #main {
+  clear: left;
+  float: left;
+  width: 620px;
+  padding: 0 0 20px 0;
+  margin: 0 0 0 30px;
+  display: inline;
+}
+/* line 17, ../../sass/page/_body.sass */
+#container #body #main h2 {
+  margin: 0;
+}
+/* line 20, ../../sass/page/_body.sass */
+#container #body aside {
   float: right;
-  width: 240px;
-  padding: 20px 0;
+  width: 220px;
+  min-height: 300px;
+  padding: 5px 10px 20px 10px;
   margin: 0 20px 0 0;
   display: inline;
   background: #eeeeee;
+  border-bottom: 5px solid #333333;
+  border-radius: 0 0 10px 10px;
 }
-/* line 8, ../../sass/page/_body.sass */
-#container aside h3 {
+/* line 30, ../../sass/page/_body.sass */
+#container #body aside h3 {
   margin: 0;
 }
-/* line 1, ../../sass/page/_footer.sass */
+/* line 4, ../../sass/page/_footer.sass */
 #container #footer {
   position: relatvie;
   clear: both;
   overflow: hidden;
+  margin: 0 auto;
+  width: 960px;
   margin-bottom: 10px;
-  background: #ababab;
+  background: black;
   min-height: 105px;
   height: 1%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 2px gray;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 3px 5px 0 black;
 }
-/* line 12, ../../sass/page/_footer.sass */
+/* line 17, ../../sass/page/_footer.sass */
 #container #footer p.copyright {
   color: white;
-  text-shadow: 1px 1px 2px #333333;
-  position: absolute;
-  right: 30px;
-  bottom: 0;
-  height: 20px;
 }
-/* line 19, ../../sass/page/_footer.sass */
+/* line 20, ../../sass/page/_footer.sass */
 #container #footer nav.bottom {
   float: left;
   width: 200px;
 }
-/* line 22, ../../sass/page/_footer.sass */
+/* line 23, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul {
   margin: 15px;
   padding: 0;
+  padding-right: 20px;
   border-right: 1px solid #cccccc;
 }
-/* line 26, ../../sass/page/_footer.sass */
+/* line 28, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li {
   list-style-type: none;
   text-align: right;
 }
-/* line 29, ../../sass/page/_footer.sass */
+/* line 31, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li a {
   color: white;
-  text-shadow: 1px 1px 2px #333333;
   padding-right: 5px;
   text-decoration: none;
-}
-/* line 11, ../../sass/_layout.sass */
-#container #main {
-  clear: left;
-  float: left;
-  width: 560px;
-  padding: 20px 0;
-  margin: 0 0 0 30px;
-  display: inline;
-}
-/* line 18, ../../sass/_layout.sass */
-#container #main h2 {
-  margin: 0;
 }

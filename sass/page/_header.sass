@@ -1,8 +1,12 @@
 #header
+    position: relative
+    padding-top: 10px
     overflow: hidden
-    padding: 10px
+    background: #fff
+    height: 130px
+
     h1
-        margin: 0
+        margin: 0 0 0 10px
         background: url(../img/logo.jpg) no-repeat
         a
             display: block
@@ -13,11 +17,31 @@
             outline: none
     h2
         position: absolute
-        top: 50px
+        top: 55px
         left: 260px
 
     nav.top
-        float: left
-        width: 900px
+        position: relative
+        top: 10px
+        background: #000
+
         ul
-            +css3-tab
+            margin: 0 auto
+            width: $fixedWidth
+            height: 40px
+
+            li
+                display: inline
+
+                a
+                    float: left
+                    display: block
+                    font-size: 1.2em
+                    height: 30px
+                    line-height: 30px
+                    padding: 5px 20px
+                    color: #fff
+                    text-decoration: none
+
+                    &:hover
+                        +shadow-font(#eee, #ccc)

@@ -1,8 +1,11 @@
 <div id="info">
+    <p><a class="register" href="http://registrano.com/" target="_blank">現在就報名！</a></p>
     <% foreach $announcements as $announcement %>
-    <article class="announcement">
+    <section class="announcement">
+        <header>
         <h1><% $announcement->title|escape %></h1>
+        </header>
         <div class="content"><% $announcement->content %></div>
-    </article>
+    </section>
     <% /foreach %>
 </div>

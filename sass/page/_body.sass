@@ -1,9 +1,31 @@
-aside
-    float: right
-    width: 240px
-    padding: 20px 0
-    margin: 0 20px 0 0
-    display: inline
-    background: #eee
-    h3
-        margin: 0
+#body
+    position: relative
+    margin: 0 auto
+    width: $fixedWidth
+    height: 100%
+    background: #fff
+    overflow: hidden
+    +main-shadow
+
+    #main
+        clear: left
+        float: left
+        width: $mainContentWidth
+        padding: 0 0 20px 0
+        margin: 0 0 0 30px
+        display: inline
+        h2
+            margin: 0
+
+    aside
+        float: right
+        width: 220px
+        min-height: 300px
+        padding: 5px 10px 20px 10px
+        margin: 0 20px 0 0
+        display: inline
+        background: #eee
+        border-bottom: 5px solid #333
+        border-radius: 0 0 10px 10px
+        h3
+            margin: 0
