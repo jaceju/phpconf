@@ -1,5 +1,4 @@
-$bgColor: #000
-$fontColor: #fff
+$lineHeight: 35px
 
 #footer
     position: relatvie
@@ -8,27 +7,33 @@ $fontColor: #fff
     margin: 0 auto
     width: $fixedWidth
     margin-bottom: 10px
-    background: $bgColor
-    min-height: 105px
+    background: $highlightBgColor
+    min-height: 35px
     height: 1%
     border-radius: 0 0 10px 10px
     +main-shadow
 
     p.copyright
-        color: $fontColor
+        float: left
+        line-height: $lineHeight
+        color: $highlightFontColor
+        margin: 15px
 
     nav.bottom
-        float: left
-        width: 200px
         ul
+            float: left
             margin: 15px
             padding: 0
-            padding-right: 20px
             border-right: 1px solid #ccc
             li
+                display: inline
                 list-style-type: none
                 text-align: right
                 a
-                    color: $fontColor
-                    padding-right: 5px
+                    display: block
+                    float: left
+                    height: 35px
+                    line-height: $lineHeight
+                    color: $highlightFontColor
+                    padding-right: 20px
                     text-decoration: none

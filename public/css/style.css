@@ -604,6 +604,7 @@ section.announcement .content {
   color: #666666;
   padding: 20px;
   background: #eeeeee;
+  box-shadow: inset 0 0 5px #cccccc;
 }
 
 /* line 2, ../../sass/_sessions.sass */
@@ -612,41 +613,42 @@ section.announcement .content {
   border: 1px solid black;
   width: 100%;
   table-layout: fixed;
-  box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 5px #cccccc;
 }
 /* line 9, ../../sass/_sessions.sass */
 #sessions table td, #sessions table th {
-  border: 1px solid black;
+  border: 1px solid #999999;
   padding: 5px;
   text-align: center;
 }
 /* line 14, ../../sass/_sessions.sass */
 #sessions table th {
-  background: #cccccc;
+  background: #666666;
+  color: #eeeeee;
   font-size: 20px;
 }
-/* line 18, ../../sass/_sessions.sass */
+/* line 19, ../../sass/_sessions.sass */
 #sessions table tr.break {
   background: #993333;
 }
-/* line 21, ../../sass/_sessions.sass */
+/* line 22, ../../sass/_sessions.sass */
 #sessions table tr.break td {
   color: white;
   text-align: center;
 }
-/* line 25, ../../sass/_sessions.sass */
+/* line 26, ../../sass/_sessions.sass */
 #sessions table th.time {
   width: 80px;
 }
-/* line 28, ../../sass/_sessions.sass */
+/* line 29, ../../sass/_sessions.sass */
 #sessions table td {
   padding: 5px;
 }
-/* line 31, ../../sass/_sessions.sass */
+/* line 32, ../../sass/_sessions.sass */
 #sessions table td span {
   display: block;
 }
-/* line 34, ../../sass/_sessions.sass */
+/* line 35, ../../sass/_sessions.sass */
 #sessions table td span.subject {
   font-size: 18px;
   font-weight: bold;
@@ -654,24 +656,24 @@ section.announcement .content {
   line-height: 25px;
   text-align: left;
 }
-/* line 41, ../../sass/_sessions.sass */
+/* line 42, ../../sass/_sessions.sass */
 #sessions table td span.talker {
   font-size: 16px;
   color: #666666;
   text-align: right;
 }
-/* line 46, ../../sass/_sessions.sass */
+/* line 47, ../../sass/_sessions.sass */
 #sessions table td div.brief {
   padding-left: 20px;
   text-align: left;
 }
 
-/* line 9, ../../sass/_layout.sass */
+/* line 11, ../../sass/_layout.sass */
 html, body {
   background: #999999;
 }
 
-/* line 12, ../../sass/_layout.sass */
+/* line 14, ../../sass/_layout.sass */
 #container {
   position: relative;
   margin: 0 auto;
@@ -684,13 +686,14 @@ html, body {
   overflow: hidden;
   background: white;
   height: 130px;
+  box-shadow: 0 0 5px 0 #666666;
 }
-/* line 8, ../../sass/page/_header.sass */
+/* line 9, ../../sass/page/_header.sass */
 #container #header h1 {
   margin: 0 0 0 10px;
   background: url(../img/logo.jpg) no-repeat;
 }
-/* line 11, ../../sass/page/_header.sass */
+/* line 12, ../../sass/page/_header.sass */
 #container #header h1 a {
   display: block;
   width: 237px;
@@ -699,29 +702,41 @@ html, body {
   overflow: hidden;
   outline: none;
 }
-/* line 18, ../../sass/page/_header.sass */
+/* line 19, ../../sass/page/_header.sass */
 #container #header h2 {
   position: absolute;
   top: 55px;
   left: 260px;
 }
-/* line 23, ../../sass/page/_header.sass */
+/* line 24, ../../sass/page/_header.sass */
 #container #header nav.top {
   position: relative;
   top: 10px;
-  background: black;
+  background: #666666;
+  box-shadow: inset 0 3px 0 #cccccc;
+  z-index: 9999;
 }
-/* line 28, ../../sass/page/_header.sass */
+/* line 31, ../../sass/page/_header.sass */
 #container #header nav.top ul {
   margin: 0 auto;
   width: 960px;
   height: 40px;
 }
-/* line 33, ../../sass/page/_header.sass */
+/* line 36, ../../sass/page/_header.sass */
 #container #header nav.top ul li {
   display: inline;
 }
-/* line 36, ../../sass/page/_header.sass */
+/* line 39, ../../sass/page/_header.sass */
+#container #header nav.top ul li.active > a {
+  background: white;
+  color: #333333;
+  box-shadow: inset 0 3px 0 #666666;
+}
+/* line 44, ../../sass/page/_header.sass */
+#container #header nav.top ul li.active > a:hover {
+  color: #333333;
+}
+/* line 47, ../../sass/page/_header.sass */
 #container #header nav.top ul li a {
   float: left;
   display: block;
@@ -732,7 +747,7 @@ html, body {
   color: white;
   text-decoration: none;
 }
-/* line 46, ../../sass/page/_header.sass */
+/* line 57, ../../sass/page/_header.sass */
 #container #header nav.top ul li a:hover {
   color: #eeeeee;
   text-shadow: 1px 1px 2px #cccccc;
@@ -745,7 +760,7 @@ html, body {
   height: 100%;
   background: white;
   overflow: hidden;
-  box-shadow: 0px 3px 5px 0 black;
+  box-shadow: 0 0 5px 0 #666666;
 }
 /* line 10, ../../sass/page/_body.sass */
 #container #body #main {
@@ -769,14 +784,15 @@ html, body {
   margin: 0 20px 0 0;
   display: inline;
   background: #eeeeee;
-  border-bottom: 5px solid #333333;
+  border-bottom: 5px solid #666666;
   border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 5px 0 #666666;
 }
-/* line 30, ../../sass/page/_body.sass */
+/* line 31, ../../sass/page/_body.sass */
 #container #body aside h3 {
   margin: 0;
 }
-/* line 4, ../../sass/page/_footer.sass */
+/* line 3, ../../sass/page/_footer.sass */
 #container #footer {
   position: relatvie;
   clear: both;
@@ -784,36 +800,39 @@ html, body {
   margin: 0 auto;
   width: 960px;
   margin-bottom: 10px;
-  background: black;
-  min-height: 105px;
+  background: #666666;
+  min-height: 35px;
   height: 1%;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0px 3px 5px 0 black;
+  box-shadow: 0 0 5px 0 #666666;
 }
-/* line 17, ../../sass/page/_footer.sass */
+/* line 16, ../../sass/page/_footer.sass */
 #container #footer p.copyright {
-  color: white;
-}
-/* line 20, ../../sass/page/_footer.sass */
-#container #footer nav.bottom {
   float: left;
-  width: 200px;
+  line-height: 35px;
+  color: white;
+  margin: 15px;
 }
 /* line 23, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul {
+  float: left;
   margin: 15px;
   padding: 0;
-  padding-right: 20px;
   border-right: 1px solid #cccccc;
 }
 /* line 28, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li {
+  display: inline;
   list-style-type: none;
   text-align: right;
 }
-/* line 31, ../../sass/page/_footer.sass */
+/* line 32, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li a {
+  display: block;
+  float: left;
+  height: 35px;
+  line-height: 35px;
   color: white;
-  padding-right: 5px;
+  padding-right: 20px;
   text-decoration: none;
 }

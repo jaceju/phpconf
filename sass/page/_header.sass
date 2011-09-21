@@ -4,6 +4,7 @@
     overflow: hidden
     background: #fff
     height: 130px
+    +main-shadow
 
     h1
         margin: 0 0 0 10px
@@ -23,7 +24,9 @@
     nav.top
         position: relative
         top: 10px
-        background: #000
+        background: $highlightBgColor
+        box-shadow: inset 0 3px 0 #ccc
+        z-index: 9999
 
         ul
             margin: 0 auto
@@ -33,6 +36,14 @@
             li
                 display: inline
 
+                &.active>a
+                    background: #fff
+                    color: #333
+                    box-shadow: inset 0 3px 0 $highlightBgColor
+
+                    &:hover
+                        color: #333
+
                 a
                     float: left
                     display: block
@@ -40,7 +51,7 @@
                     height: 30px
                     line-height: 30px
                     padding: 5px 20px
-                    color: #fff
+                    color: $highlightFontColor
                     text-decoration: none
 
                     &:hover
