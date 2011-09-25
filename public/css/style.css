@@ -723,10 +723,11 @@ table {
 }
 /* line 11, ../../sass/frontend/_layout.sass */
 html, body {
+  font-family: Verdana, "LiHei Pro", 新細明體, sans-serif;
   background: #e3e9f9 url(../img/html_bg.png) -50px 0;
 }
 
-/* line 14, ../../sass/frontend/_layout.sass */
+/* line 15, ../../sass/frontend/_layout.sass */
 #container {
   position: relative;
   margin: 0 auto;
@@ -1008,7 +1009,7 @@ html, body {
   padding-right: 20px;
   text-decoration: none;
 }
-/* line 23, ../../sass/frontend/_layout.sass */
+/* line 24, ../../sass/frontend/_layout.sass */
 #container a {
   text-decoration: none;
 }
@@ -1070,24 +1071,29 @@ div.announcement .content {
   vertical-align: middle !important;
 }
 /* line 37, ../../sass/tab/_sessions.sass */
+#sessions table td span {
+  display: block;
+}
+/* line 40, ../../sass/tab/_sessions.sass */
 #sessions table td h1.subject {
   margin: 0 !important;
   padding: 5px 0;
-  font-size: 18px/30px bold !important;
+  font: 18px/30px bold !important;
   color: #333333 !important;
   border: none !important;
   text-align: left;
 }
-/* line 45, ../../sass/tab/_sessions.sass */
+/* line 48, ../../sass/tab/_sessions.sass */
 #sessions table td h2.talker {
   margin-left: 10px !important;
-  font-size: 16px;
+  font: 16px/30px normal !important;
   color: #666666 !important;
   text-align: left;
   padding: 5px 0;
 }
-/* line 52, ../../sass/tab/_sessions.sass */
+/* line 55, ../../sass/tab/_sessions.sass */
 #sessions table td div.brief {
+  font: 14px/25px normal !important;
   color: #999999;
   margin: 10px auto 20px 20px;
   text-align: left;
@@ -1099,12 +1105,18 @@ div.announcement .content {
 }
 /* line 6, ../../sass/tab/_location.sass */
 #location iframe {
+  margin-bottom: 20px;
+  border: 1px solid #999999;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: 0 0 5px 0 #999999;
   -webkit-box-shadow: 0 0 5px 0 #999999;
   -o-box-shadow: 0 0 5px 0 #999999;
   box-shadow: 0 0 5px 0 #999999;
-  margin-bottom: 20px;
-  border: 1px solid #999999;
 }
 
 /* line 3, ../../sass/tab/_staffs.sass */
