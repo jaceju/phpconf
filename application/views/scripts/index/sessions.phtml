@@ -19,9 +19,13 @@
             <tr class="info">
                 <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
                 <td>
-                    <span class="subject"><% $session->subject|escape %></span>
-                    <div class="brief"><% $session->brief %></div>
-                    <span class="talker"><% $session->talker|escape %></span>
+                    <section>
+                        <hgroup>
+                            <h1 class="subject"><% $session->subject|escape %></h1>
+                            <h2 class="talker"><% $session->talker|escape %></h2>
+                        </hgroup>
+                        <div class="brief"><% $session->brief %></div>
+                    </section>
                 </td>
             </tr>
             <% /if %>

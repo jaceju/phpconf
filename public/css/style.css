@@ -723,7 +723,7 @@ table {
 }
 /* line 11, ../../sass/frontend/_layout.sass */
 html, body {
-  background: #e3e9f9 url(../img/html_bg.png) 50% 30%;
+  background: #e3e9f9 url(../img/html_bg.png) -50px 0;
 }
 
 /* line 14, ../../sass/frontend/_layout.sass */
@@ -778,7 +778,7 @@ html, body {
   left: 260px;
   margin: 0;
   padding: 0;
-  color: #999999;
+  color: #ff9933;
   font: 16px/32px bold;
 }
 /* line 43, ../../sass/page/_header.sass */
@@ -1070,29 +1070,26 @@ div.announcement .content {
   vertical-align: middle !important;
 }
 /* line 37, ../../sass/tab/_sessions.sass */
-#sessions table td span {
-  display: block;
-}
-/* line 40, ../../sass/tab/_sessions.sass */
-#sessions table td span.subject {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  line-height: 30px;
+#sessions table td h1.subject {
+  margin: 0 !important;
   padding: 5px 0;
+  font-size: 18px/30px bold !important;
+  color: #333333 !important;
+  border: none !important;
   text-align: left;
 }
-/* line 48, ../../sass/tab/_sessions.sass */
-#sessions table td span.talker {
-  margin-left: 10px;
+/* line 45, ../../sass/tab/_sessions.sass */
+#sessions table td h2.talker {
+  margin-left: 10px !important;
   font-size: 16px;
-  color: #666666;
+  color: #666666 !important;
   text-align: left;
   padding: 5px 0;
 }
-/* line 55, ../../sass/tab/_sessions.sass */
+/* line 52, ../../sass/tab/_sessions.sass */
 #sessions table td div.brief {
-  padding-left: 20px;
+  color: #999999;
+  margin: 10px auto 20px 20px;
   text-align: left;
 }
 
