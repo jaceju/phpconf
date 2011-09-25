@@ -11,6 +11,7 @@ class IndexController extends Zend_Controller_Action
     public function preDispatch()
     {
         $this->_conference = $this->getHelper('Conference')->getConference();
+        $this->view->conference = $this->_conference;
         $this->view->actionName = $this->getRequest()->getActionName();
     }
 

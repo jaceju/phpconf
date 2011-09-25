@@ -3,14 +3,14 @@
     margin: 0 auto
     width: $fixedWidth
     height: 100%
-    background: #fff
     overflow: hidden
+    background: $pageColor
     +main-shadow
 
     #main
         clear: left
         float: left
-        width: $mainContentWidth
+        width: $contentWidth
         padding: 0 0 20px 0
         margin: 0 0 0 30px
         display: inline
@@ -18,26 +18,4 @@
 
         h2
             margin: 0
-
-    aside
-        float: right
-        width: 220px
-        min-height: 300px
-        margin: 0 20px 0 0
-        display: inline
-        background: #069
-        color: #fff
-        border-bottom: 5px solid #666
-        +border-radius(0 0 10px 10px)
-        +main-shadow(#999)
-
-        .section
-
-            h1
-                color: #333
-                padding: 10px
-                background: #fff
-                margin: 0
-                text-align: center
-                font-size: 1.4em
 

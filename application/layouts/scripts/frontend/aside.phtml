@@ -1,12 +1,17 @@
-<div class="section">
-    <section>
-        <header>
-            <h1>贊助</h1>
-        </header>
-        <ul>
+<aside>
+    <div class="section">
+        <section>
+            <header>
+                <h1>贊助</h1>
+            </header>
+
+            <dl>
             <% foreach $sponsors as $sponsor %>
-            <li><% $sponsor->name|escape %> - <% $sponsor->supply|escape %></li>
+                <dt><% $sponsor->supply|escape %></dt>
+                <dd><% $sponsor->name|escape %></dd>
             <% /foreach %>
-        </ul>
-    </section>
-</div>
+            </dl>
+
+        </section>
+    </div>
+</aside>

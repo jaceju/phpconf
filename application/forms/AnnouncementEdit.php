@@ -26,6 +26,7 @@ class Phpconf_Form_AnnouncementEdit extends Zend_Form
                 ->addElement('textarea', 'content', array(
                     'cols' => 50,
                     'rows' => 10,
+                    'class' => 'html',
                     'validators' => array(
                         array('StringLength', false, array(1, 200)),
                     ),

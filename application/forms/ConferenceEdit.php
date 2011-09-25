@@ -40,7 +40,17 @@ class Phpconf_Form_ConferenceEdit extends Zend_Form
                     'required' => true,
                     'label' => '結束日期',
                 ))
-                ->addElement('text', 'location', array(
+                ->addElement('text', 'registrationUrl', array(
+//                    'filters' => array('Digits'),
+//                    'validators' => array(
+//                        array('Between', false, array(
+//                                'min' => '2011',
+//                                'max' => '9999',
+//                        )),
+//                    ),
+                    'required' => true,
+                    'label' => '報名網址',
+                ))                ->addElement('text', 'location', array(
 //                    'filters' => array('Digits'),
 //                    'validators' => array(
 //                        array('Between', false, array(

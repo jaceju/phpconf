@@ -10,6 +10,8 @@
         <link rel="shortcut icon" href="<% $this->baseUrl() %>/favicon.gif" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/admin.css" media="screen, projection" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/print.css" media="print" />
+        <link rel="stylesheet" href="<% $this->baseUrl() %>/lib/jquery/ui-lightness/jquery-ui-1.8.16.custom" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="<% $this->baseUrl() %>/lib/elrte/css/elrte.min.css" media="screen" charset="utf-8" />
         <!--[if IE]>
             <link href="<% $this->baseUrl() %>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -44,8 +46,10 @@
             </div>
         </div> <!--! end of #container -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<% $this->baseUrl() %>/lib/jquery-1.6.2.min.js"><\/script>')</script>
-        <script src="<% $this->baseUrl() %>/js/phpconf.js"></script>
+        <script src="<% $this->baseUrl() %>/lib/jquery/jquery-1.6.2.min.js"></script>
+    	<script src="<% $this->baseUrl() %>/lib/jquery/jquery-ui-1.8.16.custom.min.js" charset="utf-8"></script>
+        <script src="<% $this->baseUrl() %>/lib/elrte/elrte.min.js" charset="utf-8"></script>
+        <script src="<% $this->baseUrl() %>/lib/elrte/elrte.zh_TW.js" charset="utf-8"></script>
+        <script src="<% $this->baseUrl() %>/js/admin.js"></script>
     </body>
 </html>

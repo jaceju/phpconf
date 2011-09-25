@@ -1,10 +1,12 @@
 <div id="info">
     <% foreach $announcements as $announcement %>
-    <section class="announcement">
-        <header>
-        <h1><% $announcement->title|escape %></h1>
-        </header>
-        <div class="content"><% $announcement->content %></div>
-    </section>
+    <div class="announcement">
+        <section>
+            <header>
+                <h1><% $announcement->title|escape %></h1>
+            </header>
+            <div class="content"><% $announcement->content %></div>
+        </section>
+    </div>
     <% /foreach %>
 </div>

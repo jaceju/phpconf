@@ -25,6 +25,7 @@
       </pluginsDirectory>
       <actionHelpersDirectory>
         <actionHelperFile actionHelperName="Conference"/>
+        <actionHelperFile actionHelperName="Crud"/>
       </actionHelpersDirectory>
       <formsDirectory>
         <formFile formName="Login"/>
