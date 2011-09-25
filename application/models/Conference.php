@@ -175,7 +175,7 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $sponsorTable = Phpconf_Model_DbTable_Sponsors::getInstance();
         $select = $sponsorTable->select()
-                ->order('name');
+                ->order('sortOrder');
         return $this->findDependentRowset('Phpconf_Model_DbTable_Sponsors', 'Conference', $select);
     }
 

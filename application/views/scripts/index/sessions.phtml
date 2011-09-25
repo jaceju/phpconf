@@ -20,7 +20,7 @@
                 <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
                 <td>
                     <span class="subject"><% $session->subject|escape %></span>
-                    <div class="brief"><% $session->brief|escape|nl2br %></div>
+                    <div class="brief"><% $session->brief %></div>
                     <span class="talker"><% $session->talker|escape %></span>
                 </td>
             </tr>

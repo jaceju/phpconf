@@ -86,7 +86,7 @@ b, strong {
 
 /* line 34, ../../sass/common/_html5.sass */
 blockquote {
-  margin: 1em 40px;
+  margin: 1em 20px;
 }
 
 /* line 36, ../../sass/common/_html5.sass */
@@ -173,12 +173,12 @@ sub {
 /* line 82, ../../sass/common/_html5.sass */
 ul, ol {
   margin: 1em 0;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
 }
 
 /* line 85, ../../sass/common/_html5.sass */
 dd {
-  margin: 0 0 0 40px;
+  margin: 0 0 0 20px;
 }
 
 /* line 88, ../../sass/common/_html5.sass */

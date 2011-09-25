@@ -389,7 +389,7 @@ b, strong {
 
 /* line 34, ../../sass/common/_html5.sass */
 blockquote {
-  margin: 1em 40px;
+  margin: 1em 20px;
 }
 
 /* line 36, ../../sass/common/_html5.sass */
@@ -476,12 +476,12 @@ sub {
 /* line 82, ../../sass/common/_html5.sass */
 ul, ol {
   margin: 1em 0;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
 }
 
 /* line 85, ../../sass/common/_html5.sass */
 dd {
-  margin: 0 0 0 40px;
+  margin: 0 0 0 20px;
 }
 
 /* line 88, ../../sass/common/_html5.sass */
@@ -893,10 +893,10 @@ html, body {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  -moz-box-shadow: 0 0 10px 0 aside-shadow-color;
-  -webkit-box-shadow: 0 0 10px 0 aside-shadow-color;
-  -o-box-shadow: 0 0 10px 0 aside-shadow-color;
-  box-shadow: 0 0 10px 0 aside-shadow-color;
+  -moz-box-shadow: 0 0 10px 0 #cccccc;
+  -webkit-box-shadow: 0 0 10px 0 #cccccc;
+  -o-box-shadow: 0 0 10px 0 #cccccc;
+  box-shadow: 0 0 10px 0 #cccccc;
 }
 /* line 13, ../../sass/page/_aside.sass */
 #container #aside .section h1 {
@@ -939,7 +939,7 @@ html, body {
 }
 /* line 46, ../../sass/page/_aside.sass */
 #container #aside .section dl dd a:hover {
-  background: #cccccc;
+  background: #eeeeee;
   color: #666666;
 }
 /* line 3, ../../sass/page/_footer.sass */
@@ -973,31 +973,32 @@ html, body {
 }
 /* line 22, ../../sass/page/_footer.sass */
 #container #footer p.powered {
-  margin-top: 5px;
+  margin-top: 18px;
+  margin-right: 20px;
   float: right;
 }
-/* line 26, ../../sass/page/_footer.sass */
+/* line 27, ../../sass/page/_footer.sass */
 #container #footer p.powered a {
   display: block;
-  width: 190px;
-  height: 50px;
-  line-height: 50px;
+  width: 127px;
+  height: 25px;
+  line-height: 25px;
   background: url(../img/zf_logo.png) no-repeat;
   text-indent: -9999px;
 }
-/* line 36, ../../sass/page/_footer.sass */
+/* line 37, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul {
   float: right;
   margin: 15px 15px 15px 30px;
   padding: 0;
 }
-/* line 41, ../../sass/page/_footer.sass */
+/* line 42, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li {
   display: inline;
   list-style-type: none;
   text-align: right;
 }
-/* line 46, ../../sass/page/_footer.sass */
+/* line 47, ../../sass/page/_footer.sass */
 #container #footer nav.bottom ul li a {
   display: block;
   float: left;
