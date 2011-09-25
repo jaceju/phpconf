@@ -1,8 +1,9 @@
-<section>
-    <h1>工作人員</h1>
+<div id="staffs">
     <% foreach $jobs as $job %>
     <section>
+        <header>
         <h1><% $job->name|escape %></h1>
+        </header>
         <ul>
             <% foreach $staffs as $staff %>
             <% if $staff->jobId === $job->id %>
@@ -12,4 +13,4 @@
         </ul>
     </section>
     <% /foreach %>
-</section>
+</div>

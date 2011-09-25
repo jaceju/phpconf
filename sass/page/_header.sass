@@ -5,7 +5,7 @@
     overflow: hidden
     background: #fff url(../img/head_bg.png) no-repeat 700px 0px
     height: 140px
-    +main-shadow
+    +page-shadow
 
     #hgroup
         margin: 0 auto
@@ -35,7 +35,8 @@
             left: 260px
             margin: 0
             padding: 0
-            color: #999
+            color: $headerFontColor
+            font: 16px/32px bold
 
         h3
 
@@ -53,7 +54,7 @@
 
         ul
             position: relative
-            background: $mainColor
+            background: $menuBgColor
             box-shadow: inset 0 3px 0 #ccc
             z-index: 9999
             margin: 0 auto
@@ -83,7 +84,7 @@
                 &.active>a
                     background: #fff
                     color: #333
-                    box-shadow: inset 0 3px 0 $mainColor
+                    +box-shadow(inset 0 3px 0 $menuBgColor)
 
                     &:hover
                         color: #333

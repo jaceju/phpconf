@@ -5,10 +5,10 @@
         border: 1px solid #000
         width: 100%
         table-layout: fixed
-        box-shadow: 0px 0px 5px #ccc
+        +box-shadow(inset 0px 0px 10px #ccc)
 
         td,th
-            border: 1px solid #999
+            border: 1px solid $session-table-border-color
             padding: 5px
             text-align: center
 
@@ -18,7 +18,7 @@
             font-size: 20px
 
         tr.break
-            background: #933
+            background: $session-table-break-color
 
             td
                 color: #fff
@@ -26,15 +26,13 @@
 
         th.time
             width: 80px
-            border-right: 3px solid #999
 
         td
             padding: 5px
 
             &.time
-                background: #F2FFF5
+                background: $session-table-time-bg-color
                 vertical-align: middle !important
-                border-right: 3px solid #999
 
             span
                 display: block
@@ -48,6 +46,7 @@
                     text-align: left
 
                 &.talker
+                    margin-left: 10px
                     font-size: 16px
                     color: #666
                     text-align: left
