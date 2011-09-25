@@ -893,10 +893,10 @@ html, body {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  -moz-box-shadow: 0 0 10px 0 #cccccc;
-  -webkit-box-shadow: 0 0 10px 0 #cccccc;
-  -o-box-shadow: 0 0 10px 0 #cccccc;
-  box-shadow: 0 0 10px 0 #cccccc;
+  -moz-box-shadow: 0 0 10px 0 aside-shadow-color;
+  -webkit-box-shadow: 0 0 10px 0 aside-shadow-color;
+  -o-box-shadow: 0 0 10px 0 aside-shadow-color;
+  box-shadow: 0 0 10px 0 aside-shadow-color;
 }
 /* line 13, ../../sass/page/_aside.sass */
 #container #aside .section h1 {

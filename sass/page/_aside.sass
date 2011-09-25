@@ -1,21 +1,21 @@
 #aside
     float: right
-    width: $asideWidth - 80px
+    width: $aside-width - 80px
     min-height: 300px
     margin: 10px 20px 0 0
     display: inline
-    background: $asideBgColor
+    background: $aside-bg-color
     +border-radius(10px)
-    +box-shadow(0 0 10px 0 #ccc)
+    +box-shadow(0 0 10px 0 aside-shadow-color)
 
     .section
 
         h1
-            color: $asideHeadFontColor
+            color: $aside-head-font-color
             padding: 5px
-            background: $asideHeadBgColor
+            background: $aside-head-bg-color
             margin: 0
-            border-top: 3px solid $asideHeadBorderColor
+            border-top: 3px solid $aside-head-border-color
             text-align: center
             font: 16px/32px bold
 
@@ -25,24 +25,24 @@
             dt
                 margin: 5px 20px
                 font: 16px/32px bold
-                color: $asideDlFontColor
+                color: $aside-dl-font-color
                 +bottom-line
 
             dd
                 margin: 5px 20px 15px 30px
                 font: 14px/28px normal
-                color: $asideDdFontColor
+                color: $aside-dd-font-color
 
                 span
                     display: block
                     padding: 4px
-                    color: $asideDdFontColor
+                    color: $aside-dd-font-color
 
                 a
                     display: block
                     padding: 4px
-                    color: $asideDdFontColor
+                    color: $aside-dd-font-color
 
                     &:hover
-                        background: $asideLinkHoverBgColor
-                        color: $asideDdFontColor
+                        background: $aside-link-hover-bg-color
+                        color: $aside-dd-font-color
