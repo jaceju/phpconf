@@ -19,6 +19,9 @@
           <actionMethod actionName="staffEdit"/>
           <actionMethod actionName="sponsorEdit"/>
         </controllerFile>
+        <controllerFile controllerName="Mobile">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <pluginsDirectory>
         <pluginFile pluginName="Conference"/>
@@ -72,6 +75,9 @@
           <viewControllerScriptsDirectory forControllerName="Admin">
             <viewScriptFile forActionName="sponsorEdit"/>
           </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Mobile">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
         <viewFiltersDirectory enabled="false"/>
@@ -115,6 +121,9 @@
             <testApplicationActionMethod forActionName="sessionEdit"/>
             <testApplicationActionMethod forActionName="staffEdit"/>
             <testApplicationActionMethod forActionName="sponsorEdit"/>
+          </testApplicationControllerFile>
+          <testApplicationControllerFile forControllerName="Mobile">
+            <testApplicationActionMethod forActionName="index"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
       </testApplicationDirectory>
