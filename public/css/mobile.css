@@ -774,20 +774,19 @@ body > div, body > form, body > ul {
   display: none;
   position: absolute;
   left: 0;
-  top: 41px;
   min-height: 418px;
   margin: 0;
   padding: 0;
 }
-/* line 62, ../../sass/mobile/_iphone.sass */
+/* line 61, ../../sass/mobile/_iphone.sass */
 body *[selected="true"] {
   display: block;
 }
-/* line 65, ../../sass/mobile/_iphone.sass */
+/* line 64, ../../sass/mobile/_iphone.sass */
 body ul.menu {
   width: 100%;
 }
-/* line 68, ../../sass/mobile/_iphone.sass */
+/* line 67, ../../sass/mobile/_iphone.sass */
 body ul.menu > li {
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
@@ -797,7 +796,7 @@ body ul.menu > li {
   font-weight: bold;
   list-style: none;
 }
-/* line 77, ../../sass/mobile/_iphone.sass */
+/* line 76, ../../sass/mobile/_iphone.sass */
 body ul.menu > li > a {
   display: block;
   padding: 8px 32px 8px 8px;
@@ -805,7 +804,7 @@ body ul.menu > li > a {
   color: black;
 }
 
-/* line 83, ../../sass/mobile/_iphone.sass */
+/* line 82, ../../sass/mobile/_iphone.sass */
 .panel {
   box-sizing: border-box;
   padding: 10px;
@@ -813,7 +812,7 @@ body ul.menu > li > a {
   overflow: auto;
 }
 
-/* line 89, ../../sass/mobile/_iphone.sass */
+/* line 88, ../../sass/mobile/_iphone.sass */
 .dialog {
   position: absolute;
   top: 0;
@@ -825,7 +824,7 @@ body ul.menu > li > a {
   text-align: right;
 }
 
-/* line 99, ../../sass/mobile/_iphone.sass */
+/* line 98, ../../sass/mobile/_iphone.sass */
 fieldset {
   box-sizing: border-box;
   width: 100%;
@@ -834,7 +833,7 @@ fieldset {
   padding: 10px 6px;
   background: url(../img/mobile/toolbar.png) #7388a5 repeat-x;
 }
-/* line 107, ../../sass/mobile/_iphone.sass */
+/* line 106, ../../sass/mobile/_iphone.sass */
 fieldset > h1 {
   margin: 0 10px 0 10px;
   padding: 0;
@@ -845,7 +844,7 @@ fieldset > h1 {
   text-align: center;
 }
 
-/* line 116, ../../sass/mobile/_iphone.sass */
+/* line 115, ../../sass/mobile/_iphone.sass */
 label {
   position: absolute;
   margin: 14px 0 0 6px;
@@ -853,7 +852,7 @@ label {
   color: #bbbbbb;
 }
 
-/* line 122, ../../sass/mobile/_iphone.sass */
+/* line 121, ../../sass/mobile/_iphone.sass */
 input {
   box-sizing: border-box;
   width: 100%;
@@ -861,19 +860,6 @@ input {
   padding: 6px 6px 6px 44px;
   font-size: 16px;
   font-weight: normal;
-}
-
-/* line 3, ../../sass/mobile/_style.sass */
-div.panel h1 {
-  font: 18px/36px bold;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  color: #ff9933;
-  border-bottom: 1px solid #eeeeee;
-}
-/* line 10, ../../sass/mobile/_style.sass */
-div.panel h2 {
-  margin: 0;
 }
 
 /* line 1, ../../sass/mobile/tab/_announcements.sass */
@@ -887,6 +873,11 @@ div.panel h2 {
   margin-bottom: 10px;
 }
 /* line 9, ../../sass/mobile/tab/_announcements.sass */
+#announcements div.announcement h1 {
+  font: 18px/36px bold;
+  color: #ff9933;
+}
+/* line 13, ../../sass/mobile/tab/_announcements.sass */
 #announcements div.announcement .content {
   color: #333333;
   padding: 0 10px;
@@ -905,7 +896,8 @@ div.panel h2 {
 }
 /* line 9, ../../sass/mobile/tab/_location.sass */
 #location iframe {
-  margin-bottom: 20px;
+  margin: 20px auto;
+  width: 100%;
   border: 1px solid #999999;
 }
 
@@ -916,71 +908,46 @@ div.panel h2 {
   position: relative;
 }
 /* line 6, ../../sass/mobile/tab/_sessions.sass */
-#sessions table {
-  font-size: 15px;
-  border: 1px solid black;
-  width: 100%;
-  table-layout: fixed;
+#sessions ul > li {
+  min-height: 30px;
+  padding: 5px;
+  font: 16px/32px normal;
 }
 /* line 11, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td, #sessions table th {
-  border: 1px solid #cccccc;
-  padding: 5px;
-  text-align: center;
+#sessions ul > li.alt {
+  background: #eeeeee;
 }
-/* line 16, ../../sass/mobile/tab/_sessions.sass */
-#sessions table th {
-  background: #666666;
-  color: #eeeeee;
-  font-size: 20px;
+/* line 14, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul > li span.startTime, #sessions ul > li span.endTime {
+  width: 10%;
+  color: #666666;
+  margin: 0 5px;
 }
-/* line 21, ../../sass/mobile/tab/_sessions.sass */
-#sessions table tr.break {
-  background: #ff9933;
+/* line 19, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul > li span.subject {
+  display: block;
+  font: 18px/36px bold;
+  color: #ff9933;
 }
 /* line 24, ../../sass/mobile/tab/_sessions.sass */
-#sessions table tr.break td {
+#sessions ul > li span.talker {
+  display: block;
+  margin-left: 20px;
+  color: #333333;
+}
+/* line 29, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul > li div.brief {
+  margin-left: 30px;
+  color: #666666;
+}
+/* line 33, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul > li.break {
+  background: #666666;
   color: white;
   text-align: center;
 }
-/* line 28, ../../sass/mobile/tab/_sessions.sass */
-#sessions table th.time {
-  width: 80px;
-}
-/* line 31, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td {
-  padding: 5px;
-}
-/* line 34, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td.time {
-  background: #f2fff5;
-  vertical-align: middle !important;
-}
 /* line 38, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td span {
-  display: block;
-}
-/* line 41, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td h1.subject {
-  margin: 0 !important;
-  padding: 5px 0;
-  font: 18px/30px bold !important;
-  color: #333333 !important;
-  border: none !important;
-  text-align: left;
-}
-/* line 49, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td h2.talker {
-  margin-left: 10px !important;
-  font: 16px/30px normal !important;
-  color: #666666 !important;
-  text-align: left;
-  padding: 5px 0;
-}
-/* line 56, ../../sass/mobile/tab/_sessions.sass */
-#sessions table td div.brief {
-  font: 14px/25px normal !important;
-  color: #999999;
-  margin: 10px auto 20px 20px;
-  text-align: left;
+#sessions ul > li.break span {
+  display: inline;
+  color: white;
 }

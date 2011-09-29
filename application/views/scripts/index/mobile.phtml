@@ -20,67 +20,35 @@
         <div id="announcements" class="panel" title="公告">
             <% foreach $announcements as $announcement %>
             <div class="announcement">
-                <section>
-                    <header>
-                        <h1><% $announcement->title|escape %></h1>
-                    </header>
-                    <div class="content"><% $announcement->content %></div>
-                </section>
+                <h1><% $announcement->title|escape %></h1>
+                <div class="content"><% $announcement->content %></div>
             </div>
             <% /foreach %>
         </div>
         <div id="sessions" class="panel" title="議程">
-            ul>li>span.startTime+span.endTime+
-
-            <section>
-                <header>
-                    <h1>議程介紹</h1>
-                </header>
-
-                <table>
-                    <tr>
-                        <th class="time">時間</th>
-                        <th class="session">議程</th>
-                    </tr>
-                    <% foreach $sessions as $session %>
-                    <% if null === $session->talker %>
-                    <tr class="break">
-                        <td colspan="2">
-                            <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
-                        </td>
-                    </tr>
-                    <% else %>
-                    <tr class="info">
-                        <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
-                        <td>
-                            <section>
-                                <hgroup>
-                                    <h1 class="subject"><% $session->subject|escape %></h1>
-                                    <h2 class="talker"><% $session->talker|escape %></h2>
-                                </hgroup>
-                                <div class="brief"><% $session->brief %></div>
-                            </section>
-                        </td>
-                    </tr>
-                    <% /if %>
-                    <% /foreach %>
-                </table>
-            </section>
+            <ul>
+                <% foreach $sessions as $session %>
+                <li <% if null !== $session->talker %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
+                    <p>
+                        <span class="subject"><% $session->subject|escape %></span>
+                        <span class="startTime"><% $session->startTime|escape %></span>
+                        ~
+                        <span class="endTime"><% $session->endTime|escape %></span>
+                        <% if null !== $session->talker %>
+                        <span class="talker"><% $session->talker|escape %></span>
+                        <% /if %>
+                    </p>
+                    <div class="brief"><% $session->brief %></div>
+                </li>
+                <% /foreach %>
+            </ul>
         </div>
         <div id="location" class="panel" title="地點">
-            <section>
-                <header>
-                    <h1>會場地點</h1>
-                </header>
-                <p><% $conference->location|escape %>（<a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a>）</p>
-                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://goo.gl/p8DxP"></iframe>
-            </section>
-            <section>
-                <header>
-                    <h1>交通資訊</h1>
-                </header>
-                <% $conference->traffic %>
-            </section>
+            <h1>會場地點</h1>
+            <p><% $conference->location|escape %>（<a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a>）</p>
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://goo.gl/p8DxP"></iframe>
+            <h1>交通資訊</h1>
+            <% $conference->traffic %>
         </div>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
