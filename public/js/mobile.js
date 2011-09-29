@@ -10,8 +10,7 @@
     var hashPrefix = "#_";
     var pageHistory = [];
 
-    addEventListener("load", function(event)
-    {
+    $(function(event) {
         var body = document.getElementsByTagName("body")[0];
         for (var child = body.firstChild; child; child = child.nextSibling)
         {
@@ -24,22 +23,18 @@
 
         setInterval(checkOrientAndLocation, 300);
         setTimeout(scrollTo, 0, 0, 1);
-    }, false);
+    });
 
-    addEventListener("click", function(event)
-    {
-        event.preventDefault();
-
-        var link = event.target;
-        while (link && link.localName.toLowerCase() != "a")
-            link = link.parentNode;
-
-        if (link && link.hash)
-        {
-            var page = document.getElementById(link.hash.substr(1));
-            showPage(page);
-        }
-    }, true);
+    $(function () {
+        $('a.toPanel,a.button').click(function(event) {
+            event.preventDefault();
+            var link = this;
+            if (link && link.hash) {
+                var page = document.getElementById(link.hash.substr(1));
+                showPage(page);
+            }
+        })
+    });
 
     function checkOrientAndLocation()
     {

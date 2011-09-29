@@ -6,17 +6,18 @@
         <link href="<% $this->baseUrl() %>/img/apple-touch-icon.png" rel="apple-touch-icon" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/mobile.css" media="handheld, screen" />
         <title>PHPConf Taiwan <% $conference->year %></title>
+        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
     </head>
     <body>
         <h1 id="pageTitle"></h1>
         <a class="button" href="#menu" id="homeButton">主選單</a>
-        <a class="button" href="http://www.openfoundry.org/tw/activities/details/170">現在就報名！</a>
         <ul id="menu" title="PHPConf Taiwan 2011" selected="true">
-            <li><a href="#announcements">公告</a></li>
-            <li><a href="#sessions">議程</a></li>
-            <li><a href="#location">地點</a></li>
-            <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
+            <li><a href="#announcements" class="toPanel">公告</a></li>
+            <li><a href="#sessions" class="toPanel">議程</a></li>
+            <li><a href="#location" class="toPanel">地點</a></li>
+            <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
+            <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
         </ul>
         <% partial name="index/index" %>
         <% partial name="index/sessions" %>
