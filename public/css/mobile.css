@@ -907,16 +907,6 @@ div.panel h2 {
 #location iframe {
   margin-bottom: 20px;
   border: 1px solid #999999;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: 0 0 5px 0 #999999;
-  -webkit-box-shadow: 0 0 5px 0 #999999;
-  -o-box-shadow: 0 0 5px 0 #999999;
-  box-shadow: 0 0 5px 0 #999999;
 }
 
 /* line 1, ../../sass/mobile/tab/_sessions.sass */
