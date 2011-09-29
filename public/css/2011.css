@@ -266,22 +266,18 @@ select, input, textarea {
 }
 
 /* line 187, ../../sass/common/_reset.sass */
-a:hover {
-  color: #6699ff;
-}
-/* line 189, ../../sass/common/_reset.sass */
 a:link {
   -webkit-tap-highlight-color: #fcd700;
 }
 
-/* line 192, ../../sass/common/_reset.sass */
+/* line 190, ../../sass/common/_reset.sass */
 ins {
   background-color: #fcd700;
   color: black;
   text-decoration: none;
 }
 
-/* line 197, ../../sass/common/_reset.sass */
+/* line 195, ../../sass/common/_reset.sass */
 mark {
   background-color: #fcd700;
   color: black;
@@ -289,12 +285,12 @@ mark {
   font-weight: 700;
 }
 
-/* line 203, ../../sass/common/_reset.sass */
+/* line 201, ../../sass/common/_reset.sass */
 input[type="radio"], .ie6 input {
   vertical-align: text-bottom;
 }
 
-/* line 207, ../../sass/common/_reset.sass */
+/* line 205, ../../sass/common/_reset.sass */
 *::-moz-selection, *::selection {
   background: #fcd700;
   color: white;

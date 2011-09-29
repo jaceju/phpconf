@@ -55,7 +55,6 @@ body
         position: absolute
         left: 0
         top: 41px
-        width: 100%
         min-height: 418px
         margin: 0
         padding: 0
@@ -63,25 +62,29 @@ body
     *[selected="true"]
         display: block
 
-    ul>li
-        margin: 0
-        border-bottom: 1px solid #E0E0E0
-        padding: 0
-        background: url(../img/mobile/arrow.png) no-repeat right center
-        font-size: 20px
-        font-weight: bold
-        list-style: none
+    ul.menu
+        width: 100%
 
-        &>a
-            display: block
-            padding: 8px 32px 8px 8px
-            text-decoration: none
-            color: #000
+        &>li
+            margin: 0
+            border-bottom: 1px solid #E0E0E0
+            padding: 0
+            background: url(../img/mobile/arrow.png) no-repeat right center
+            font-size: 20px
+            font-weight: bold
+            list-style: none
+
+            &>a
+                display: block
+                padding: 8px 32px 8px 8px
+                text-decoration: none
+                color: #000
 
 .panel
     box-sizing: border-box
     padding: 10px
     background: #c8c8c8 url(../img/mobile/pinstripes.png)
+    overflow: auto
 
 .dialog
     position: absolute
