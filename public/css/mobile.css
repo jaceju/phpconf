@@ -713,7 +713,7 @@ table {
 /* line 1, ../../sass/mobile/_iphone.sass */
 body {
   margin: 0;
-  font-family: Helvetica;
+  font-family: Arial;
   background: white;
   color: black;
   overflow: hidden;
@@ -874,14 +874,14 @@ input {
 }
 /* line 9, ../../sass/mobile/tab/_announcements.sass */
 #announcements div.announcement h1 {
-  font: 18px/36px bold;
+  font: 16px/32px bold;
   color: #ff9933;
 }
 /* line 13, ../../sass/mobile/tab/_announcements.sass */
 #announcements div.announcement .content {
   color: #333333;
   padding: 0 10px;
-  font: 16px/32px normal;
+  font: 12px/24px normal;
 }
 
 /* line 1, ../../sass/mobile/tab/_location.sass */
@@ -892,12 +892,12 @@ input {
 }
 /* line 6, ../../sass/mobile/tab/_location.sass */
 #location h1 {
-  font: 18px/36px bold;
+  font: 16px/32px bold;
   color: #ff9933;
 }
 /* line 10, ../../sass/mobile/tab/_location.sass */
 #location * {
-  font: 16px/32px normal;
+  font: 12px/24px normal;
 }
 /* line 13, ../../sass/mobile/tab/_location.sass */
 #location iframe {
@@ -913,46 +913,53 @@ input {
   position: relative;
 }
 /* line 6, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li {
+#sessions ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 10, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li {
   min-height: 30px;
   padding: 5px;
-  font: 16px/32px normal;
+  font: 12px/24px normal;
+  border-top: 1px solid #999999;
 }
-/* line 11, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li.alt {
+/* line 16, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li.alt {
   background: #eeeeee;
 }
-/* line 14, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li span.startTime, #sessions ul > li span.endTime {
+/* line 19, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li span.startTime, #sessions ul li span.endTime {
   width: 10%;
   color: #666666;
   margin: 0 5px;
 }
-/* line 19, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li span.subject {
+/* line 24, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li span.subject {
   display: block;
-  font: 18px/36px bold;
+  font: 16px/32px bold;
   color: #ff9933;
 }
-/* line 24, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li span.talker {
+/* line 29, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li span.talker {
   display: block;
   margin-left: 20px;
   color: #333333;
 }
-/* line 29, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li div.brief {
+/* line 34, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li div.brief {
   margin-left: 30px;
-  color: #666666;
+  color: #999999;
 }
-/* line 33, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li.break {
+/* line 38, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li.break {
   background: #666666;
   color: white;
   text-align: center;
+  margin: 10px auto;
 }
-/* line 38, ../../sass/mobile/tab/_sessions.sass */
-#sessions ul > li.break span {
+/* line 44, ../../sass/mobile/tab/_sessions.sass */
+#sessions ul li.break span {
   display: inline;
   color: white;
 }
