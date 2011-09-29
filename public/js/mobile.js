@@ -36,6 +36,13 @@
         })
     });
 
+    $(function () {
+        $('iframe').bind('enterviewport', function () {
+            var src = $(this).data('src');
+            $(this).attr('src', src);
+        }).bullseye();
+    });
+
     function checkOrientAndLocation()
     {
         if (window.outerWidth != currentWidth)

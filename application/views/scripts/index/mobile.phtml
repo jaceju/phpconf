@@ -47,11 +47,12 @@
         <div id="location" class="panel" title="地點">
             <h1>會場地點</h1>
             <p><% $conference->location|escape %>（<a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a>）</p>
-            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://goo.gl/p8DxP"></iframe>
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" data-src="<% $conference->mapUrl|escape %>"></iframe>
             <h1>交通資訊</h1>
             <% $conference->traffic %>
         </div>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
+        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.bullseye-1.0-min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
     </body>
 </html>
