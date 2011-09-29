@@ -6,8 +6,6 @@
         <link href="<% $this->baseUrl() %>/img/apple-touch-icon.png" rel="apple-touch-icon" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/mobile.css" media="handheld, screen" />
         <title>PHPConf Taiwan <% $conference->year %></title>
-        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
-        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
     </head>
     <body>
         <h1 id="pageTitle"></h1>
@@ -82,5 +80,7 @@
                 <% $conference->traffic %>
             </section>
         </div>
+        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
+        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
     </body>
 </html>
