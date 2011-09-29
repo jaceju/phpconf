@@ -4,11 +4,10 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>PHPConf Taiwan <% $year %></title>
+        <meta name="author" content="jaceju" />
+        <title>PHPConf Taiwan <% $conference->year %></title>
         <link rel="shortcut icon" href="<% $this->baseUrl() %>/favicon.gif" />
-        <link rel="stylesheet" href="<% $this->baseUrl() %>/css/style.css" media="screen, projection" />
+        <link rel="stylesheet" href="<% $this->baseUrl() %>/css/<% $conference->year %>.css" media="screen, projection" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/print.css" media="print" />
         <!--[if IE]>
             <link href="<% $this->baseUrl() %>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />

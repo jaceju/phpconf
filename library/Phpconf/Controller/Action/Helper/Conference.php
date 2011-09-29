@@ -1,6 +1,6 @@
 <?php
 
-class Phpconf_ActionHelper_Conference
+class Phpconf_Controller_Action_Helper_Conference
         extends Zend_Controller_Action_Helper_Abstract
 {
     /**
@@ -12,18 +12,13 @@ class Phpconf_ActionHelper_Conference
     public function init()
     {
         $year = $this->getRequest()->getParam('year');
-        $controllerName = $this->getRequest()->getControllerName();
-
-        $routerName = ('index' === $controllerName)
-                    ? 'year'
-                    : 'mobile';
 
         if (null === $year) {
             $redirector = Zend_Controller_Action_HelperBroker::getStaticHelper('redirector');
             /* @var $redirector Zend_Controller_Action_Helper_Redirector */
             $redirector->gotoRouteAndExit(array(
                         'year' => START_YEAR,
-                    ), $routerName);
+                    ), 'year');
         }
         $this->_conference =
                 Phpconf_Model_Conference::getInstanceFromYear($year);

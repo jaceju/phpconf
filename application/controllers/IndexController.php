@@ -22,7 +22,6 @@ class IndexController extends Zend_Controller_Action
 
     public function locationAction()
     {
-        $this->view->conference = $this->_conference;
     }
 
     public function sessionsAction()
@@ -34,6 +33,13 @@ class IndexController extends Zend_Controller_Action
     {
         $this->view->jobs = $this->_conference->fetchJobs();
         $this->view->staffs = $this->_conference->fetchStaffs();
+    }
+
+    public function mobileAction()
+    {
+        $this->getHelper('layout')->disableLayout();
+        $this->view->announcements = $this->_conference->fetchLatestAnnouncements();
+        $this->view->sessions = $this->_conference->fetchSessions();
     }
 }
 

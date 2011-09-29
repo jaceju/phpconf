@@ -1,6 +1,6 @@
 <?php
 
-class Phpconf_ActionHelper_Crud extends Zend_Controller_Action_Helper_Abstract
+class Phpconf_Controller_Action_Helper_Crud extends Zend_Controller_Action_Helper_Abstract
 {
     /**
      *

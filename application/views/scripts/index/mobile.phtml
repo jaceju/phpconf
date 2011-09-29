@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
+        <link href="<% $this->baseUrl() %>/img/apple-touch-icon.png" rel="apple-touch-icon" />
+        <link rel="stylesheet" href="<% $this->baseUrl() %>/css/mobile.css" media="handheld, screen" />
+        <title>PHPConf Taiwan <% $conference->year %></title>
+        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
+    </head>
+    <body>
+        <h1 id="pageTitle"></h1>
+        <a class="button" href="#menu" id="homeButton">主選單</a>
+        <a class="button" href="http://www.openfoundry.org/tw/activities/details/170">現在就報名！</a>
+        <ul id="menu" title="PHPConf Taiwan 2011" selected="true">
+            <li><a href="#announcements">公告</a></li>
+            <li><a href="#sessions">議程</a></li>
+            <li><a href="#location">地點</a></li>
+            <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論區</a></li>
+        </ul>
+        <% partial name="index/index" %>
+        <% partial name="index/sessions" %>
+        <% partial name="index/location" %>
+    </body>
+</html>
