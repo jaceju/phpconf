@@ -803,8 +803,15 @@ body ul.menu > li > a {
   text-decoration: none;
   color: black;
 }
-
 /* line 82, ../../sass/mobile/_iphone.sass */
+body ul.menu > li.image {
+  background: none;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 88, ../../sass/mobile/_iphone.sass */
 .panel {
   box-sizing: border-box;
   padding: 10px;
@@ -812,7 +819,7 @@ body ul.menu > li > a {
   overflow: auto;
 }
 
-/* line 88, ../../sass/mobile/_iphone.sass */
+/* line 94, ../../sass/mobile/_iphone.sass */
 .dialog {
   position: absolute;
   top: 0;
@@ -824,7 +831,7 @@ body ul.menu > li > a {
   text-align: right;
 }
 
-/* line 98, ../../sass/mobile/_iphone.sass */
+/* line 104, ../../sass/mobile/_iphone.sass */
 fieldset {
   box-sizing: border-box;
   width: 100%;
@@ -833,7 +840,7 @@ fieldset {
   padding: 10px 6px;
   background: url(../img/mobile/toolbar.png) #7388a5 repeat-x;
 }
-/* line 106, ../../sass/mobile/_iphone.sass */
+/* line 112, ../../sass/mobile/_iphone.sass */
 fieldset > h1 {
   margin: 0 10px 0 10px;
   padding: 0;
@@ -844,7 +851,7 @@ fieldset > h1 {
   text-align: center;
 }
 
-/* line 115, ../../sass/mobile/_iphone.sass */
+/* line 121, ../../sass/mobile/_iphone.sass */
 label {
   position: absolute;
   margin: 14px 0 0 6px;
@@ -852,7 +859,7 @@ label {
   color: #bbbbbb;
 }
 
-/* line 121, ../../sass/mobile/_iphone.sass */
+/* line 127, ../../sass/mobile/_iphone.sass */
 input {
   box-sizing: border-box;
   width: 100%;
