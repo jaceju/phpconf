@@ -121,21 +121,15 @@
         currentDialog = form;
         form.setAttribute("selected", "true");
 
-        form.onsubmit = function(event)
-        {
+        $('form').submit(function(event) {
             event.preventDefault();
-            form.removeAttribute("selected");
-
+            $(this).removeAttr("selected");
             var index = form.action.lastIndexOf("#");
             if (index != -1)
-                showPage(document.getElementById(form.action.substr(index+1)));
-        }
-
-        form.onclick = function(event)
-        {
-            if (event.target == form)
-                form.removeAttribute("selected");
-        }
+                showPage(document.getElementById(form.action.substr(index + 1)));
+        }).click(function(event) {
+            $(this).removeAttr("selected");
+        });
     }
 
 })();
