@@ -10,8 +10,11 @@
     <body>
 
         <div data-role="page" id="announcements">
-            <div data-role="header" data-position="fixed">
+            <div data-role="header">
                 <h1>PHPConf Taiwan <% $conference->year %></h1>
+            </div>
+            <div data-role="content" class="block" style="text-align: center;">
+                <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
             <% foreach $announcements as $announcement %>
             <div data-role="content" class="block">
@@ -26,14 +29,12 @@
                         <li><a href="#announcements" class="ui-btn-active">公告</a></li>
                         <li><a href="#sessions" data-transition="slide">議程</a></li>
                         <li><a href="#location" data-transition="slide">地點</a></li>
-                        <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
-                        <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->
         </div>
         <div data-role="page" id="sessions">
-            <div data-role="header" data-position="fixed">
+            <div data-role="header">
                 <h1>議程</h1>
             </div>
             <div data-role="content" class="block">
@@ -60,18 +61,17 @@
                         <li><a href="#announcements" data-transition="slide">公告</a></li>
                         <li><a href="#sessions" class="ui-btn-active">議程</a></li>
                         <li><a href="#location" data-transition="slide">地點</a></li>
-                        <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
-                        <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->
         </div>
         <div data-role="page" id="location">
-            <div data-role="header" data-position="fixed">
+            <div data-role="header">
                 <h1>會場地點</h1>
             </div>
             <div data-role="content" class="block">
-                <p><% $conference->location|escape %>（<a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a>）</p>
+                <p><% $conference->location|escape %></p>
+                <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
             </div>
             <div data-role="footer" data-position="fixed">
@@ -80,8 +80,6 @@
                         <li><a href="#announcements" data-transition="slide">公告</a></li>
                         <li><a href="#sessions" data-transition="slide">議程</a></li>
                         <li><a href="#location" class="ui-btn-active">地點</a></li>
-                        <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
-                        <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->
