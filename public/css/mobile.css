@@ -710,114 +710,217 @@ table {
     page-break-after: avoid;
   }
 }
-/* line 1, ../../sass/mobile/_layout.sass */
-body, html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  weight: 100%;
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-  background: white;
-  color: black;
-  overflow: hidden;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-  background: #c8c8c8 url(../img/mobile/pinstripes.png);
-}
-
-/* line 17, ../../sass/mobile/_layout.sass */
-#container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-/* line 23, ../../sass/mobile/_layout.sass */
-#container h1#pageTitle {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  height: 41px;
+/* Quickie Reset */
+/* line 3, ../../sass/mobile/_layout.sass */
+* {
   margin: 0;
   padding: 0;
-  line-height: 41px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
-  text-overflow: ellipsis;
-  color: white;
-  background: url(../img/mobile/toolbar.png) #6d84a2 repeat-x;
-  border-bottom: 1px solid #2d3642;
+  border: 0;
+  font-family: Helvetica;
 }
-/* line 41, ../../sass/mobile/_layout.sass */
-#container div.panel {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+
+/* Minimum height on body helps preventDefault */
+/* line 11, ../../sass/mobile/_layout.sass */
+body {
+  min-height: 316px;
+}
+
+/* Set our fixed elements above everything else */
+/* line 16, ../../sass/mobile/_layout.sass */
+#header, #footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
   width: 100%;
-  min-height: 418px;
-  margin: 0;
-  padding: 10px;
-  padding-bottom: 52px;
-  display: none;
+  height: 44px;
+  background: url("../img/mobile/bg.png") repeat-x center top;
+  z-index: 200;
+}
+
+/* Header */
+/* line 28, ../../sass/mobile/_layout.sass */
+#header h1 {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+}
+
+/* Footer */
+/* line 37, ../../sass/mobile/_layout.sass */
+#footer {
+  position: absolute;
+  top: 368px;
+  height: 49px;
+  background-position: center bottom;
+}
+
+/* Reposition on scroll */
+/* line 46, ../../sass/mobile/_layout.sass */
+body.scrolled #footer {
+  top: 307px;
+}
+/* line 49, ../../sass/mobile/_layout.sass */
+body[orient="landscape"] #footer {
+  top: 220px;
 }
 /* line 52, ../../sass/mobile/_layout.sass */
-#container div.panel.selected {
-  display: block;
-}
-/* line 55, ../../sass/mobile/_layout.sass */
-#container div.panel.selected .block {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  background: white;
-  border: 1px solid #999999;
-  border-radius: 5px;
+body.scrolled[orient="landscape"] #footer {
+  top: 159px;
 }
 
-/* line 66, ../../sass/mobile/_layout.sass */
-ul#menu {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  z-index: 9999;
-  background: #333333;
-  border-top: 2px solid #666666;
-}
-/* line 78, ../../sass/mobile/_layout.sass */
-ul#menu > li {
-  box-sizing: border-box;
-  float: left;
-  width: 20%;
-  margin: 0;
-  padding: 0;
-}
-/* line 85, ../../sass/mobile/_layout.sass */
-ul#menu > li a {
+/* Reposition on orientation change */
+/* Reposition on scroll */
+/* line 60, ../../sass/mobile/_layout.sass */
+#footer ul {
+  margin: 0 auto;
+  padding: 3px 0 0;
+  list-style: none;
   display: block;
-  margin: 2px 1px;
-  line-height: 50px;
+  height: 46px;
+  width: 320px;
   text-align: center;
-  color: #cccccc;
+  overflow: hidden;
 }
-/* line 92, ../../sass/mobile/_layout.sass */
-ul#menu > li a:hover, ul#menu > li a.selected {
+/* line 70, ../../sass/mobile/_layout.sass */
+#footer li {
+  margin: 0 2px;
+  float: left;
   position: relative;
-  border-radius: 5px;
+}
+/* line 74, ../../sass/mobile/_layout.sass */
+#footer li.active {
+  border: 3px solid;
+  border-width: 0 3px;
+  -webkit-border-image: url("../img/mobile/footer-hover.png") 0 3;
+}
+/* line 79, ../../sass/mobile/_layout.sass */
+#footer span {
+  padding: 29px 3px 3px;
+  float: left;
+  width: 54px;
+  color: #bbbbbb;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: none;
+  background: url("../img/mobile/footer-buttons.png") no-repeat -2px -50px;
+}
+/* line 89, ../../sass/mobile/_layout.sass */
+#footer li.active span {
+  padding-left: 0;
+  padding-right: 0;
   color: white;
-  background: #666666;
+}
+/* line 94, ../../sass/mobile/_layout.sass */
+#footer .team.active span {
+  background-position: -5px top;
+}
+/* line 98, ../../sass/mobile/_layout.sass */
+#footer .feed span {
+  background-position: -66px -50px;
+}
+/* line 101, ../../sass/mobile/_layout.sass */
+#footer .feed.active span {
+  background-position: -69px top;
+}
+/* line 105, ../../sass/mobile/_layout.sass */
+#footer .post span {
+  background-position: -130px -50px;
+}
+/* line 108, ../../sass/mobile/_layout.sass */
+#footer .post.active span {
+  background-position: -133px top;
+}
+/* line 112, ../../sass/mobile/_layout.sass */
+#footer .box span {
+  background-position: -194px -50px;
+}
+/* line 115, ../../sass/mobile/_layout.sass */
+#footer .box.active span {
+  background-position: -197px top;
+}
+/* line 119, ../../sass/mobile/_layout.sass */
+#footer .games span {
+  background-position: -258px -50px;
+}
+/* line 121, ../../sass/mobile/_layout.sass */
+#footer .games.active span {
+  background-position: -261px top;
+}
+/* line 124, ../../sass/mobile/_layout.sass */
+#footer .tweets span {
+  background-position: -322px -50px;
+}
+/* line 126, ../../sass/mobile/_layout.sass */
+#footer .tweets.active span {
+  background-position: -325px top;
+}
+
+/* Container */
+/* line 131, ../../sass/mobile/_layout.sass */
+#container {
+  height: 324px;
+}
+
+/* Reposition on scroll */
+/* line 137, ../../sass/mobile/_layout.sass */
+body.scrolled #container {
+  height: 263px;
+}
+/* line 139, ../../sass/mobile/_layout.sass */
+body[orient="landscape"] #container {
+  height: 176px;
+}
+/* line 141, ../../sass/mobile/_layout.sass */
+body.scrolled[orient="landscape"] #container {
+  height: 115px;
+}
+
+/* Reposition on orientation change */
+/* Reposition on scroll */
+/* Content */
+/* line 150, ../../sass/mobile/_layout.sass */
+#content {
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+}
+/* line 153, ../../sass/mobile/_layout.sass */
+#content li {
+  position: relative;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-top-collapse: separate;
+  -webkit-margin-bottom-collapse: separate;
+  border-bottom: 1px solid #e0e0e0;
+  height: 47px;
+}
+/* line 163, ../../sass/mobile/_layout.sass */
+#content li.active {
+  background: #0874e1;
+}
+/* line 165, ../../sass/mobile/_layout.sass */
+#content li.active span {
+  color: white;
+}
+/* line 167, ../../sass/mobile/_layout.sass */
+#content li span {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  height: 22px;
+  right: 30px;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 /* line 3, ../../sass/mobile/tab/_announcements.sass */

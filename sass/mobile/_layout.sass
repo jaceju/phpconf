@@ -1,96 +1,180 @@
-body, html
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
-    position: relative
-    weight: 100%
-    height: 100%
-    margin: 0
-    font-family: Arial
-    background: #fff
-    color: #000
-    overflow: hidden
-    -webkit-text-size-adjust: none
-    text-size-adjust: none
-    background: #c8c8c8 url(../img/mobile/pinstripes.png)
+/* Quickie Reset
 
-#container
-    position: relative
-    width: 100%
-    height: 100%
-    overflow: auto
-
-    h1#pageTitle
-        -webkit-box-sizing: border-box
-        -moz-box-sizing: border-box
-        box-sizing: border-box
-        width: 100%
-        height: 41px
-        margin: 0
-        padding: 0
-        line-height: 41px
-        font-size: 20px
-        font-weight: bold
-        text-align: center
-        text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0
-        text-overflow: ellipsis
-        color: #fff
-        background: url(../img/mobile/toolbar.png) #6d84a2 repeat-x
-        border-bottom: 1px solid #2d3642
-
-    div.panel
-        -webkit-box-sizing: border-box
-        -moz-box-sizing: border-box
-        box-sizing: border-box
-        width: 100%
-        min-height: 418px
-        margin: 0
-        padding: 10px
-        padding-bottom: 52px
-        display: none
-
-        &.selected
-            display: block
-
-            .block
-                -webkit-box-sizing: border-box
-                -moz-box-sizing: border-box
-                box-sizing: border-box
-                width: 100%
-                margin-bottom: 10px
-                padding: 10px
-                background: #fff
-                border: 1px solid #999
-                border-radius: 5px
-
-ul#menu
-    position: fixed
-    bottom: 0
-    left: 0
-    width: 100%
-    height: 50px
+*
     margin: 0
     padding: 0
-    z-index: 9999
-    background: #333
-    border-top: 2px solid #666
+    border: 0
+    font-family: Helvetica
 
-    &>li
-        box-sizing: border-box
+/* Minimum height on body helps preventDefault
+
+body
+    min-height: 316px
+
+/* Set our fixed elements above everything else
+
+#header, #footer
+    position: relative
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    height: 44px
+    background: url("../img/mobile/bg.png") repeat-x center top
+    z-index: 200
+
+/* Header
+
+#header h1
+    color: #fff
+    text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0px
+    font-size: 20px
+    text-align: center
+    line-height: 44px
+
+/* Footer
+
+#footer
+    position: absolute
+    top: 368px
+    height: 49px
+    background-position: center bottom
+
+/* Reposition on scroll
+
+body
+    &.scrolled #footer
+        top: 307px
+
+    &[orient="landscape"] #footer
+        top: 220px
+
+    &.scrolled[orient="landscape"] #footer
+        top: 159px
+
+/* Reposition on orientation change
+
+/* Reposition on scroll
+
+#footer
+    ul
+        margin: 0 auto
+        padding: 3px 0 0
+        list-style: none
+        display: block
+        height: 46px
+        width: 320px
+        text-align: center
+        overflow: hidden
+
+    li
+        margin: 0 2px
         float: left
-        width: 20%
+        position: relative
+        &.active
+            border: 3px solid
+            border-width: 0 3px
+            -webkit-border-image: url("../img/mobile/footer-hover.png") 0 3
+
+    span
+        padding: 29px 3px 3px
+        float: left
+        width: 54px
+        color: #bbb
+        font-weight: bold
+        font-size: 10px
+        text-decoration: none
+        background: url("../img/mobile/footer-buttons.png") no-repeat -2px -50px
+
+    li.active span
+        padding-left: 0
+        padding-right: 0
+        color: #fff
+
+    .team.active span
+        background-position: -5px top
+
+    .feed
+        span
+            background-position: -66px -50px
+
+        &.active span
+            background-position: -69px top
+
+    .post
+        span
+            background-position: -130px -50px
+
+        &.active span
+            background-position: -133px top
+
+    .box
+        span
+            background-position: -194px -50px
+
+        &.active span
+            background-position: -197px top
+
+    .games
+        span
+            background-position: -258px -50px
+        &.active span
+            background-position: -261px top
+    .tweets
+        span
+            background-position: -322px -50px
+        &.active span
+            background-position: -325px top
+
+/* Container
+
+#container
+    height: 324px
+
+/* Reposition on scroll
+
+body
+    &.scrolled #container
+        height: 263px
+    &[orient="landscape"] #container
+        height: 176px
+    &.scrolled[orient="landscape"] #container
+        height: 115px
+
+/* Reposition on orientation change
+
+/* Reposition on scroll
+
+/* Content
+
+#content
+    position: relative
+    border-top: 1px solid #e0e0e0
+    li
+        position: relative
+        list-style-type: none
+        overflow: hidden
         margin: 0
         padding: 0
-
-        a
-            display: block
-            margin: 2px 1px
-            line-height: 50px
-            text-align: center
-            color: #ccc
-
-            &:hover, &.selected
-                position: relative
-                border-radius: 5px
+        -webkit-margin-top-collapse: separate
+        -webkit-margin-bottom-collapse: separate
+        border-bottom: 1px solid #e0e0e0
+        height: 47px
+        &.active
+            background: #0874e1
+            span
                 color: #fff
-                background: #666
+        span
+            position: absolute
+            left: 10px
+            top: 12px
+            height: 22px
+            right: 30px
+            width: auto
+            color: #000
+            font-weight: bold
+            font-size: 20px
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+            text-decoration: none
