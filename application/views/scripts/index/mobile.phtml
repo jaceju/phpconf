@@ -75,7 +75,7 @@
             <div data-role="content" class="block" style="text-align: center;">
                 <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
-            <div data-role="content" class="block">
+            <div data-role="content" class="block min-height">
                 <p><% $conference->location|escape %></p>
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
