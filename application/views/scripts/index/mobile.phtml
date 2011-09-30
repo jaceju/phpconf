@@ -23,12 +23,12 @@
             </div>
             <% /foreach %>
 
-            <div data-role="footer" data-position="fixed">
-                <div data-role="navbar">
+            <div data-role="footer">
+                <div data-role="navbar" class="custom-icon">
                     <ul>
-                        <li><a href="#announcements" class="ui-btn-active">公告</a></li>
-                        <li><a href="#sessions" data-transition="slide">議程</a></li>
-                        <li><a href="#location" data-transition="slide">地點</a></li>
+                        <li><a href="#announcements" data-icon="custom" class="announcements ui-btn-active">公告</a></li>
+                        <li><a href="#sessions" data-icon="custom" data-transition="slide" class="sessions">議程</a></li>
+                        <li><a href="#location" data-icon="custom" data-transition="slide" class="location">地點</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->
@@ -36,6 +36,9 @@
         <div data-role="page" id="sessions">
             <div data-role="header">
                 <h1>議程</h1>
+            </div>
+            <div data-role="content" class="block" style="text-align: center;">
+                <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
             <div data-role="content" class="block">
                 <ul>
@@ -55,12 +58,12 @@
                     <% /foreach %>
                 </ul>
             </div>
-            <div data-role="footer" data-position="fixed">
-                <div data-role="navbar">
+            <div data-role="footer">
+                <div data-role="navbar" class="custom-icon">
                     <ul>
-                        <li><a href="#announcements" data-transition="slide">公告</a></li>
-                        <li><a href="#sessions" class="ui-btn-active">議程</a></li>
-                        <li><a href="#location" data-transition="slide">地點</a></li>
+                        <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
+                        <li><a href="#sessions" data-icon="custom" class="sessions ui-btn-active">議程</a></li>
+                        <li><a href="#location" data-icon="custom" data-transition="slide" class="location">地點</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->
@@ -69,17 +72,20 @@
             <div data-role="header">
                 <h1>會場地點</h1>
             </div>
+            <div data-role="content" class="block" style="text-align: center;">
+                <img src="<% $this->baseUrl() %>/img/logo.jpg" />
+            </div>
             <div data-role="content" class="block">
                 <p><% $conference->location|escape %></p>
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
             </div>
-            <div data-role="footer" data-position="fixed">
-                <div data-role="navbar">
+            <div data-role="footer">
+                <div data-role="navbar" class="custom-icon">
                     <ul>
-                        <li><a href="#announcements" data-transition="slide">公告</a></li>
-                        <li><a href="#sessions" data-transition="slide">議程</a></li>
-                        <li><a href="#location" class="ui-btn-active">地點</a></li>
+                        <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
+                        <li><a href="#sessions" data-icon="custom" data-transition="slide"class="sessions">議程</a></li>
+                        <li><a href="#location" data-icon="custom" class="location ui-btn-active">地點</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->

@@ -3066,6 +3066,40 @@ span.ui-slider-label-b {
   margin-left: -1px;
 }
 
+/* line 3, ../../sass/mobile/_icon.sass */
+.custom-icon .ui-btn .ui-btn-inner {
+  padding-top: 40px !important;
+}
+/* line 6, ../../sass/mobile/_icon.sass */
+.custom-icon .ui-btn .ui-icon {
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: -15px !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -webkit-border-radius: none !important;
+  border-radius: none !important;
+}
+
+/* line 16, ../../sass/mobile/_icon.sass */
+a.announcements .ui-icon {
+  background: url(../img/mobile/group.png) 50% 50% no-repeat;
+  background-size: 32x 21px;
+}
+
+/* line 20, ../../sass/mobile/_icon.sass */
+a.sessions .ui-icon {
+  background: url(../img/mobile/clock.png) 50% 50% no-repeat;
+  background-size: 25px 25px;
+}
+
+/* line 24, ../../sass/mobile/_icon.sass */
+a.location .ui-icon {
+  background: url(../img/mobile/map-marker.png) 50% 50% no-repeat;
+  background-size: 16px 26px;
+}
+
 /* line 3, ../../sass/mobile/tab/_announcements.sass */
 #announcements div.block {
   -webkit-box-sizing: border-box;
@@ -3136,40 +3170,45 @@ span.ui-slider-label-b {
   background: white;
 }
 /* line 18, ../../sass/mobile/tab/_sessions.sass */
+#sessions div.block ul li p {
+  margin: 0;
+  padding: 0;
+}
+/* line 22, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li.alt {
   background: #eeeeee;
 }
-/* line 21, ../../sass/mobile/tab/_sessions.sass */
+/* line 25, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li span.startTime, #sessions div.block ul li span.endTime {
   width: 10%;
   color: #666666;
   margin: 0 5px;
 }
-/* line 26, ../../sass/mobile/tab/_sessions.sass */
+/* line 30, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li span.subject {
   display: block;
   font: 14px/28px bold;
   color: #ff9933;
 }
-/* line 31, ../../sass/mobile/tab/_sessions.sass */
+/* line 35, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li span.talker {
   display: block;
   margin-left: 20px;
   color: #333333;
 }
-/* line 36, ../../sass/mobile/tab/_sessions.sass */
+/* line 40, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li div.brief {
   margin-left: 30px;
   color: #999999;
 }
-/* line 40, ../../sass/mobile/tab/_sessions.sass */
+/* line 44, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li.break {
   background: #ccffcc;
   color: black;
   text-align: center;
   margin: 10px auto;
 }
-/* line 46, ../../sass/mobile/tab/_sessions.sass */
+/* line 50, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li.break span {
   display: inline;
   color: black;
