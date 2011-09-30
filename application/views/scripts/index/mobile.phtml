@@ -4,28 +4,28 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
         <link href="<% $this->baseUrl() %>/img/apple-touch-icon.png" rel="apple-touch-icon" />
-        <link rel="stylesheet" href="<% $this->baseUrl() %>/css/jquery.mobile-1.0rc1.min.css" media="handheld, screen" />
+        <link rel="stylesheet" href="<% $this->baseUrl() %>/css/mobile.css" media="handheld, screen" />
         <title>PHPConf Taiwan <% $conference->year %></title>
     </head>
     <body>
 
         <div data-role="page" id="announcements">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed">
                 <h1>PHPConf Taiwan <% $conference->year %></h1>
             </div>
             <% foreach $announcements as $announcement %>
-            <div data-role="content">
+            <div data-role="content" class="block">
                 <h1><% $announcement->title|escape %></h1>
                 <div class="content"><% $announcement->content %></div>
             </div>
             <% /foreach %>
 
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li><a href="#announcements" class="ui-btn-active">公告</a></li>
-                        <li><a href="#sessions">議程</a></li>
-                        <li><a href="#location">地點</a></li>
+                        <li><a href="#sessions" data-transition="slide">議程</a></li>
+                        <li><a href="#location" data-transition="slide">地點</a></li>
                         <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
                         <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
                     </ul>
@@ -33,31 +33,33 @@
             </div><!-- /footer -->
         </div>
         <div data-role="page" id="sessions">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed">
                 <h1>議程</h1>
             </div>
-            <ul data-role="content">
-                <% foreach $sessions as $session %>
-                <li <% if null !== $session->talker %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
-                    <p>
-                        <span class="subject"><% $session->subject|escape %></span>
-                        <span class="startTime"><% $session->startTime|escape %></span>
-                        ~
-                        <span class="endTime"><% $session->endTime|escape %></span>
-                        <% if null !== $session->talker %>
-                        <span class="talker"><% $session->talker|escape %></span>
-                        <% /if %>
-                    </p>
-                    <div class="brief"><% $session->brief %></div>
-                </li>
-                <% /foreach %>
-            </ul>
-            <div data-role="footer">
+            <div data-role="content" class="block">
+                <ul>
+                    <% foreach $sessions as $session %>
+                    <li <% if null !== $session->talker %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
+                        <p>
+                            <span class="subject"><% $session->subject|escape %></span>
+                            <span class="startTime"><% $session->startTime|escape %></span>
+                            ~
+                            <span class="endTime"><% $session->endTime|escape %></span>
+                            <% if null !== $session->talker %>
+                            <span class="talker"><% $session->talker|escape %></span>
+                            <% /if %>
+                        </p>
+                        <div class="brief"><% $session->brief %></div>
+                    </li>
+                    <% /foreach %>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#announcements">公告</a></li>
+                        <li><a href="#announcements" data-transition="slide">公告</a></li>
                         <li><a href="#sessions" class="ui-btn-active">議程</a></li>
-                        <li><a href="#location">地點</a></li>
+                        <li><a href="#location" data-transition="slide">地點</a></li>
                         <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
                         <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
                     </ul>
@@ -65,19 +67,18 @@
             </div><!-- /footer -->
         </div>
         <div data-role="page" id="location">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed">
                 <h1>會場地點</h1>
             </div>
-            <div data-role="content">
+            <div data-role="content" class="block">
                 <p><% $conference->location|escape %>（<a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a>）</p>
                 <% $conference->traffic %>
-                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<% $conference->mapUrl|escape %>"></iframe>
             </div>
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#announcements">公告</a></li>
-                        <li><a href="#sessions">議程</a></li>
+                        <li><a href="#announcements" data-transition="slide">公告</a></li>
+                        <li><a href="#sessions" data-transition="slide">議程</a></li>
                         <li><a href="#location" class="ui-btn-active">地點</a></li>
                         <li><a href="http://www.openfoundry.org/tw/activities/details/170">報名</a></li>
                         <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41">討論區</a></li>
@@ -85,8 +86,6 @@
                 </div><!-- /navbar -->
             </div><!-- /footer -->
         </div>
-
-
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.mobile-1.0rc1.min.js"></script>
     </body>

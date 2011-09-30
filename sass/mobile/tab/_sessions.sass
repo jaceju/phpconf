@@ -1,48 +1,48 @@
 #sessions
 
-    ul
-        -webkit-box-sizing: border-box
-        -moz-box-sizing: border-box
-        box-sizing: border-box
-        margin: 0
-        padding: 0
-        padding-bottom: 60px
+    div.block
+        +content-block
 
-        li
-            min-height: 30px
-            padding: 5px
-            font: 12px/24px normal
-            border-top: 1px solid #999
-            background: #fff
+        ul
+            margin: 0
+            padding: 0
 
-            &.alt
-                background: #eee
+            li
+                list-style-type: none
+                min-height: 30px
+                padding: 5px
+                font: 16px/32px normal
+                border-top: 1px solid #999
+                background: #fff
 
-            span.startTime, span.endTime
-                width: 10%
-                color: #666
-                margin: 0 5px
+                &.alt
+                    background: #eee
 
-            span.subject
-                display: block
-                font: 16px/32px bold
-                color: #f93
+                span.startTime, span.endTime
+                    width: 10%
+                    color: #666
+                    margin: 0 5px
 
-            span.talker
-                display: block
-                margin-left: 20px
-                color: #333
+                span.subject
+                    display: block
+                    font: 18px/36px bold
+                    color: #f93
 
-            div.brief
-                margin-left: 30px
-                color: #999
+                span.talker
+                    display: block
+                    margin-left: 20px
+                    color: #333
 
-            &.break
-                background: #666
-                color: #fff
-                text-align: center
-                margin: 10px auto
+                div.brief
+                    margin-left: 30px
+                    color: #999
 
-                span
-                    display: inline
+                &.break
+                    background: #999
                     color: #fff
+                    text-align: center
+                    margin: 10px auto
+
+                    span
+                        display: inline
+                        color: #fff
