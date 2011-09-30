@@ -1,24 +1,28 @@
 (function () {
-    var currentTab = '#announcements';
+    $(function () {
 
-    // 選單
-    $('li>a.toPanel', '#menu').click(function () {
-        var $link = $(this);
-        currentTab = $link.attr('href');
-        $link.parent()
-            .siblings()
-            .children('a.toPanel')
-            .removeClass('selected')
-            .end()
-            .addClass('selected');
-        $(currentTab)
-            .siblings()
-            .removeClass('selected')
-            .end()
-            .addClass('selected');
+        var currentTab = '#announcements';
+
+        // 選單
+        $('li>a.toPanel', '#menu').click(function () {
+            var $link = $(this);
+            currentTab = $link.attr('href');
+            $link.parent()
+                .siblings()
+                .children('a.toPanel')
+                .removeClass('selected')
+                .end()
+                .addClass('selected');
+            $(currentTab)
+                .siblings()
+                .removeClass('selected')
+                .end()
+                .addClass('selected');
+        });
+
+        // 隱藏瀏覽器工具列
+        setTimeout(scrollTo, 0, 0, 1);
     });
-
-
 })();
 //
 ////(function() {
