@@ -710,21 +710,41 @@ table {
     page-break-after: avoid;
   }
 }
-/* line 1, ../../sass/mobile/_iphone.sass */
-body {
+/* line 1, ../../sass/mobile/_layout.sass */
+body, html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  weight: 100%;
+  height: 100%;
   margin: 0;
   font-family: Arial;
   background: white;
   color: black;
   overflow: hidden;
   -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  background: #c8c8c8 url(../img/mobile/pinstripes.png);
 }
-/* line 9, ../../sass/mobile/_iphone.sass */
-body > h1 {
+
+/* line 17, ../../sass/mobile/_layout.sass */
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+/* line 23, ../../sass/mobile/_layout.sass */
+#container h1#pageTitle {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: 100%;
+  height: 41px;
   margin: 0;
-  padding: 10px;
-  line-height: 20px;
+  padding: 0;
+  line-height: 41px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -734,238 +754,152 @@ body > h1 {
   background: url(../img/mobile/toolbar.png) #6d84a2 repeat-x;
   border-bottom: 1px solid #2d3642;
 }
-
-/* line 23, ../../sass/mobile/_iphone.sass */
-.button {
-  position: absolute;
-  top: 8px;
-  right: 6px;
-  -webkit-border-image: url(../img/mobile/button.png) 0 5 0 5;
-  -webkit-border-radius: 0;
-  border-width: 0 5px 0 5px;
-  padding: 0;
-  height: 28px;
-  line-height: 28px;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
-  text-decoration: none;
-  background: none;
-}
-
-/* line 40, ../../sass/mobile/_iphone.sass */
-#homeButton {
-  display: none;
-  left: 6px;
-  right: auto;
-  -webkit-border-image: url(../img/mobile/back_button.png) 0 8 0 14;
-  border-width: 0 8px 0 14px;
-}
-
-/* line 47, ../../sass/mobile/_iphone.sass */
-.goButton {
-  -webkit-border-image: url(../img/mobile/go_button.png) 0 5 0 5;
-  border-width: 0 5px;
-}
-
-/* line 53, ../../sass/mobile/_iphone.sass */
-body > div, body > form, body > ul {
-  display: none;
-  position: absolute;
-  left: 0;
+/* line 41, ../../sass/mobile/_layout.sass */
+#container div.panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
   min-height: 418px;
   margin: 0;
-  padding: 0;
-}
-/* line 61, ../../sass/mobile/_iphone.sass */
-body *[selected="true"] {
-  display: block;
-}
-/* line 64, ../../sass/mobile/_iphone.sass */
-body ul.menu {
-  width: 100%;
-}
-/* line 67, ../../sass/mobile/_iphone.sass */
-body ul.menu > li {
-  margin: 0;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 0;
-  background: url(../img/mobile/arrow.png) no-repeat right center;
-  font-size: 20px;
-  font-weight: bold;
-  list-style: none;
-}
-/* line 76, ../../sass/mobile/_iphone.sass */
-body ul.menu > li > a {
-  display: block;
-  padding: 8px 32px 8px 8px;
-  text-decoration: none;
-  color: black;
-}
-/* line 82, ../../sass/mobile/_iphone.sass */
-body ul.menu > li.image {
-  background: none;
-  border: none;
-  padding: 5px;
-  text-align: center;
-}
-
-/* line 88, ../../sass/mobile/_iphone.sass */
-.panel {
-  box-sizing: border-box;
   padding: 10px;
-  background: #c8c8c8 url(../img/mobile/pinstripes.png);
-  overflow: auto;
+  padding-bottom: 52px;
+  display: none;
 }
-
-/* line 94, ../../sass/mobile/_iphone.sass */
-.dialog {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  min-height: 468px;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 0;
-  text-align: right;
+/* line 52, ../../sass/mobile/_layout.sass */
+#container div.panel.selected {
+  display: block;
 }
-
-/* line 104, ../../sass/mobile/_iphone.sass */
-fieldset {
+/* line 55, ../../sass/mobile/_layout.sass */
+#container div.panel.selected .block {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  margin: 0;
-  border: none;
-  padding: 10px 6px;
-  background: url(../img/mobile/toolbar.png) #7388a5 repeat-x;
-}
-/* line 112, ../../sass/mobile/_iphone.sass */
-fieldset > h1 {
-  margin: 0 10px 0 10px;
-  padding: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
-  text-align: center;
-}
-
-/* line 121, ../../sass/mobile/_iphone.sass */
-label {
-  position: absolute;
-  margin: 14px 0 0 6px;
-  font-size: 14px;
-  color: #bbbbbb;
-}
-
-/* line 127, ../../sass/mobile/_iphone.sass */
-input {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 6px 0 0 0;
-  padding: 6px 6px 6px 44px;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-/* line 1, ../../sass/mobile/tab/_announcements.sass */
-#announcements {
-  background: white;
-  margin: 0 auto;
-  position: relative;
-}
-/* line 6, ../../sass/mobile/tab/_announcements.sass */
-#announcements div.announcement {
   margin-bottom: 10px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #999999;
+  border-radius: 5px;
 }
-/* line 9, ../../sass/mobile/tab/_announcements.sass */
-#announcements div.announcement h1 {
+
+/* line 66, ../../sass/mobile/_layout.sass */
+ul#menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  background: #333333;
+  border-top: 2px solid #666666;
+}
+/* line 78, ../../sass/mobile/_layout.sass */
+ul#menu > li {
+  box-sizing: border-box;
+  float: left;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+}
+/* line 85, ../../sass/mobile/_layout.sass */
+ul#menu > li a {
+  display: block;
+  margin: 2px 1px;
+  line-height: 50px;
+  text-align: center;
+  color: #cccccc;
+}
+/* line 92, ../../sass/mobile/_layout.sass */
+ul#menu > li a:hover, ul#menu > li a.selected {
+  position: relative;
+  border-radius: 5px;
+  color: white;
+  background: #666666;
+}
+
+/* line 3, ../../sass/mobile/tab/_announcements.sass */
+#announcements h1 {
   font: 16px/32px bold;
   color: #ff9933;
 }
-/* line 13, ../../sass/mobile/tab/_announcements.sass */
-#announcements div.announcement .content {
+/* line 7, ../../sass/mobile/tab/_announcements.sass */
+#announcements .content {
   color: #333333;
   padding: 0 10px;
   font: 12px/24px normal;
 }
 
-/* line 1, ../../sass/mobile/tab/_location.sass */
-#location {
+/* line 3, ../../sass/mobile/tab/_location.sass */
+#location .location {
   background: white;
-  margin: 0 10px;
-  position: relative;
+  padding: 10px;
 }
-/* line 6, ../../sass/mobile/tab/_location.sass */
-#location h1 {
-  font: 16px/32px bold;
-  color: #ff9933;
-}
-/* line 10, ../../sass/mobile/tab/_location.sass */
+/* line 7, ../../sass/mobile/tab/_location.sass */
 #location * {
   font: 12px/24px normal;
 }
-/* line 13, ../../sass/mobile/tab/_location.sass */
+/* line 10, ../../sass/mobile/tab/_location.sass */
 #location iframe {
   margin: 20px auto;
   width: 100%;
   border: 1px solid #999999;
 }
 
-/* line 1, ../../sass/mobile/tab/_sessions.sass */
-#sessions {
-  background: white;
-  margin: 0 auto;
-  position: relative;
-}
-/* line 6, ../../sass/mobile/tab/_sessions.sass */
+/* line 3, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding-bottom: 60px;
 }
-/* line 10, ../../sass/mobile/tab/_sessions.sass */
+/* line 11, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li {
   min-height: 30px;
   padding: 5px;
   font: 12px/24px normal;
   border-top: 1px solid #999999;
+  background: white;
 }
-/* line 16, ../../sass/mobile/tab/_sessions.sass */
+/* line 18, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li.alt {
   background: #eeeeee;
 }
-/* line 19, ../../sass/mobile/tab/_sessions.sass */
+/* line 21, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li span.startTime, #sessions ul li span.endTime {
   width: 10%;
   color: #666666;
   margin: 0 5px;
 }
-/* line 24, ../../sass/mobile/tab/_sessions.sass */
+/* line 26, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li span.subject {
   display: block;
   font: 16px/32px bold;
   color: #ff9933;
 }
-/* line 29, ../../sass/mobile/tab/_sessions.sass */
+/* line 31, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li span.talker {
   display: block;
   margin-left: 20px;
   color: #333333;
 }
-/* line 34, ../../sass/mobile/tab/_sessions.sass */
+/* line 36, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li div.brief {
   margin-left: 30px;
   color: #999999;
 }
-/* line 38, ../../sass/mobile/tab/_sessions.sass */
+/* line 40, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li.break {
   background: #666666;
   color: white;
   text-align: center;
   margin: 10px auto;
 }
-/* line 44, ../../sass/mobile/tab/_sessions.sass */
+/* line 46, ../../sass/mobile/tab/_sessions.sass */
 #sessions ul li.break span {
   display: inline;
   color: white;
