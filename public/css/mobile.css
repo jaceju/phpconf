@@ -3164,13 +3164,13 @@ span.ui-slider-label-b {
 }
 /* line 40, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li.break {
-  background: #999999;
-  color: white;
+  background: #ccffcc;
+  color: black;
   text-align: center;
   margin: 10px auto;
 }
 /* line 46, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li.break span {
   display: inline;
-  color: white;
+  color: black;
 }
