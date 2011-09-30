@@ -3086,7 +3086,7 @@ span.ui-slider-label-b {
 #announcements div.block .content {
   color: #666666;
   padding: 0 10px;
-  font: 16px/32px normal;
+  font: 12px/24px normal;
 }
 
 /* line 3, ../../sass/mobile/tab/_location.sass */
@@ -3107,7 +3107,7 @@ span.ui-slider-label-b {
 }
 /* line 10, ../../sass/mobile/tab/_location.sass */
 #location div.block * {
-  font: 16px/32px normal;
+  font: 12px/24px normal;
 }
 
 /* line 3, ../../sass/mobile/tab/_sessions.sass */
@@ -3131,7 +3131,7 @@ span.ui-slider-label-b {
   list-style-type: none;
   min-height: 30px;
   padding: 5px;
-  font: 16px/32px normal;
+  font: 12px/24px normal;
   border-top: 1px solid #999999;
   background: white;
 }
@@ -3148,7 +3148,7 @@ span.ui-slider-label-b {
 /* line 26, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul li span.subject {
   display: block;
-  font: 18px/36px bold;
+  font: 14px/28px bold;
   color: #ff9933;
 }
 /* line 31, ../../sass/mobile/tab/_sessions.sass */
