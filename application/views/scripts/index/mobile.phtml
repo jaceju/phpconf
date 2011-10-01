@@ -11,9 +11,6 @@
 
         <!-- 公告 -->
         <div data-role="page" id="announcements">
-            <div data-role="header" data-theme="b">
-                <h1>PHPConf Taiwan <% $conference->year %></h1>
-            </div>
             <% partial name="index/mobile/nav" id="announcements" %>
             <% foreach $announcements as $announcement %>
             <div data-role="content" class="block<% if $announcement@iteration === $announcement@total %> last<% /if %>">
@@ -25,9 +22,6 @@
 
         <!-- 議程 -->
         <div data-role="page" id="sessions">
-            <div data-role="header" data-theme="b">
-                <h1>議程</h1>
-            </div>
             <% partial name="index/mobile/nav" id="sessions" %>
             <div data-role="content" class="block">
                 <ul>
@@ -51,9 +45,6 @@
 
         <!-- 地點 -->
         <div data-role="page" id="location">
-            <div data-role="header" data-theme="b">
-                <h1>會場地點</h1>
-            </div>
             <% partial name="index/mobile/nav" id="location" %>
             <div data-role="content" class="block">
                 <p><% $conference->location|escape %></p>
@@ -64,6 +55,5 @@
 
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.mobile-1.0rc1.min.js"></script>
-        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
     </body>
 </html>
