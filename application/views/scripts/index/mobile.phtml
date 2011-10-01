@@ -10,7 +10,7 @@
     <body>
 
         <div data-role="page" id="announcements">
-            <div data-role="header">
+            <div data-role="header" data-theme="b">
                 <h1>PHPConf Taiwan <% $conference->year %></h1>
             </div>
             <div data-role="content" class="block" style="text-align: center;">
@@ -23,7 +23,7 @@
             </div>
             <% /foreach %>
 
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed" data-theme="b">
                 <div data-role="navbar" class="custom-icon">
                     <ul>
                         <li><a href="#announcements" data-icon="custom" class="announcements ui-btn-active">公告</a></li>
@@ -34,7 +34,7 @@
             </div><!-- /footer -->
         </div>
         <div data-role="page" id="sessions">
-            <div data-role="header">
+            <div data-role="header" data-theme="b">
                 <h1>議程</h1>
             </div>
             <div data-role="content" class="block" style="text-align: center;">
@@ -58,7 +58,7 @@
                     <% /foreach %>
                 </ul>
             </div>
-            <div data-role="footer">
+            <div data-role="footer" data-theme="b">
                 <div data-role="navbar" class="custom-icon">
                     <ul>
                         <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
@@ -69,7 +69,7 @@
             </div><!-- /footer -->
         </div>
         <div data-role="page" id="location">
-            <div data-role="header">
+            <div data-role="header" data-theme="b">
                 <h1>會場地點</h1>
             </div>
             <div data-role="content" class="block" style="text-align: center;">
@@ -80,7 +80,7 @@
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
             </div>
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed" data-theme="b">
                 <div data-role="navbar" class="custom-icon">
                     <ul>
                         <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
