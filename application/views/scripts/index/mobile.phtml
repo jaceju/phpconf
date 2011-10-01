@@ -9,38 +9,27 @@
     </head>
     <body>
 
+        <!-- 公告 -->
         <div data-role="page" id="announcements">
             <div data-role="header" data-theme="b">
                 <h1>PHPConf Taiwan <% $conference->year %></h1>
             </div>
-            <div data-role="content" class="block" style="text-align: center;">
-                <img src="<% $this->baseUrl() %>/img/logo.jpg" />
-            </div>
+            <% partial name="index/mobile/nav" id="announcements" %>
             <% foreach $announcements as $announcement %>
             <div data-role="content" class="block<% if $announcement@iteration === $announcement@total %> last<% /if %>">
                 <h1><% $announcement->title|escape %></h1>
                 <div class="content"><% $announcement->content %></div>
             </div>
             <% /foreach %>
-
-            <div class="footer" data-role="footer" data-theme="b">
-                <div data-role="navbar" class="custom-icon">
-                    <ul>
-                        <li><a href="#announcements" data-icon="custom" class="announcements ui-btn-active">公告</a></li>
-                        <li><a href="#sessions" data-icon="custom" data-transition="slide" class="sessions">議程</a></li>
-                        <li><a href="#location" data-icon="custom" data-transition="slide" class="location">地點</a></li>
-                    </ul>
-                </div><!-- /navbar -->
-            </div><!-- /footer -->
         </div>
+
+        <!-- 議程 -->
         <div data-role="page" id="sessions">
             <div data-role="header" data-theme="b">
                 <h1>議程</h1>
             </div>
-            <div data-role="content" class="block" style="text-align: center;">
-                <img src="<% $this->baseUrl() %>/img/logo.jpg" />
-            </div>
-            <div data-role="content" class="block last">
+            <% partial name="index/mobile/nav" id="sessions" %>
+            <div data-role="content" class="block">
                 <ul>
                     <% foreach $sessions as $session %>
                     <li <% if null !== $session->talker %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
@@ -58,38 +47,21 @@
                     <% /foreach %>
                 </ul>
             </div>
-            <div class="footer" data-role="footer" data-theme="b">
-                <div data-role="navbar" class="custom-icon">
-                    <ul>
-                        <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
-                        <li><a href="#sessions" data-icon="custom" class="sessions ui-btn-active">議程</a></li>
-                        <li><a href="#location" data-icon="custom" data-transition="slide" class="location">地點</a></li>
-                    </ul>
-                </div><!-- /navbar -->
-            </div><!-- /footer -->
         </div>
+
+        <!-- 地點 -->
         <div data-role="page" id="location">
             <div data-role="header" data-theme="b">
                 <h1>會場地點</h1>
             </div>
-            <div data-role="content" class="block" style="text-align: center;">
-                <img src="<% $this->baseUrl() %>/img/logo.jpg" />
-            </div>
-            <div data-role="content" class="block last">
+            <% partial name="index/mobile/nav" id="location" %>
+            <div data-role="content" class="block">
                 <p><% $conference->location|escape %></p>
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
             </div>
-            <div class="footer" data-role="footer" data-theme="b">
-                <div data-role="navbar" class="custom-icon">
-                    <ul>
-                        <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
-                        <li><a href="#sessions" data-icon="custom" data-transition="slide"class="sessions">議程</a></li>
-                        <li><a href="#location" data-icon="custom" class="location ui-btn-active">地點</a></li>
-                    </ul>
-                </div><!-- /navbar -->
-            </div><!-- /footer -->
         </div>
+
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.mobile-1.0rc1.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>

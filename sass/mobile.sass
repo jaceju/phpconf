@@ -1,4 +1,14 @@
-@mixin content-block()
+@import "mobile/jquery-mobile"
+@import "mobile/icon"
+@import "mobile/tab/announcements"
+@import "mobile/tab/location"
+@import "mobile/tab/sessions"
+
+div.footer
+    position: absolute
+    bottom: 0
+
+div.block
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
     box-sizing: border-box
@@ -14,13 +24,3 @@
 
     &.last
         margin-bottom: 80px
-
-@import "mobile/jquery-mobile"
-@import "mobile/icon"
-@import "mobile/tab/announcements"
-@import "mobile/tab/location"
-@import "mobile/tab/sessions"
-
-div.footer
-    position: fixed
-    bottom: 0
