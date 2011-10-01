@@ -3116,6 +3116,10 @@ a.location .ui-icon {
   margin: 0;
   padding: 0;
 }
+/* line 15, ../../sass/mobile.sass */
+#announcements div.block.last {
+  margin-bottom: 80px;
+}
 /* line 6, ../../sass/mobile/tab/_announcements.sass */
 #announcements div.block h1 {
   font: 14px/28px bold;
@@ -3144,6 +3148,10 @@ a.location .ui-icon {
   margin: 0;
   padding: 0;
 }
+/* line 15, ../../sass/mobile.sass */
+#location div.block.last {
+  margin-bottom: 80px;
+}
 /* line 6, ../../sass/mobile/tab/_location.sass */
 #location div.block .location {
   background: white;
@@ -3169,6 +3177,10 @@ a.location .ui-icon {
 #sessions div.block h1, #sessions div.block p {
   margin: 0;
   padding: 0;
+}
+/* line 15, ../../sass/mobile.sass */
+#sessions div.block.last {
+  margin-bottom: 80px;
 }
 /* line 6, ../../sass/mobile/tab/_sessions.sass */
 #sessions div.block ul {
@@ -3227,4 +3239,10 @@ a.location .ui-icon {
 #sessions div.block ul li.break span {
   display: inline;
   color: black;
+}
+
+/* line 24, ../../sass/mobile.sass */
+div.footer {
+  position: fixed !important;
+  bottom: 0;
 }

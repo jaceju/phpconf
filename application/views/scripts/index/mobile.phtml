@@ -17,13 +17,13 @@
                 <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
             <% foreach $announcements as $announcement %>
-            <div data-role="content" class="block">
+            <div data-role="content" class="block<% if $announcement@iteration === $announcement@total %> last<% /if %>">
                 <h1><% $announcement->title|escape %></h1>
                 <div class="content"><% $announcement->content %></div>
             </div>
             <% /foreach %>
 
-            <div data-role="footer" data-position="fixed" data-theme="b">
+            <div class="footer" data-role="footer" data-theme="b">
                 <div data-role="navbar" class="custom-icon">
                     <ul>
                         <li><a href="#announcements" data-icon="custom" class="announcements ui-btn-active">公告</a></li>
@@ -40,7 +40,7 @@
             <div data-role="content" class="block" style="text-align: center;">
                 <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
-            <div data-role="content" class="block">
+            <div data-role="content" class="block last">
                 <ul>
                     <% foreach $sessions as $session %>
                     <li <% if null !== $session->talker %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
@@ -58,7 +58,7 @@
                     <% /foreach %>
                 </ul>
             </div>
-            <div data-role="footer" data-theme="b">
+            <div class="footer" data-role="footer" data-theme="b">
                 <div data-role="navbar" class="custom-icon">
                     <ul>
                         <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
@@ -75,12 +75,12 @@
             <div data-role="content" class="block" style="text-align: center;">
                 <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
-            <div data-role="content" class="block min-height">
+            <div data-role="content" class="block">
                 <p><% $conference->location|escape %></p>
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
             </div>
-            <div data-role="footer" data-position="fixed" data-theme="b">
+            <div class="footer" data-role="footer" data-theme="b">
                 <div data-role="navbar" class="custom-icon">
                     <ul>
                         <li><a href="#announcements" data-icon="custom" data-transition="slide" class="announcements">公告</a></li>
@@ -92,5 +92,14 @@
         </div>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.mobile-1.0rc1.min.js"></script>
+        <script>
+        jQuery(document).ready(function($) {
+            if(navigator.platform == 'iPad'
+                || navigator.platform == 'iPhone'
+                || navigator.platform == 'iPod') {
+                $(".footer").css('position', 'static');
+            };
+        });
+        </script>
     </body>
 </html>
