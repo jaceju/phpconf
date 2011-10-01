@@ -3243,6 +3243,6 @@ a.location .ui-icon {
 
 /* line 24, ../../sass/mobile.sass */
 div.footer {
-  position: fixed !important;
+  position: fixed;
   bottom: 0;
 }

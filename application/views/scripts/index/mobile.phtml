@@ -75,7 +75,7 @@
             <div data-role="content" class="block" style="text-align: center;">
                 <img src="<% $this->baseUrl() %>/img/logo.jpg" />
             </div>
-            <div data-role="content" class="block">
+            <div data-role="content" class="block last">
                 <p><% $conference->location|escape %></p>
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
@@ -92,14 +92,6 @@
         </div>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.mobile-1.0rc1.min.js"></script>
-        <script>
-        jQuery(document).ready(function($) {
-            if(navigator.platform == 'iPad'
-                || navigator.platform == 'iPhone'
-                || navigator.platform == 'iPod') {
-                $(".footer").css('position', 'static');
-            };
-        });
-        </script>
+        <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/mobile.js"></script>
     </body>
 </html>
