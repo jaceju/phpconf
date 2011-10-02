@@ -694,8 +694,8 @@ html, body {
   width: 960px;
   position: relative;
   overflow: hidden;
-  background: white url(../img/head_bg.png) no-repeat 700px 0px;
-  height: 140px;
+  background: white;
+  height: 150px;
   -moz-box-shadow: 0 0 10px 0 #666666;
   -webkit-box-shadow: 0 0 10px 0 #666666;
   -o-box-shadow: 0 0 10px 0 #666666;
@@ -712,7 +712,7 @@ html, body {
 /* line 17, ../../sass/2011/page/_header.sass */
 #container #header #hgroup h1 {
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 10px;
   margin: 0;
   padding: 0;
@@ -730,7 +730,7 @@ html, body {
 /* line 32, ../../sass/2011/page/_header.sass */
 #container #header #hgroup h2 {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 260px;
   margin: 0;
   padding: 0;
@@ -740,8 +740,8 @@ html, body {
 /* line 43, ../../sass/2011/page/_header.sass */
 #container #header #hgroup h3 a.register {
   position: absolute;
-  top: 0;
-  left: 550px;
+  top: 5px;
+  left: 670px;
   width: 250px;
   height: 100px;
   text-indent: -9999px;
@@ -751,6 +751,7 @@ html, body {
 /* line 55, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul {
   position: relative;
+  top: 10px;
   background: #484848;
   box-shadow: inset 0 3px 0 #cccccc;
   z-index: 9999;
@@ -758,15 +759,15 @@ html, body {
   width: 960px;
   height: 40px;
 }
-/* line 64, ../../sass/2011/page/_header.sass */
+/* line 65, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul:first-child {
   padding-left: 10px;
 }
-/* line 67, ../../sass/2011/page/_header.sass */
+/* line 68, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li {
   display: inline;
 }
-/* line 70, ../../sass/2011/page/_header.sass */
+/* line 71, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li a {
   float: left;
   display: block;
@@ -783,11 +784,11 @@ html, body {
   -khtml-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
-/* line 81, ../../sass/2011/page/_header.sass */
+/* line 82, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li a:hover {
   color: white;
 }
-/* line 84, ../../sass/2011/page/_header.sass */
+/* line 85, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li.active > a {
   background: white;
   color: #333333;
@@ -796,7 +797,7 @@ html, body {
   -o-box-shadow: inset 0 3px 0 #484848;
   box-shadow: inset 0 3px 0 #484848;
 }
-/* line 89, ../../sass/2011/page/_header.sass */
+/* line 90, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li.active > a:hover {
   color: #333333;
 }
@@ -817,7 +818,7 @@ html, body {
 #container #body #main {
   clear: left;
   float: left;
-  width: 660px;
+  width: 610px;
   padding: 0 0 20px 0;
   margin: 0 0 0 30px;
   display: inline;
@@ -838,9 +839,9 @@ html, body {
 /* line 1, ../../sass/2011/page/_aside.sass */
 #container #aside {
   float: right;
-  width: 220px;
+  width: 270px;
   min-height: 300px;
-  margin: 10px 20px 0 0;
+  margin: 20px 20px 0 0;
   display: inline;
   background: #fcfcfc;
   -moz-border-radius: 10px;
@@ -877,7 +878,7 @@ html, body {
 }
 /* line 31, ../../sass/2011/page/_aside.sass */
 #container #aside .section dl dd {
-  margin: 5px 20px 15px 30px;
+  margin: 5px 20px 15px 20px;
   font: 14px/28px normal;
   color: #666666;
 }

@@ -8,7 +8,19 @@
             <dl>
             <% foreach $sponsors as $sponsor %>
                 <dt><% $sponsor->supply|escape %></dt>
-                <dd><% if $sponsor->url %><a href="<% $sponsor->url|escape %>"><% $sponsor->name|escape %></a><% else %><span><% $sponsor->name|escape %><% /if %></span></dd>
+                <dd>
+                    <% if $sponsor->url %>
+                    <a href="<% $sponsor->url|escape %>">
+                    <% /if %>
+                    <% if $sponsor->logoUrl %>
+                    <img src="<% $sponsor->logoUrl|escape %>" alt="<% $sponsor->name|escape %>" />
+                    <% else %>
+                    <span><% $sponsor->name|escape %></span>
+                    <% /if %>
+                    <% if $sponsor->url %>
+                    </a>
+                    <% /if %>
+                </dd>
             <% /foreach %>
             </dl>
 
