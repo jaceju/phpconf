@@ -716,7 +716,7 @@ html, body {
   left: 10px;
   margin: 0;
   padding: 0;
-  background: url(../img/logo.jpg) no-repeat;
+  background: url(../img/logo/phpconf.jpg) no-repeat;
 }
 /* line 25, ../../sass/2011/page/_header.sass */
 #container #header #hgroup h1 a {
@@ -940,7 +940,7 @@ html, body {
   width: 127px;
   height: 25px;
   line-height: 25px;
-  background: url(../img/zf_logo.png) no-repeat;
+  background: url(../img/logo/zf.png) no-repeat;
   text-indent: -9999px;
 }
 /* line 37, ../../sass/2011/page/_footer.sass */
