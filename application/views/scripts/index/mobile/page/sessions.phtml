@@ -1,0 +1,18 @@
+<div data-role="content" class="block">
+    <ul>
+        <% foreach $sessions as $session %>
+        <li <% if null !== $session->talker %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
+            <p>
+                <span class="subject"><% $session->subject|escape %></span>
+                <span class="startTime"><% $session->startTime|escape %></span>
+                ~
+                <span class="endTime"><% $session->endTime|escape %></span>
+                <% if null !== $session->talker %>
+                <span class="talker"><% $session->talker|escape %></span>
+                <% /if %>
+            </p>
+            <div class="brief"><% $session->brief %></div>
+        </li>
+        <% /foreach %>
+    </ul>
+</div>

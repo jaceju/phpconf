@@ -679,7 +679,7 @@ table {
 /* line 11, ../../sass/2011/_layout.sass */
 html, body {
   font-family: Verdana, "LiHei Pro", 微軟正黑體, 新細明體, sans-serif;
-  background: #e3e9f9 url(../img/html_bg.png) -50px 0;
+  background: #e3e9f9 url(../img/layout/html_bg.png) -50px 0;
 }
 
 /* line 15, ../../sass/2011/_layout.sass */
@@ -746,7 +746,7 @@ html, body {
   height: 100px;
   text-indent: -9999px;
   overflow: hidden;
-  background: url(../img/registration_bg.png) no-repeat;
+  background: url(../img/layout/registration_bg.png) no-repeat;
 }
 /* line 55, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul {
@@ -1073,6 +1073,16 @@ div.announcement .content {
   -webkit-box-shadow: 0 0 5px 0 #999999;
   -o-box-shadow: 0 0 5px 0 #999999;
   box-shadow: 0 0 5px 0 #999999;
+}
+/* line 12, ../../sass/2011/tab/_location.sass */
+#location a.external {
+  padding-right: 20px;
+  text-decoration: none;
+  background: url(../img/ico/external_link.png) no-repeat 100% 0;
+}
+/* line 17, ../../sass/2011/tab/_location.sass */
+#location a.external.map {
+  font: 16px/32px normal;
 }
 
 /* line 3, ../../sass/2011/tab/_staffs.sass */

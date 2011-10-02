@@ -1,0 +1,6 @@
+<% foreach $announcements as $announcement %>
+<div data-role="content" class="block<% if $announcement@iteration === $announcement@total %> last<% /if %>">
+    <h1><% $announcement->title|escape %></h1>
+    <div class="content"><% $announcement->content %></div>
+</div>
+<% /foreach %>
