@@ -18,6 +18,7 @@
                 <div class="content"><% $announcement->content %></div>
             </div>
             <% /foreach %>
+            <% partial name="index/mobile/footer" %>
         </div>
 
         <!-- 議程 -->
@@ -41,6 +42,7 @@
                     <% /foreach %>
                 </ul>
             </div>
+            <% partial name="index/mobile/footer" %>
         </div>
 
         <!-- 地點 -->
@@ -51,6 +53,7 @@
                 <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>"><% $conference->address|escape %></a></p>
                 <% $conference->traffic %>
             </div>
+            <% partial name="index/mobile/footer" %>
         </div>
 
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>

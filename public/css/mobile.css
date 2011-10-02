@@ -3185,9 +3185,10 @@ a.location .ui-icon {
 div.footer {
   position: absolute;
   bottom: 0;
+  text-align: center;
 }
 
-/* line 11, ../../sass/mobile.sass */
+/* line 12, ../../sass/mobile.sass */
 div.block {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3198,12 +3199,12 @@ div.block {
   border: 1px solid #999999;
   border-radius: 10px;
 }
-/* line 21, ../../sass/mobile.sass */
+/* line 22, ../../sass/mobile.sass */
 div.block h1, div.block p {
   margin: 0;
   padding: 0;
 }
-/* line 25, ../../sass/mobile.sass */
+/* line 26, ../../sass/mobile.sass */
 div.block.last {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
