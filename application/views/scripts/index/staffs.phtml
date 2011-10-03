@@ -7,7 +7,19 @@
         <ul>
             <% foreach $staffs as $staff %>
             <% if $staff->jobId === $job->id %>
-            <li><% $staff->name|escape %></li>
+            <% if $staff->logoUrl %>
+            <li class="image">
+                <% if $staff->url %><a href="<% $staff->url|escape %>"><% /if %>
+                <img src="<% $staff->logoUrl|escape %>" alt="<% $staff->name|escape %>" />
+                <% if $staff->url %></a><% /if %>
+            </li>
+            <% else %>
+            <li>
+                <% if $staff->url %><a href="<% $staff->url|escape %>"><% /if %>
+                <% $staff->name|escape %>
+                <% if $staff->url %></a><% /if %>
+            </li>
+            <% /if %>
             <% /if %>
             <% /foreach %>
         </ul>

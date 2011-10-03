@@ -23,7 +23,7 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $announcementTable = Phpconf_Model_DbTable_Announcements::getInstance();
         $select = $announcementTable->select()
-                ->where('published', 'y')
+                ->where('published = ?', 'y')
                 ->order('id DESC');
         return $this->findDependentRowset('Phpconf_Model_DbTable_Announcements', 'Conference', $select);
     }
