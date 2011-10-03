@@ -818,7 +818,7 @@ html, body {
 #container #body #main {
   clear: left;
   float: left;
-  width: 660px;
+  width: 920px;
   padding: 0 0 20px 0;
   margin: 0 0 0 30px;
   display: inline;
@@ -839,7 +839,7 @@ html, body {
 /* line 1, ../../sass/2011/page/_aside.sass */
 #container #aside {
   float: right;
-  width: 220px;
+  width: -40px;
   min-height: 300px;
   margin: 20px 20px 0 0;
   display: inline;
