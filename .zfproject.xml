@@ -38,6 +38,7 @@
           <dbTableFile dbTableName="Staffs"/>
           <dbTableFile dbTableName="Jobs"/>
           <dbTableFile dbTableName="Sponsors"/>
+          <dbTableFile dbTableName="Talkers"/>
         </dbTableDirectory>
         <modelFile modelName="Conference"/>
       </modelsDirectory>

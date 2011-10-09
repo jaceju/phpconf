@@ -204,6 +204,39 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
      *
      * @return Zend_Db_Table_Rowset
      */
+    public function fetchTalkers()
+    {
+        $talkerTable = Phpconf_Model_DbTable_Talkers::getInstance();
+        $select = $talkerTable->select()
+                ->order('nickname');
+        return $this->findDependentRowset('Phpconf_Model_DbTable_Talkers', 'Conference', $select);
+    }
+
+    /**
+     *
+     * @param int $id
+     * @return Zend_Db_Table_Row
+     */
+    public function fetchTalkerById($id)
+    {
+        $talkerTable = Phpconf_Model_DbTable_Talkers::getInstance();
+        return $talkerTable->find($id)->current();
+    }
+
+    /**
+     *
+     * @return Zend_Db_Table_Row
+     */
+    public function newTalker()
+    {
+        $talkerTable = Phpconf_Model_DbTable_Talkers::getInstance();
+        return $talkerTable->createRow(array(), Zend_Db_Table::DEFAULT_DB);
+    }
+
+    /**
+     *
+     * @return Zend_Db_Table_Rowset
+     */
     public static function fetchConferences()
     {
         $conferenceTable = Phpconf_Model_DbTable_Conferences::getInstance();

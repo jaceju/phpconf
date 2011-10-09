@@ -8,30 +8,16 @@
         <title>PHPConf Taiwan <% $conference->year %></title>
     </head>
     <body>
+        <% $pages = ['announcements', 'sessions', 'location'] %>
 
-        <!-- 公告 -->
-        <div data-role="page" id="announcements">
+        <% foreach $pages as $pageId %>
+        <div data-role="page" id="<% $pageId %>">
             <% partial name="index/mobile/layout/header" %>
-            <% partial name="index/mobile/layout/nav" id="announcements" %>
-            <% partial name="index/mobile/page/announcements" %>
+            <% partial name="index/mobile/layout/nav" id=$pageId %>
+            <% partial name="index/mobile/page/$pageId" %>
             <% partial name="index/mobile/layout/footer" %>
         </div>
-
-        <!-- 議程 -->
-        <div data-role="page" id="sessions">
-            <% partial name="index/mobile/layout/header" %>
-            <% partial name="index/mobile/layout/nav" id="sessions" %>
-            <% partial name="index/mobile/page/sessions" %>
-            <% partial name="index/mobile/layout/footer" %>
-        </div>
-
-        <!-- 地點 -->
-        <div data-role="page" id="location">
-            <% partial name="index/mobile/layout/header" %>
-            <% partial name="index/mobile/layout/nav" id="location" %>
-            <% partial name="index/mobile/page/location" %>
-            <% partial name="index/mobile/layout/footer" %>
-        </div>
+        <% /foreach %>
 
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery-1.6.4.min.js"></script>
         <script type="application/x-javascript" src="<% $this->baseUrl() %>/js/jquery.mobile-1.0rc1.min.js"></script>

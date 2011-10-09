@@ -2,6 +2,7 @@
     <ul>
         <li<% if $actionName === 'index' %> class="active"<% /if %>><a href="<% $this->url(['action' => 'index']) %>">公告</a></li>
         <li<% if $actionName === 'sessions' %> class="active"<% /if %>><a href="<% $this->url(['action' => 'sessions']) %>">議程</a></li>
+        <li<% if $actionName === 'talkers' %> class="active"<% /if %>><a href="<% $this->url(['action' => 'talkers']) %>">講師</a></li>
         <li<% if $actionName === 'location' %> class="active"<% /if %>><a href="<% $this->url(['action' => 'location']) %>">地點</a></li>
         <li<% if $actionName === 'staffs' %> class="active"<% /if %>><a href="<% $this->url(['action' => 'staffs']) %>">關於</a></li>
         <li><a href="http://twpug.net/modules/newbb/viewforum.php?forum=41" target="_blank">討論</a></li>

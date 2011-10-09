@@ -1,0 +1,63 @@
+<div id="talkers">
+  <section>
+    <header>
+      <h1 class="title">講師群</h1>
+    </header>
+    <ul>
+      <% foreach $talkers as $talker %>
+        <li class="talker">
+          <section class="profile">
+            <header>
+              <h1 class="name"><% $talker->name|escape %></h1>
+              <h2 class="job"><% $talker->job|escape %></h2>
+            </header>
+            <div class="info">
+              <% if $talker->photo %>
+              <p class="photo">
+                <img src="<% $this->baseUrl() %>/img/talker/<% $talker->photo|escape %>" alt="<% $talker->name|escape %>" />
+              </p>
+              <% /if %>
+              <ul class="link">
+                <% $talkerLinks = [
+                  'blog' => 'Blog',
+                  'twitter' => 'Twitter',
+                  'facebook' => 'Facebook',
+                  'plurk' => 'Plurk',
+                  'googleplus' => 'Google +',
+                  'aboutme' => 'About.me',
+                  'github' => 'GitHub',
+                  'slideshare' => 'SlideShare'
+                ] %>
+                <% foreach $talkerLinks as $linkId => $linkName %>
+                  <% if $talker->$linkId %>
+                    <li><a href="<% $talker->$linkId|escape %>" class="social-<% $linkId %>" title="<% $linkName %>"><% $linkName %></a></li>
+                  <% /if %>
+                <% /foreach %>
+              </ul>
+            </div>
+            <dl>
+              <% if $talker->creation %>
+                <dt>著作</dt>
+                <dd class="creation">
+                  <% $talker->creation %>
+                </dd>
+              <% /if %>
+              <% if $talker->skill %>
+                <dt>專長</dt>
+                <dd class="skill">
+                  <% $talker->skill %>
+                </dd>
+              <% /if %>
+              <% if $talker->brief %>
+                <dt>簡介</dt>
+                <dd class="brief">
+                  <% $talker->brief %>
+                </dd>
+              <% /if %>
+            </dl>
+          </section>
+        </li>
+      <% /foreach %>
+    </ul>
+  </section>
+</div>

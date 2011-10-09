@@ -1,7 +1,7 @@
 <div id="sessions" class="panel" title="議程">
     <section>
         <header>
-            <h1>議程介紹</h1>
+            <h1 class="title">議程介紹</h1>
         </header>
         <table>
             <tr>
@@ -9,7 +9,7 @@
                 <th class="session">議程</th>
             </tr>
             <% foreach $sessions as $session %>
-            <% if null === $session->talker %>
+            <% if null === $session->talkerName %>
             <tr class="break">
                 <td colspan="2">
                     <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
@@ -22,7 +22,7 @@
                     <section>
                         <hgroup>
                             <h1 class="subject"><% $session->subject|escape %></h1>
-                            <h2 class="talker"><% $session->talker|escape %></h2>
+                            <h2 class="talkerName"><% $session->talkerName|escape %></h2>
                         </hgroup>
                         <div class="brief"><% $session->brief %></div>
                     </section>
