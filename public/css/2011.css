@@ -1,12 +1,7 @@
-/* line 75, social */
-.social-sprite, #talkers li.talker .profile .info .link .social-aboutme, #talkers li.talker .profile .info .link .social-blog, #talkers li.talker .profile .info .link .social-email, #talkers li.talker .profile .info .link .social-facebook, #talkers li.talker .profile .info .link .social-github, #talkers li.talker .profile .info .link .social-googleplus, #talkers li.talker .profile .info .link .social-plurk, #talkers li.talker .profile .info .link .social-slideshare, #talkers li.talker .profile .info .link .social-twitter {
-  background: url('/public/img/social-se80167cf60.png') no-repeat;
-}
-
 /* line 11, ../../sass/2011/_layout.sass */
 html, body {
   font-family: Verdana, "LiHei Pro", 微軟正黑體, 新細明體, sans-serif;
-  background: #e3e9f9 url(../img/layout/html_bg.png) -50px 0;
+  background: #e3e9f9 url(../img/layout/html_bg.png) -50px 0 !important;
 }
 
 /* line 15, ../../sass/2011/_layout.sass */
@@ -1069,6 +1064,11 @@ div.announcement .content li {
   text-align: left;
 }
 
+/* line 75, social */
+.social-sprite, #talkers li.talker .profile .info .link .social-aboutme, #talkers li.talker .profile .info .link .social-blog, #talkers li.talker .profile .info .link .social-email, #talkers li.talker .profile .info .link .social-facebook, #talkers li.talker .profile .info .link .social-github, #talkers li.talker .profile .info .link .social-googleplus, #talkers li.talker .profile .info .link .social-plurk, #talkers li.talker .profile .info .link .social-slideshare, #talkers li.talker .profile .info .link .social-twitter {
+  background: url('/public/img/social-se80167cf60.png') no-repeat;
+}
+
 /* line 3, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker {
   overflow: hidden;
@@ -1170,23 +1170,30 @@ div.announcement .content li {
   width: 32px;
   height: 32px;
   text-indent: -9999px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
-/* line 55, ../../sass/2011/tab/_talkers.sass */
+/* line 56, ../../sass/2011/tab/_talkers.sass */
+#talkers li.talker .profile .info .link a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 59, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl {
   float: left;
   width: 80%;
 }
-/* line 59, ../../sass/2011/tab/_talkers.sass */
+/* line 63, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dt {
   font: 16px/32px bold;
   color: #ff9933;
 }
-/* line 63, ../../sass/2011/tab/_talkers.sass */
+/* line 67, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dd {
   font: 14px/150% normal;
   color: #666666;
 }
-/* line 67, ../../sass/2011/tab/_talkers.sass */
+/* line 71, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dd li {
   list-style-type: disc;
 }

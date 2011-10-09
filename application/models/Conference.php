@@ -76,8 +76,11 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $sessionTable = Phpconf_Model_DbTable_Sessions::getInstance();
         $select = $sessionTable->select()
-                ->order('startTime');
-        return $this->findDependentRowset('Phpconf_Model_DbTable_Sessions', 'Conference', $select);
+                ->setIntegrityCheck(false)
+                ->from(array('s' => $sessionTable->info('name')))
+                ->join(array('t' => 'talkers'), 's.talkerId = t.id', array('talkerName' => 'name'))
+                ->order('s.startTime');
+        return $sessionTable->fetchAll($select);
     }
 
     /**
@@ -208,7 +211,7 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $talkerTable = Phpconf_Model_DbTable_Talkers::getInstance();
         $select = $talkerTable->select()
-                ->order('nickname');
+                ->order('name');
         return $this->findDependentRowset('Phpconf_Model_DbTable_Talkers', 'Conference', $select);
     }
 
