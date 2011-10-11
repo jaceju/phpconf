@@ -1125,6 +1125,7 @@ div.announcement .content li {
   width: 130px;
   margin: 0;
   padding: 0;
+  margin-left: 13px;
 }
 /* line 60, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 #talkers li.talker .profile .info .link .social-aboutme {
@@ -1162,13 +1163,13 @@ div.announcement .content li {
 #talkers li.talker .profile .info .link .social-twitter {
   background-position: 0 -256px;
 }
-/* line 44, ../../sass/2011/tab/_talkers.sass */
+/* line 45, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link > li {
   float: left;
   margin-right: 2px !important;
   margin-bottom: 2px !important;
 }
-/* line 49, ../../sass/2011/tab/_talkers.sass */
+/* line 50, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link a {
   display: block;
   width: 32px;
@@ -1177,27 +1178,27 @@ div.announcement .content li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 56, ../../sass/2011/tab/_talkers.sass */
+/* line 57, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 59, ../../sass/2011/tab/_talkers.sass */
+/* line 60, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl {
   float: left;
   width: 80%;
 }
-/* line 63, ../../sass/2011/tab/_talkers.sass */
+/* line 64, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dt {
   font: 16px/32px bold;
   color: #ff9933;
 }
-/* line 67, ../../sass/2011/tab/_talkers.sass */
+/* line 68, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dd {
   font: 14px/150% normal;
   color: #666666;
 }
-/* line 71, ../../sass/2011/tab/_talkers.sass */
+/* line 72, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dd li {
   list-style-type: disc;
 }
