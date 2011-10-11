@@ -19,6 +19,7 @@
               <% /if %>
               <ul class="link">
                 <% $talkerLinks = [
+                  'email' => 'Email',
                   'blog' => 'Blog',
                   'twitter' => 'Twitter',
                   'facebook' => 'Facebook',
@@ -30,7 +31,7 @@
                 ] %>
                 <% foreach $talkerLinks as $linkId => $linkName %>
                   <% if $talker->$linkId %>
-                    <li><a href="<% $talker->$linkId|escape %>" class="social-<% $linkId %>" title="<% $linkName %>"><% $linkName %></a></li>
+                    <li><a href="<% $talker->$linkId|escape %>" class="social-<% $linkId %>" title="<% $linkName %>" target="_blank"><% $linkName %></a></li>
                   <% /if %>
                 <% /foreach %>
               </ul>
