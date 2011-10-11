@@ -1044,7 +1044,7 @@ div.announcement .content li {
   margin: 0 !important;
   padding: 5px 0;
   font: 18px/30px bold !important;
-  color: #333333 !important;
+  color: #a9c434 !important;
   border: none !important;
   text-align: left;
 }
@@ -1057,6 +1057,10 @@ div.announcement .content li {
   padding: 5px 0;
 }
 /* line 55, ../../sass/2011/tab/_sessions.sass */
+#sessions table td h2.talkerName > span {
+  display: inline;
+}
+/* line 58, ../../sass/2011/tab/_sessions.sass */
 #sessions table td div.brief {
   font: 14px/25px normal !important;
   color: #999999;
@@ -1066,7 +1070,7 @@ div.announcement .content li {
 
 /* line 75, social */
 .social-sprite, #talkers li.talker .profile .info .link .social-aboutme, #talkers li.talker .profile .info .link .social-blog, #talkers li.talker .profile .info .link .social-email, #talkers li.talker .profile .info .link .social-facebook, #talkers li.talker .profile .info .link .social-github, #talkers li.talker .profile .info .link .social-googleplus, #talkers li.talker .profile .info .link .social-plurk, #talkers li.talker .profile .info .link .social-slideshare, #talkers li.talker .profile .info .link .social-twitter {
-  background: url('/public/img/social-se80167cf60.png') no-repeat;
+  background: url('../img/social-se80167cf60.png') no-repeat;
 }
 
 /* line 3, ../../sass/2011/tab/_talkers.sass */

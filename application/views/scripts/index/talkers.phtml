@@ -8,7 +8,7 @@
         <li class="talker">
           <section class="profile">
             <header>
-              <h1 class="name"><% $talker->name|escape %></h1>
+              <h1 class="name"><% partial name="index/_talker-name" talker=$talker %></h1>
               <h2 class="job"><% $talker->job|escape %></h2>
             </header>
             <div class="info">

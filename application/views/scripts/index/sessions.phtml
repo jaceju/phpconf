@@ -9,7 +9,7 @@
                 <th class="session">議程</th>
             </tr>
             <% foreach $sessions as $session %>
-            <% if null === $session->talkerName %>
+            <% if null === $session->name %>
             <tr class="break">
                 <td colspan="2">
                     <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
@@ -22,7 +22,7 @@
                     <section>
                         <hgroup>
                             <h1 class="subject"><% $session->subject|escape %></h1>
-                            <h2 class="talkerName"><% $session->talkerName|escape %></h2>
+                            <h2 class="talkerName"><% partial name="index/_talker-name" talker=$session %></h2>
                         </hgroup>
                         <div class="brief"><% $session->brief %></div>
                     </section>
