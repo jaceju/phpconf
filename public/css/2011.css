@@ -1061,6 +1061,10 @@ div.announcement .content li {
   display: inline;
 }
 /* line 58, ../../sass/2011/tab/_sessions.sass */
+#sessions table td h2.talkerName > span.separator {
+  margin: 0 5px;
+}
+/* line 61, ../../sass/2011/tab/_sessions.sass */
 #sessions table td div.brief {
   font: 14px/25px normal !important;
   color: #999999;
@@ -1087,27 +1091,36 @@ div.announcement .content li {
   color: #a9c434;
 }
 /* line 16, ../../sass/2011/tab/_talkers.sass */
+#talkers li.talker .profile .name span {
+  display: inline;
+}
+/* line 19, ../../sass/2011/tab/_talkers.sass */
+#talkers li.talker .profile .name span.separator {
+  color: #eeeeee;
+  margin: 0 7px;
+}
+/* line 23, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .job {
   float: left;
   font: 14px/28px bold;
-  margin: 5px;
+  margin: 5px 5px 5px 10px;
   color: #999999;
 }
-/* line 22, ../../sass/2011/tab/_talkers.sass */
+/* line 29, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info {
   clear: both;
   float: left;
   width: 20%;
   min-width: 140px;
 }
-/* line 28, ../../sass/2011/tab/_talkers.sass */
+/* line 35, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .photo {
   clear: both;
   border: none !important;
   margin: 5px !important;
   margin-right: 10px !important;
 }
-/* line 34, ../../sass/2011/tab/_talkers.sass */
+/* line 41, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .photo img {
   -moz-box-shadow: 0 0 5px #999999;
   -webkit-box-shadow: 0 0 5px #999999;
@@ -1120,7 +1133,7 @@ div.announcement .content li {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 38, ../../sass/2011/tab/_talkers.sass */
+/* line 45, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link {
   width: 130px;
   margin: 0;
@@ -1163,13 +1176,13 @@ div.announcement .content li {
 #talkers li.talker .profile .info .link .social-twitter {
   background-position: 0 -256px;
 }
-/* line 45, ../../sass/2011/tab/_talkers.sass */
+/* line 52, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link > li {
   float: left;
   margin-right: 2px !important;
   margin-bottom: 2px !important;
 }
-/* line 50, ../../sass/2011/tab/_talkers.sass */
+/* line 57, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link a {
   display: block;
   width: 32px;
@@ -1178,27 +1191,27 @@ div.announcement .content li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 57, ../../sass/2011/tab/_talkers.sass */
+/* line 64, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile .info .link a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 60, ../../sass/2011/tab/_talkers.sass */
+/* line 67, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl {
   float: left;
   width: 80%;
 }
-/* line 64, ../../sass/2011/tab/_talkers.sass */
+/* line 71, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dt {
   font: 16px/32px bold;
   color: #ff9933;
 }
-/* line 68, ../../sass/2011/tab/_talkers.sass */
+/* line 75, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dd {
   font: 14px/150% normal;
   color: #666666;
 }
-/* line 72, ../../sass/2011/tab/_talkers.sass */
+/* line 79, ../../sass/2011/tab/_talkers.sass */
 #talkers li.talker .profile dl dd li {
   list-style-type: disc;
 }
