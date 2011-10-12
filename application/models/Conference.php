@@ -292,5 +292,11 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
         }
         return $conference->save();
     }
+
+    public function registrable()
+    {
+        $today = date('Y-m-d');
+        return ($this->registrationStartDate <= $today && $today <= $this->registrationEndDate);
+    }
 }
 
