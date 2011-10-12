@@ -149,6 +149,7 @@ class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
     {
         $jobTable = Phpconf_Model_DbTable_Jobs::getInstance();
         $select = $jobTable->select()
+                ->where('display = ?', 'y')
                 ->order('sortOrder');
         return $jobTable->fetchAll($select);
     }
