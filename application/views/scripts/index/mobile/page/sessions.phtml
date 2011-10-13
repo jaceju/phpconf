@@ -1,7 +1,7 @@
 <div data-role="content" class="block">
     <ul>
         <% foreach $sessions as $session %>
-        <li <% if null !== $session->name %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
+        <li <% if constant('Phpconf_Model_Conference::SESSION_BREAK') !== $session->type %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
             <p>
                 <span class="subject"><% $session->subject|escape %></span>
                 <span class="startTime"><% $session->startTime|escape %></span>
