@@ -2,6 +2,12 @@
 
 class Phpconf_Model_Conference extends Zend_Db_Table_Row_Abstract
 {
+    const SESSION_NORMAL = 'n';
+
+    const SESSION_BREAK = 'b';
+
+    const SESSION_OTHER = 'o';
+
     /**
      *
      * @param string $year

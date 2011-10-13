@@ -9,14 +9,25 @@
                 <th class="session">議程</th>
             </tr>
             <% foreach $sessions as $session %>
-            <% if null === $session->name %>
+            <% if constant('Phpconf_Model_Conference::SESSION_BREAK') === $session->type %>
             <tr class="break">
                 <td colspan="2">
                     <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
                 </td>
             </tr>
+            <% elseif constant('Phpconf_Model_Conference::SESSION_OTHER') === $session->type %>
+            <tr class="other">
+                <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+                <td>
+                    <section>
+                        <hgroup>
+                            <h1 class="subject"><% $session->subject|escape %></h1>
+                        </hgroup>
+                    </section>
+                </td>
+            </tr>
             <% else %>
-            <tr class="info">
+            <tr class="normal">
                 <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
                 <td>
                     <section>

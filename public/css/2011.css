@@ -1023,23 +1023,27 @@ div.announcement .content li {
   text-align: center;
 }
 /* line 27, ../../sass/2011/tab/_sessions.sass */
+#sessions table tr.other {
+  background: white;
+}
+/* line 30, ../../sass/2011/tab/_sessions.sass */
 #sessions table th.time {
   width: 80px;
 }
-/* line 30, ../../sass/2011/tab/_sessions.sass */
+/* line 33, ../../sass/2011/tab/_sessions.sass */
 #sessions table td {
   padding: 5px;
 }
-/* line 33, ../../sass/2011/tab/_sessions.sass */
+/* line 36, ../../sass/2011/tab/_sessions.sass */
 #sessions table td.time {
   background: #f2fff5;
   vertical-align: middle !important;
 }
-/* line 37, ../../sass/2011/tab/_sessions.sass */
+/* line 40, ../../sass/2011/tab/_sessions.sass */
 #sessions table td span {
   display: block;
 }
-/* line 40, ../../sass/2011/tab/_sessions.sass */
+/* line 43, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h1.subject {
   margin: 0 !important;
   padding: 5px 0;
@@ -1048,7 +1052,7 @@ div.announcement .content li {
   border: none !important;
   text-align: left;
 }
-/* line 48, ../../sass/2011/tab/_sessions.sass */
+/* line 51, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h2.talkerName {
   margin-left: 10px !important;
   font: 16px/30px normal !important;
@@ -1056,15 +1060,15 @@ div.announcement .content li {
   text-align: left;
   padding: 5px 0;
 }
-/* line 55, ../../sass/2011/tab/_sessions.sass */
+/* line 58, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h2.talkerName > span {
   display: inline;
 }
-/* line 58, ../../sass/2011/tab/_sessions.sass */
+/* line 61, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h2.talkerName > span.separator {
   margin: 0 5px;
 }
-/* line 61, ../../sass/2011/tab/_sessions.sass */
+/* line 64, ../../sass/2011/tab/_sessions.sass */
 #sessions table td div.brief {
   font: 14px/25px normal !important;
   color: #999999;
