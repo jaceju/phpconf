@@ -65,9 +65,11 @@ class IndexController extends Zend_Controller_Action
             'version' => '1.0',
             'type' => 'rich',
             'title' => 'PHPConf Taiwan ' . $this->_conference->year,
-            'thumbnail' => 'http://phpconf.tw/img/logo/phpconf.jpg',
-            'providerName' => 'PHPConf Taiwan',
-            'providerUrl' => 'http://phpconf.tw/',
+            'url' => 'http://phpconf.tw/img/logo/phpconf.jpg',
+            'author_name' => 'phpconf.tw',
+            'author_url' => 'http://phpconf.tw/',
+            'provider_name' => 'PHPConf Taiwan',
+            'provider_url' => 'http://phpconf.tw/',
         ));
     }
 
