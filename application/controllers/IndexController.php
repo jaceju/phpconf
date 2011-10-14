@@ -9,6 +9,14 @@ class IndexController extends Zend_Controller_Action
      */
     protected $_conference = null;
 
+    public function init()
+    {
+        $this->_helper->contextSwitch()
+                      ->addActionContext('oembed', 'json')
+                      ->addActionContext('oembed', 'xml')
+                      ->initContext();
+    }
+
     public function preDispatch()
     {
         $this->_conference = $this->getHelper('Conference')->getConference();
@@ -52,19 +60,15 @@ class IndexController extends Zend_Controller_Action
     public function oembedAction()
     {
         $this->getHelper('layout')->disableLayout();
-        $this->getHelper('viewRenderer')->setNoRender();
-        $oEmbedData = array(
+        $this->view->clearVars();
+        $this->view->assign(array(
             'version' => '1.0',
-            'type' => 'article',
+            'type' => 'rich',
             'title' => 'PHPConf Taiwan ' . $this->_conference->year,
-            'url' => 'http://phpconf.tw/img/logo/phpconf.jpg',
-            'provider_name' => 'PHPConf Taiwan',
-            'provider_url' => 'http://phpconf.tw/',
-        );
-
-        $this->getResponse()
-                ->setHeader('Content-Type', 'application/json+oembed')
-                ->appendBody(Zend_Json::encode($oEmbedData));
+            'thumbnail' => 'http://phpconf.tw/img/logo/phpconf.jpg',
+            'providerName' => 'PHPConf Taiwan',
+            'providerUrl' => 'http://phpconf.tw/',
+        ));
     }
 
 }

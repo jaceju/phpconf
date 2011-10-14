@@ -10,7 +10,8 @@
         <meta name="og_url" property="og:url" content="http://phpconf.tw/2011" />
         <meta name="og_image" property="og:image" content="http://phpconf.tw/img/logo/phpconf.jpg" />
         <meta name="og_site_name" property="og:site_name" content="PHPConf Taiwan" />
-        <link rel="alternate" type="application/json+oembed" href="http://phpconf.tw/<% $conference->year %>/oembed/" title="PHPConf Taiwan oEmbed Profile" />
+        <link rel="alternate" type="application/json+oembed" href="http://phpconf.tw/<% $conference->year %>/oembed/?format=json" title="PHPConf Taiwan oEmbed Profile" />
+        <link rel="alternate" type="text/xml+oembed" href="http://phpconf.tw/<% $conference->year %>/oembed/?format=xml" title="PHPConf Taiwan oEmbed Profile" />
         <title>PHPConf Taiwan <% $conference->year %></title>
         <link rel="shortcut icon" href="<% $this->baseUrl() %>/favicon.gif" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/<% $conference->year %>.css" media="screen, projection" />
