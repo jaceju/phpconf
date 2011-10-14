@@ -1002,6 +1002,13 @@ div.announcement .content li {
 }
 
 /* line 3, ../../sass/2011/tab/_sessions.sass */
+#sessions p.note {
+  margin-bottom: 5px;
+  text-align: center;
+  font: 14px/120% bold;
+  color: #ff6633;
+}
+/* line 9, ../../sass/2011/tab/_sessions.sass */
 #sessions table {
   font-size: 15px;
   border: 1px solid black;
@@ -1012,49 +1019,49 @@ div.announcement .content li {
   -o-box-shadow: inset 0px 0px 10px #cccccc;
   box-shadow: inset 0px 0px 10px #cccccc;
 }
-/* line 10, ../../sass/2011/tab/_sessions.sass */
+/* line 16, ../../sass/2011/tab/_sessions.sass */
 #sessions table td, #sessions table th {
   border: 1px solid #cccccc;
   padding: 5px;
   text-align: center;
 }
-/* line 15, ../../sass/2011/tab/_sessions.sass */
+/* line 21, ../../sass/2011/tab/_sessions.sass */
 #sessions table th {
   background: #666666;
   color: #eeeeee;
   font-size: 20px;
 }
-/* line 20, ../../sass/2011/tab/_sessions.sass */
+/* line 26, ../../sass/2011/tab/_sessions.sass */
 #sessions table tr.break {
   background: #ff9933;
 }
-/* line 23, ../../sass/2011/tab/_sessions.sass */
+/* line 29, ../../sass/2011/tab/_sessions.sass */
 #sessions table tr.break td {
   color: white;
   text-align: center;
 }
-/* line 27, ../../sass/2011/tab/_sessions.sass */
+/* line 33, ../../sass/2011/tab/_sessions.sass */
 #sessions table tr.other {
   background: white;
 }
-/* line 30, ../../sass/2011/tab/_sessions.sass */
+/* line 36, ../../sass/2011/tab/_sessions.sass */
 #sessions table th.time {
   width: 80px;
 }
-/* line 33, ../../sass/2011/tab/_sessions.sass */
+/* line 39, ../../sass/2011/tab/_sessions.sass */
 #sessions table td {
   padding: 5px;
 }
-/* line 36, ../../sass/2011/tab/_sessions.sass */
+/* line 42, ../../sass/2011/tab/_sessions.sass */
 #sessions table td.time {
   background: #f2fff5;
   vertical-align: middle !important;
 }
-/* line 40, ../../sass/2011/tab/_sessions.sass */
+/* line 46, ../../sass/2011/tab/_sessions.sass */
 #sessions table td span {
   display: block;
 }
-/* line 43, ../../sass/2011/tab/_sessions.sass */
+/* line 49, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h1.subject {
   margin: 0 !important;
   padding: 5px 0;
@@ -1063,7 +1070,7 @@ div.announcement .content li {
   border: none !important;
   text-align: left;
 }
-/* line 51, ../../sass/2011/tab/_sessions.sass */
+/* line 57, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h2.talkerName {
   margin-left: 10px !important;
   font: 16px/30px normal !important;
@@ -1071,15 +1078,15 @@ div.announcement .content li {
   text-align: left;
   padding: 5px 0;
 }
-/* line 58, ../../sass/2011/tab/_sessions.sass */
+/* line 64, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h2.talkerName > span {
   display: inline;
 }
-/* line 61, ../../sass/2011/tab/_sessions.sass */
+/* line 67, ../../sass/2011/tab/_sessions.sass */
 #sessions table td h2.talkerName > span.separator {
   margin: 0 5px;
 }
-/* line 64, ../../sass/2011/tab/_sessions.sass */
+/* line 70, ../../sass/2011/tab/_sessions.sass */
 #sessions table td div.brief {
   font: 14px/25px normal !important;
   color: #999999;
