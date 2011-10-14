@@ -60,6 +60,17 @@ html, body {
   font: 16px/32px bold;
 }
 /* line 43, ../../sass/2011/page/_header.sass */
+#container #header #hgroup h3.registration-time {
+  position: absolute;
+  top: 10px;
+  left: 690px;
+  width: 200px;
+  height: 100px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../img/layout/registration_time.png) no-repeat;
+}
+/* line 53, ../../sass/2011/page/_header.sass */
 #container #header #hgroup h3 a.register {
   position: absolute;
   top: 5px;
@@ -70,7 +81,7 @@ html, body {
   overflow: hidden;
   background: url(../img/layout/registration_bg.png) no-repeat;
 }
-/* line 55, ../../sass/2011/page/_header.sass */
+/* line 65, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul {
   position: relative;
   top: 10px;
@@ -81,15 +92,15 @@ html, body {
   width: 960px;
   height: 40px;
 }
-/* line 65, ../../sass/2011/page/_header.sass */
+/* line 75, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul:first-child {
   padding-left: 10px;
 }
-/* line 68, ../../sass/2011/page/_header.sass */
+/* line 78, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li {
   display: inline;
 }
-/* line 71, ../../sass/2011/page/_header.sass */
+/* line 81, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li a {
   float: left;
   display: block;
@@ -106,11 +117,11 @@ html, body {
   -khtml-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
-/* line 82, ../../sass/2011/page/_header.sass */
+/* line 92, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li a:hover {
   color: white;
 }
-/* line 85, ../../sass/2011/page/_header.sass */
+/* line 95, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li.active > a {
   background: white;
   color: #333333;
@@ -119,7 +130,7 @@ html, body {
   -o-box-shadow: inset 0 3px 0 #484848;
   box-shadow: inset 0 3px 0 #484848;
 }
-/* line 90, ../../sass/2011/page/_header.sass */
+/* line 100, ../../sass/2011/page/_header.sass */
 #container #header nav.top ul li.active > a:hover {
   color: #333333;
 }
