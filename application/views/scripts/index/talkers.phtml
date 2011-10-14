@@ -1,21 +1,19 @@
 <div id="talkers">
   <section>
-    <header>
-      <h1 class="title">講師群</h1>
-    </header>
+    <h1 class="title">講師群</h1>
     <ul>
       <% foreach $talkers as $talker %>
         <li class="talker">
           <section class="profile">
-            <header>
+            <hgroup>
               <h1 class="name"><% partial name="index/_talker-name" talker=$talker %></h1>
               <h2 class="job"><% $talker->job|escape %></h2>
-            </header>
+            </hgroup>
             <div class="info">
               <% if $talker->photo %>
-              <p class="photo">
-                <img src="<% $this->baseUrl() %>/img/talker/<% $talker->photo|escape %>" alt="<% $talker->name|escape %>" />
-              </p>
+                <p class="photo">
+                  <img src="<% $this->baseUrl() %>/img/talker/<% $talker->photo|escape %>" alt="<% $talker->name|escape %>" />
+                </p>
               <% /if %>
               <ul class="link">
                 <% $talkerLinks = [

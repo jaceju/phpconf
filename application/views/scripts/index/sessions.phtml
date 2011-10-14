@@ -1,47 +1,45 @@
 <div id="sessions" class="panel" title="議程">
-    <section>
-        <header>
-            <h1 class="title">議程介紹</h1>
-        </header>
-        <p class="note">議程議題、時間若變更，以本頁公告議程為主。</p>
-        <table>
-            <tr>
-                <th class="time">時間</th>
-                <th class="session">議程</th>
-            </tr>
-            <% foreach $sessions as $session %>
-            <% if constant('Phpconf_Model_Conference::SESSION_BREAK') === $session->type %>
-            <tr class="break">
-                <td colspan="2">
-                    <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
-                </td>
-            </tr>
-            <% elseif constant('Phpconf_Model_Conference::SESSION_OTHER') === $session->type %>
-            <tr class="other">
-                <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
-                <td>
-                    <section>
-                        <hgroup>
-                            <h1 class="subject"><% $session->subject|escape %></h1>
-                        </hgroup>
-                    </section>
-                </td>
-            </tr>
-            <% else %>
-            <tr class="normal">
-                <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
-                <td>
-                    <section>
-                        <hgroup>
-                            <h1 class="subject"><% $session->subject|escape %></h1>
-                            <h2 class="talkerName"><% partial name="index/_talker-name" talker=$session %></h2>
-                        </hgroup>
-                        <div class="brief"><% $session->brief %></div>
-                    </section>
-                </td>
-            </tr>
-            <% /if %>
-            <% /foreach %>
-        </table>
-    </section>
+  <section>
+    <h1 class="title">議程介紹</h1>
+    <p class="note">議程議題、時間若變更，以本頁公告議程為主。</p>
+    <table>
+      <tr>
+        <th class="time">時間</th>
+        <th class="session">議程</th>
+      </tr>
+      <% foreach $sessions as $session %>
+        <% if constant('Phpconf_Model_Conference::SESSION_BREAK') === $session->type %>
+          <tr class="break">
+            <td colspan="2">
+              <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
+            </td>
+          </tr>
+        <% elseif constant('Phpconf_Model_Conference::SESSION_OTHER') === $session->type %>
+          <tr class="other">
+            <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+            <td>
+              <section>
+                <hgroup>
+                  <h1 class="subject"><% $session->subject|escape %></h1>
+                </hgroup>
+              </section>
+            </td>
+          </tr>
+        <% else %>
+          <tr class="normal">
+            <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+            <td>
+              <section>
+                <hgroup>
+                  <h1 class="subject"><% $session->subject|escape %></h1>
+                  <h2 class="talkerName"><% partial name="index/_talker-name" talker=$session %></h2>
+                </hgroup>
+                <div class="brief"><% $session->brief %></div>
+              </section>
+            </td>
+          </tr>
+        <% /if %>
+      <% /foreach %>
+    </table>
+  </section>
 </div>

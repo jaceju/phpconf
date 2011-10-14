@@ -1,21 +1,15 @@
 <div id="location">
-    <section>
-        <header>
-            <h1 class="title">會場地點</h1>
-        </header>
-        <p><% $conference->location|escape %></p>
-    </section>
-    <section>
-        <header>
-            <h1 class="title">交通資訊</h1>
-        </header>
-        <% $conference->traffic %>
-    </section>
-    <section>
-        <header>
-            <h1 class="title">地址</h1>
-        </header>
-        <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>" class="external map"><% $conference->address|escape %></a></p>
-        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<% $conference->mapUrl|escape %>"></iframe>
-    </section>
+  <section>
+    <h1 class="title">會場地點</h1>
+    <p><% $conference->location|escape %></p>
+  </section>
+  <section>
+    <h1 class="title">交通資訊</h1>
+    <% $conference->traffic %>
+  </section>
+  <section>
+    <h1 class="title">地址</h1>
+    <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>" class="external map"><% $conference->address|escape %></a></p>
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<% $conference->mapUrl|escape %>"></iframe>
+  </section>
 </div>

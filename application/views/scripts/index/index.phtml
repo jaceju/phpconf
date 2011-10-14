@@ -2,9 +2,7 @@
     <% foreach $announcements as $announcement %>
     <div class="announcement">
         <section>
-            <header>
-                <h1 class="title"><% $announcement->title|escape %></h1>
-            </header>
+            <h1 class="title"><% $announcement->title|escape %></h1>
             <div class="content"><% $announcement->content %></div>
         </section>
     </div>

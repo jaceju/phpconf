@@ -1,20 +1,14 @@
 <div data-role="content" class="block">
-    <section>
-        <header>
-            <h1>會場地點</h1>
-        </header>
-        <p><% $conference->location|escape %></p>
-    </section>
-    <section>
-        <header>
-            <h1>交通資訊</h1>
-        </header>
-        <% $conference->traffic %>
-    </section>
-    <section>
-        <header>
-            <h1>地址</h1>
-        </header>
-        <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>" class="external map"><% $conference->address|escape %></a></p>
-    </section>
+  <section>
+    <h1>會場地點</h1>
+    <p><% $conference->location|escape %></p>
+  </section>
+  <section>
+    <h1>交通資訊</h1>
+    <% $conference->traffic %>
+  </section>
+  <section>
+    <h1>地址</h1>
+    <p><a href="http://maps.google.com/maps?q=<% $conference->address|escape %>" class="external map"><% $conference->address|escape %></a></p>
+  </section>
 </div>

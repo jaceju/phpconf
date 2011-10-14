@@ -1,28 +1,26 @@
 <div id="staffs">
-    <% foreach $jobs as $job %>
+  <% foreach $jobs as $job %>
     <section>
-        <header>
-        <h1 class="title"><% $job->name|escape %></h1>
-        </header>
-        <ul>
-            <% foreach $staffs as $staff %>
-            <% if $staff->jobId === $job->id %>
+      <h1 class="title"><% $job->name|escape %></h1>
+      <ul>
+        <% foreach $staffs as $staff %>
+          <% if $staff->jobId === $job->id %>
             <% if $staff->logoUrl %>
-            <li class="image">
-                <% if $staff->url %><a href="<% $staff->url|escape %>"><% /if %>
+              <li class="image">
+              <% if $staff->url %><a href="<% $staff->url|escape %>"><% /if %>
                 <img src="<% $staff->logoUrl|escape %>" alt="<% $staff->name|escape %>" />
-                <% if $staff->url %></a><% /if %>
-            </li>
-            <% else %>
-            <li>
-                <% if $staff->url %><a href="<% $staff->url|escape %>"><% /if %>
-                <% $staff->name|escape %>
-                <% if $staff->url %></a><% /if %>
-            </li>
-            <% /if %>
-            <% /if %>
-            <% /foreach %>
-        </ul>
-    </section>
-    <% /foreach %>
+              <% if $staff->url %></a><% /if %>
+          </li>
+        <% else %>
+          <li>
+          <% if $staff->url %><a href="<% $staff->url|escape %>"><% /if %>
+            <% $staff->name|escape %>
+          <% if $staff->url %></a><% /if %>
+      </li>
+    <% /if %>
+  <% /if %>
+<% /foreach %>
+</ul>
+</section>
+<% /foreach %>
 </div>
