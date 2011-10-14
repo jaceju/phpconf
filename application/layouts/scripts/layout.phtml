@@ -10,6 +10,7 @@
         <meta name="og_url" property="og:url" content="http://phpconf.tw/2011" />
         <meta name="og_image" property="og:image" content="http://phpconf.tw/img/logo/phpconf.jpg" />
         <meta name="og_site_name" property="og:site_name" content="PHPConf Taiwan" />
+        <link rel="alternate" type="application/json+oembed" href="http://phpconf.tw/<% $conference->year %>/oembed/" title="Bacon Lollys oEmbed Profile" />
         <title>PHPConf Taiwan <% $conference->year %></title>
         <link rel="shortcut icon" href="<% $this->baseUrl() %>/favicon.gif" />
         <link rel="stylesheet" href="<% $this->baseUrl() %>/css/<% $conference->year %>.css" media="screen, projection" />
@@ -28,7 +29,7 @@
                 <header class="page">
                     <div id="hgroup">
                         <hgroup>
-                            <h1><a href="<% $this->baseUrl() %>">PHPConf Taiwan <% $year %></a></h1>
+                            <h1><a href="<% $this->baseUrl() %>">PHPConf Taiwan <% $conference->year %></a></h1>
                             <h2>台灣 PHP 界的大盛事</h2>
                             <% if $conference->registrable() %>
                             <h3><a class="register" href="<% $conference->registrationUrl|escape %>" target="_blank">現在就報名！</a></h3>

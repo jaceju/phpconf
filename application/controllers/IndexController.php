@@ -2,6 +2,7 @@
 
 class IndexController extends Zend_Controller_Action
 {
+
     /**
      *
      * @var Phpconf_Model_Conference
@@ -22,6 +23,7 @@ class IndexController extends Zend_Controller_Action
 
     public function locationAction()
     {
+
     }
 
     public function sessionsAction()
@@ -46,5 +48,22 @@ class IndexController extends Zend_Controller_Action
         $this->view->announcements = $this->_conference->fetchLatestAnnouncements();
         $this->view->sessions = $this->_conference->fetchSessions();
     }
+
+    public function oembedAction()
+    {
+        $this->getHelper('layout')->disableLayout();
+        $this->getHelper('viewRenderer')->setNoRender();
+        $oEmbedData = array(
+            'version' => '1.0',
+            'type' => 'article',
+            'title' => 'PHPConf Taiwan ' . $this->_conference->year,
+            'url' => 'http://phpconf.tw/img/logo/phpconf.jpg',
+            'provider_name' => 'PHPConf Taiwan',
+            'provider_url' => 'http://phpconf.tw/',
+        );
+
+        echo Zend_Json::encode($oEmbedData);
+    }
+
 }
 
