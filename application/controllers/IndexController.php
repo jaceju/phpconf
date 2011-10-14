@@ -63,7 +63,7 @@ class IndexController extends Zend_Controller_Action
         $this->view->clearVars();
         $this->view->assign(array(
             'version' => '1.0',
-            'type' => 'rich',
+            'type' => 'link',
             'title' => 'PHPConf Taiwan ' . $this->_conference->year,
             'url' => 'http://phpconf.tw/img/logo/phpconf.jpg',
             'author_name' => 'phpconf.tw',
