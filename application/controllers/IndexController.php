@@ -62,7 +62,9 @@ class IndexController extends Zend_Controller_Action
             'provider_url' => 'http://phpconf.tw/',
         );
 
-        echo Zend_Json::encode($oEmbedData);
+        $this->getResponse()
+                ->setHeader('Content-Type', 'application/json+oembed')
+                ->appendBody(Zend_Json::encode($oEmbedData));
     }
 
 }
