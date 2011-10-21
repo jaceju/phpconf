@@ -2,7 +2,7 @@
 /* line 177, ../../../../../../../Library/Ruby/Gems/1.8/gems/fancy-buttons-1.1.2/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
-  background: url('/public/img/button_bg.png') repeat-x bottom left;
+  background: url('/public/img/button_bg.png?1319182777') repeat-x bottom left;
   margin: 0;
   width: auto;
   overflow: visible;

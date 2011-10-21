@@ -1000,6 +1000,10 @@ div.announcement .content p.signature {
 div.announcement .content li {
   list-style-type: disc;
 }
+/* line 19, ../../sass/2011/tab/_announcements.sass */
+div.announcement .content li strong {
+  color: #ff3333;
+}
 
 /* line 3, ../../sass/2011/tab/_sessions.sass */
 #sessions p.note {
@@ -1096,7 +1100,7 @@ div.announcement .content li {
 
 /* line 75, social */
 .social-sprite, #talkers li.talker .profile .info .link .social-aboutme, #talkers li.talker .profile .info .link .social-blog, #talkers li.talker .profile .info .link .social-email, #talkers li.talker .profile .info .link .social-facebook, #talkers li.talker .profile .info .link .social-github, #talkers li.talker .profile .info .link .social-googleplus, #talkers li.talker .profile .info .link .social-plurk, #talkers li.talker .profile .info .link .social-slideshare, #talkers li.talker .profile .info .link .social-twitter {
-  background: url('../img/social-se80167cf60.png') no-repeat;
+  background: url('/public/img/social-se80167cf60.png') no-repeat;
 }
 
 /* line 3, ../../sass/2011/tab/_talkers.sass */
