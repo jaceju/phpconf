@@ -4,9 +4,9 @@
         <li <% if constant('Phpconf_Model_Conference::SESSION_BREAK') !== $session->type %>class="<% cycle values="alt," %>"<% else %>class="break"<% /if %>>
             <p>
                 <span class="subject"><% $session->subject|escape %></span>
-                <span class="startTime"><% $session->startTime|escape %></span>
+                <span class="startTime"><% $session->startTime|date_format:'H:i'|escape %></span>
                 ~
-                <span class="endTime"><% $session->endTime|escape %></span>
+                <span class="endTime"><% $session->endTime|date_format:'H:i'|escape %></span>
                 <% if null !== $session->name %>
                 <span class="talker"><% partial name="index/_talker-name" talker=$session %></span>
                 <% /if %>

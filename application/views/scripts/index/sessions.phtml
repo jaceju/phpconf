@@ -11,12 +11,12 @@
         <% if constant('Phpconf_Model_Conference::SESSION_BREAK') === $session->type %>
           <tr class="break">
             <td colspan="2">
-              <% $session->subject|escape %> (<% $session->startTime|escape %> ~ <% $session->endTime|escape %>)
+              <% $session->subject|escape %> (<% $session->startTime|date_format:'H:i'|escape %> ~ <% $session->endTime|date_format:'H:i'|escape %>)
             </td>
           </tr>
         <% elseif constant('Phpconf_Model_Conference::SESSION_OTHER') === $session->type %>
           <tr class="other">
-            <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+            <td class="time"><span class="startTime"><% $session->startTime|date_format:'H:i'|escape %></span> ~ <span class="endTime"><% $session->endTime|date_format:'H:i'|escape %></span></td>
             <td>
               <section>
                 <hgroup>
@@ -27,7 +27,7 @@
           </tr>
         <% else %>
           <tr class="normal">
-            <td class="time"><span class="startTime"><% $session->startTime|escape %></span> ~ <span class="endTime"><% $session->endTime|escape %></span></td>
+            <td class="time"><span class="startTime"><% $session->startTime|date_format:'H:i'|escape %></span> ~ <span class="endTime"><% $session->endTime|date_format:'H:i'|escape %></span></td>
             <td>
               <section>
                 <hgroup>
