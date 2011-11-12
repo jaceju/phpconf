@@ -32,11 +32,7 @@
                         <hgroup>
                             <h1><a href="<% $this->baseUrl() %>">PHPConf Taiwan <% $conference->year %></a></h1>
                             <h2>台灣 PHP 界的大盛事</h2>
-                            <% if $conference->registrable() %>
                             <h3><a class="register" href="<% $conference->registrationUrl|escape %>" target="_blank">現在就報名！</a></h3>
-                            <% else %>
-                            <h3 class="registration-time">報名時間︰ 10/21 (五) 下午 01:30 ，報名人數︰ 100 人。</h3>
-                            <% /if %>
                         </hgroup>
                     </div>
                 </header>
