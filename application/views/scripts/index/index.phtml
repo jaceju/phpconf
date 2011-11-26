@@ -2,7 +2,10 @@
     <% foreach $announcements as $announcement %>
     <div class="announcement">
         <section>
-            <h1 class="title"><% $announcement->title|escape %></h1>
+            <hgroup>
+              <h1 class="title"><% $announcement->title|escape %></h1>
+              <p class="date"><% $announcement->createDateTime|date_format:'%Y-%m-%d' %></p>
+            </hgroup>
             <div class="content"><% $announcement->content %></div>
         </section>
     </div>
